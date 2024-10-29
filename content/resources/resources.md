@@ -8,7 +8,7 @@ This is the Resource page where you can find resources about Data Science
 
 ## Tutorials
 
-Here you will find a listing of tutorials
+Here you will find a listing of tutorials.
 
 ## Reading 
 

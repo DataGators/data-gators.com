@@ -11,8 +11,8 @@ pygmentsCodeFences=true
 
 
 [params.intro]
-  main = "I, Oliver Bonham-Carter :wave:"
-  sub = "Assistant Professor in Computer Science, Allegheny College"
+  main = DataGators :wave:"
+  sub = "We make you a better Data Scientist at Allegheny College"
 
 
 [params.main]

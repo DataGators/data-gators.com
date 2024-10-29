@@ -11,8 +11,8 @@ pygmentsCodeFences=true
 
 
 [params.intro]
-  main = DataGators :wave:"
-  sub = "We make you a better Data Scientist at Allegheny College"
+  main = "DataGators :wave:"
+  sub = "Become Data Scientist at Allegheny College!"
 
 
 [params.main]

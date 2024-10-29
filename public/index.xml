@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators Project</copyright>
-    <lastBuildDate>Fri, 03 May 2019 09:37:55 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2024 22:46:09 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resources</title>
+      <link>http://localhost:1313/resources/resources/</link>
+      <pubDate>Mon, 28 Oct 2024 22:46:09 -0400</pubDate>
+      <guid>http://localhost:1313/resources/resources/</guid>
+      <description>This is the Resource page where you can find resources about Data Science&#xA;Tutorials Here you will find a listing of tutorials&#xA;Reading Here you will find free textbooks about programming.</description>
+    </item>
     <item>
       <title>Getting started</title>
       <link>http://localhost:1313/post/getting-started/</link>

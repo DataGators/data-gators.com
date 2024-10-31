@@ -1,0 +1,45 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'DataGators Website'
+theme = ["PaperMod"]
+
+# Site metadata
+author = "Katie Duerig"
+description = "A resource for learning the R programming language."
+keywords = ["R", "programming", "statistics", "data analysis"]
+
+# Enable or customize the homepage
+enableGitInfo = true
+paginate = 10  # Number of posts per page
+showPageInfo = true  # Display page info (date, author, etc.)
+
+# Menu configuration
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Tutorials"
+  url = "/tutorials/"
+  weight = 2
+
+[[menu.main]]
+  name = "Resources"
+  url = "/resources/"
+  weight = 3
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+# Customize appearance
+theme_color = "#4CAF50"  # Main color of your theme
+favicon = "favicon.ico"   # Path to your favicon file
+
+# Enable analytics (optional)
+googleAnalytics = "UA-XXXXXXX-X"  # Replace with your Google Analytics ID
+
+# Additional settings
+disableComments = false  # Enable comments on posts

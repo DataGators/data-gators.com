@@ -1,7 +1,7 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "Data Gators Project"
-theme = "personal-web"
+theme = "personal-web_"
 copyright="© Data Gators Project"
 googleAnalytics = ""
 enableEmoji=true

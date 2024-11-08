@@ -51,7 +51,7 @@ pygmentsCodeFences=true
   customCSS = ""
 
 [params.social]
-  glasses = "http://oliverbonhamcarter.com/live/"
+  glasses = "https://datagators.netlify.app/live/"
 #  github = "https://github.com/"
 #  twitter = "https://twitter.com/"
 #  linkedin = "https://www.linkedin.com/in/"

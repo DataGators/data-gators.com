@@ -45,13 +45,14 @@ pygmentsCodeFences=true
 [params.sidebar]
   backgroundImage = '/images/treeLine.png' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
   gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
-  logo = "/images/dg_logo_short.png" # - default "/images/dg_logo_short.png"
+  logo = "/images/logos/dg_logo_short.png" # - default "/images/dg_logo_short.png"
 [params.assets]
   favicon = ""
   customCSS = ""
 
 [params.social]
-  github = "https://github.com/"
+  glasses = "http://oliverbonhamcarter.com/live/"
+#  github = "https://github.com/"
 #  twitter = "https://twitter.com/"
 #  linkedin = "https://www.linkedin.com/in/"
 #  medium = "https://medium.com/"
@@ -84,10 +85,10 @@ pygmentsCodeFences=true
   weight = -110
 
 [[menu.main]]
-  identifier = "blog"
-  name = "Post"
-  title = "Blog section"
-  url = "/post/"
+  identifier = "current"
+  name = "Learn"
+  title = "Learn"
+  url = "/learn/"
   weight = -100
 
 [sitemap]

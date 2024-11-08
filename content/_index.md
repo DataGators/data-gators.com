@@ -1,11 +1,13 @@
 ---
 title: HOME
-description: Welcome to this sample project
-images: ["/images/sample.jpg"]
+description: Welcome
+images: ["/images/main/data_gators_5.jpg"]
 ---
 
 Welcome to the DataGator Website!
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus error cumque quisquam necessitatibus libero dolore porro, quo at molestiae modi voluptatibus iusto alias corporis. Accusamus, debitis, atque. Maiores, distinctio, neque.
+
+![dataGatorsLogo](images/logos/dg_logo_1532x313.png)
+
 
 [Get to know us better](/about "Get to know us better")

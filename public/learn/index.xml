@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learn on Data Gators Project</title>
+    <link>http://localhost:1313/learn/</link>
+    <description>Recent content in Learn on Data Gators Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Data Gators Project</copyright>
+    <atom:link href="http://localhost:1313/learn/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,10 +1,14 @@
 ---
 title: ABOUT
-description: Hey, I'm Edna West
-images: ["/images/sample.jpg"]
+description: About The DataGators Project
+images: ["/images/logos/dg_logo_short.png"]
 ---
 
+![dataGatorsLogo](/images/main/data_gators_5.png)
 
-This is my about page. :wave:
 
-Lorem ipsum dolor sit amet, :smile: consectetur adipisicing elit. Voluptates aut, tenetur distinctio voluptatibus ab. Nihil id dignissimos unde, tenetur iusto facilis suscipit corporis, ipsam necessitatibus, eaque iste deleniti consequuntur reprehenderit? :earth_africa:
+ <!-- This is my about page. :wave:
+
+:smile: 
+ 
+ :earth_africa: -->

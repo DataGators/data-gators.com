@@ -1,5 +1,5 @@
 ---
-title: HOME
+title: DataGators
 description: Welcome
 images: ["/images/main/data_gators_5.jpg"]
 ---

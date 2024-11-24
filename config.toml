@@ -83,6 +83,13 @@ pygmentsCodeFences=true
   name = "About"
   title = "About section"
   url = "/about/"
+  weight = -140
+
+[[menu.main]]
+  identifier = "Tutorials"
+  name = "Tutorials"
+  title = "Tutorials"
+  url = "/tutorials/"
   weight = -130
 
 [[menu.main]]
@@ -105,6 +112,7 @@ pygmentsCodeFences=true
   title = "Jupyter"
   url = "https://datagators.netlify.app/live/"
   weight = -100
+
 
 [sitemap]
   changefreq = "monthly"

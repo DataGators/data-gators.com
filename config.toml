@@ -16,7 +16,7 @@ pygmentsCodeFences=true
 
 
 [params.main]
-  latestPublishHeader = "My Latest Project!!"
+  latestPublishHeader = "yey! My Latest Project!!"
 
 [taxonomies]
   design = "designs"
@@ -28,7 +28,7 @@ pygmentsCodeFences=true
 [params]
   breadcrumb = true
   accentColor = "#FD3519"
-  mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+#  mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
   rendererSafe = false # set to true if wish to remove the unsafe renderer setting below (recommended). Titles will not be run through markdownify
 
 [params.notFound]
@@ -43,9 +43,13 @@ pygmentsCodeFences=true
   portfolio = "project"
 
 [params.sidebar]
-  backgroundImage = '/images/treeLine.png' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+#  backgroundImage = '/images/treeLine.png' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+  backgroundImage = '/images/main/bars_2.png' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+
+
   gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
-  logo = "/images/logos/dg_logo_short.png" # - default "/images/dg_logo_short.png"
+  # logo = "/images/logos/dg_logo_short.png" # - default "/images/dg_logo_short.png"
+  logo = "/images/logos/logo_500x500.png" 
 [params.assets]
   favicon = ""
   customCSS = ""
@@ -75,20 +79,27 @@ pygmentsCodeFences=true
   name = "About"
   title = "About section"
   url = "/about/"
-  weight = -120
+  weight = -130
 
 [[menu.main]]
   identifier = "resources"
   name = "Resources"
   title = "Resources"
   url = "/resources/"
-  weight = -110
+  weight = -120
 
 [[menu.main]]
   identifier = "learn"
   name = "Learn"
   title = "Learn"
   url = "/learn/"
+  weight = -110
+
+[[menu.main]]
+  identifier = "Jupyter"
+  name = "Jupyter"
+  title = "Jupyter"
+  url = "https://datagators.netlify.app/live/"
   weight = -100
 
 [sitemap]

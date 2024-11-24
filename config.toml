@@ -28,7 +28,10 @@ pygmentsCodeFences=true
 [params]
   breadcrumb = true
   accentColor = "#FD3519"
-  mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+
+
+  mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section to be displayed below 404
+
   rendererSafe = false # set to true if wish to remove the unsafe renderer setting below (recommended). Titles will not be run through markdownify
 
 [params.notFound]
@@ -41,7 +44,7 @@ pygmentsCodeFences=true
   # Define how your sections will be called
   # when automatically pulled. For instance in the 404 page
   post = "article"
-  portfolio = "project"
+  portfolio = "project" # This shows up on 404 page and other pages in reference to the portfolio content
 
 [params.sidebar]
 #  backgroundImage = '/images/treeLine.png' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash

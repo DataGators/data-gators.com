@@ -35,7 +35,7 @@ head(iris)
 - `head(iris)` displays the first six rows of the `iris` dataset to give us an idea of its structure.
 
 **Output:**
-```
+``` 
   Sepal.Length Sepal.Width Petal.Length Petal.Width    Species
 1           5.1          3.5           1.4          0.2     setosa
 2           4.9          3.0           1.4          0.2     setosa
@@ -61,7 +61,7 @@ cor(iris[, 1:4])
 - `cor()` computes the correlation matrix, which measures the linear relationships between pairs of variables.
 
 **Output:**
-```
+``` 
                Sepal.Length Sepal.Width Petal.Length Petal.Width
 Sepal.Length        1.000000   -0.117570     0.871754     0.817941
 Sepal.Width        -0.117570    1.000000    -0.428440    -0.366125
@@ -171,5 +171,6 @@ This exercise helps in understanding both the basic analysis and visualization t
 ---
 
 ### Next Steps:
+
 - You can try modifying the plots to explore other variables or try additional visualizations like histograms, density plots, or heatmaps.
 - Experiment with different `ggplot2` functions for more advanced visualizations.

@@ -5,5 +5,11 @@ description = 'Introductory Tutorials'
 draft = false
 +++
 Welcome to Tutorials for introductory level concepts.
-<!-- 
-![dataGatorsLogo](/images/main/logo_500x500.png) -->
+
+<!-- ![dataGatorsLogo](/images/logos/logo_500x500.png) -->
+![dataGatorsLogo](/images/main/dashboard_01.png)
+
+
+<center>
+&#x200B;
+</center>

@@ -178,4 +178,3 @@ In this lesson, you learned how to:
 - Load and explore a synthetic dataset.
 - Perform basic correlation analysis to understand relationships between variables.
 - Visualize data using scatter plots, histograms, and boxplots in R.
-

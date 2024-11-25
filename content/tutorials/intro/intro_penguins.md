@@ -23,7 +23,8 @@ We will perform basic exploratory data analysis (EDA) by calculating correlation
 First, we'll need to install and load the `palmerpenguins` package, which contains the dataset.
 
 ```r
-# Install the palmerpenguins package (if not already installed)
+# Install the palmerpenguins package 
+# (if not already installed)
 # install.packages("palmerpenguins")
 
 # Load the required libraries
@@ -77,8 +78,14 @@ We can calculate the correlation matrix for the numeric variables (excluding `sp
 
 ```r
 # Select numeric columns and calculate correlations
-numeric_data <- penguins[, c("bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g")]
-cor(numeric_data, use = "complete.obs")
+numeric_data <- penguins[, c(
+  "bill_length_mm", 
+  "bill_depth_mm", 
+  "flipper_length_mm", 
+  "body_mass_g")]
+cor(
+  numeric_data,
+  use = "complete.obs")
 ```
 
 **Explanation:**
@@ -110,9 +117,17 @@ We can create a scatter plot to visualize the relationship between bill length a
 
 ```r
 # Scatter plot of Bill Length vs Bill Depth
-ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+ggplot(
+  penguins,
+  aes(x = bill_length_mm,
+  y = bill_depth_mm,
+  color = species)
+  ) +
   geom_point() +
-  labs(title = "Bill Length vs Bill Depth", x = "Bill Length (mm)", y = "Bill Depth (mm)") +
+  labs(
+    title = "Bill Length vs Bill Depth",
+    x = "Bill Length (mm)",
+    y = "Bill Depth (mm)") +
   theme_minimal()
 ```
 
@@ -133,9 +148,16 @@ Next, we create a boxplot to compare the distribution of body mass across specie
 
 ```r
 # Boxplot of Body Mass by Species
-ggplot(penguins, aes(x = species, y = body_mass_g, fill = species)) +
-  geom_boxplot() +
-  labs(title = "Body Mass Distribution by Species", x = "Species", y = "Body Mass (g)") +
+ggplot(penguins, aes(
+  x = species,
+  y = body_mass_g,
+  fill = species)) +
+geom_boxplot() +
+  labs(
+    title = "Body Mass Distribution by Species",
+    x = "Species",
+    y = "Body Mass (g)"
+    ) +
   theme_minimal()
 ```
 
@@ -155,13 +177,21 @@ This boxplot will display the distribution of body mass for each species, includ
 To explore the relationships between multiple numeric variables, we can create a pair plot.
 
 ```r
-# Install and load GGally for ggpairs if not already installed
+# Install and load GGally for
+# ggpairs if not already installed
 # install.packages("GGally")
+
 library(GGally)
 
 # Create a pair plot of numeric variables
-ggpairs(penguins[, c("bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g")], 
-        aes(color = penguins$species))
+ggpairs(
+  penguins[, c(
+  "bill_length_mm",
+  "bill_depth_mm",
+  "flipper_length_mm",
+  "body_mass_g")
+  ],
+  aes(color = penguins$species))
 ```
 
 **Explanation:**

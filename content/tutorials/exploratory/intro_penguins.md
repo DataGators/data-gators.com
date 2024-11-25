@@ -1,5 +1,5 @@
 +++
-title = 'Intro_penguins'
+title = 'Exploratory Steps with Penguins Data'
 date = 2024-11-24T03:14:28-05:00
 draft = false
 +++

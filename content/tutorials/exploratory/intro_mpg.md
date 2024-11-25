@@ -1,5 +1,5 @@
 +++
-title = 'Intro_mpg'
+title = 'Exploratory Steps With MPG Data'
 date = 2024-11-24T03:03:29-05:00
 draft = false
 +++

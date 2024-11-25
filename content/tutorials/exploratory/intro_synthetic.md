@@ -1,5 +1,5 @@
 +++
-title = 'Intro_synthetic_Data'
+title = 'Exploratory Steps With Synthetic Data'
 date = 2024-11-25T13:09:06-05:00
 draft = false
 +++

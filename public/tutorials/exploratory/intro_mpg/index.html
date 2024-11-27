@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang='en'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Exploratory Steps With MPG Data - Data Gators</title>
+  <link rel='canonical' href='http://localhost:1313/tutorials/exploratory/intro_mpg/' />
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <meta name='description' content='' />
+  <meta name='theme-color' content='#FD3519' />
+  
+
+  <meta name="generator" content="Hugo 0.139.2">
+
+  
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/sass/style.min.eabe1aa4bd266a15f7b39b122bd6a5cc75cb067e5373631ac21d7815d6240d6f.css" integrity="sha256-6r4apL0mahX3s5sSK9alzHXLBn5Tc2Mawh14FdYkDW8=" media="screen">
+<link rel="stylesheet" href="http://localhost:1313/syntax.min.css" integrity="" media="screen">
+
+  <meta property="og:url" content="http://localhost:1313/tutorials/exploratory/intro_mpg/">
+  <meta property="og:site_name" content="Data Gators">
+  <meta property="og:title" content="Exploratory Steps With MPG Data">
+  <meta property="og:description" content="Let’s explore the mpg dataset from the ggplot2 package in R. This lesson will cover how to load the dataset, calculate basic correlations, and create various plots, with detailed explanations for each step.
+Introduction to R Programming with the MPG Dataset In this lesson, we will work with the mpg dataset, which is included in the ggplot2 package. The dataset contains information about the fuel efficiency (miles per gallon) of various car models, with additional details about each car such as:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="tutorials">
+    <meta property="article:published_time" content="2024-11-24T03:03:29-05:00">
+    <meta property="article:modified_time" content="2024-11-24T03:03:29-05:00">
+
+  
+  <meta itemprop="name" content="Exploratory Steps With MPG Data">
+  <meta itemprop="description" content="Let’s explore the mpg dataset from the ggplot2 package in R. This lesson will cover how to load the dataset, calculate basic correlations, and create various plots, with detailed explanations for each step.
+Introduction to R Programming with the MPG Dataset In this lesson, we will work with the mpg dataset, which is included in the ggplot2 package. The dataset contains information about the fuel efficiency (miles per gallon) of various car models, with additional details about each car such as:">
+  <meta itemprop="datePublished" content="2024-11-24T03:03:29-05:00">
+  <meta itemprop="dateModified" content="2024-11-24T03:03:29-05:00">
+  <meta itemprop="wordCount" content="1137">
+</head>
+<body>
+
+  <header style="background-image:linear-gradient(
+      rgba(0,0,0,0.4),rgba(0,0,0,0.4)
+    ),url(&#39;http://localhost:1313/images/main/bars_2.png&#39;)">
+  <div class="intro">
+    <div class="logo-container">
+      <a href="/">
+        <img src='http://localhost:1313/images/logos/logo_500x500.png' alt="Profile DataGators" class="rounded-logo">
+      </a>
+    </div>
+    <h2>DataGators 👋</h2>
+    <h3>Help With Data Science at Allegheny College!</h3>
+    <div class="menu">
+      
+
+        <p>
+            <a href="/about/">
+                About
+            </a>
+        </p>
+
+        <p>
+            <a href="/tutorials/">
+                Tutorials
+            </a>
+        </p>
+
+        <p>
+            <a href="/resources/">
+                Resources
+            </a>
+        </p>
+
+        <p>
+            <a href="/learn/">
+                Learn
+            </a>
+        </p>
+
+        <p>
+            <a href="https://datagators.netlify.app/live/">
+                Jupyter
+            </a>
+        </p>
+
+      
+        
+        <p>
+            <a href="mailto:obonhamcarter@allegheny.edu" target="_blank" rel="external">
+                
+            </a>
+        </p>
+      
+    </div>
+  </div>
+
+  <div class="socials">
+      
+  
+    <a href="https://datagators.netlify.app/live/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M66.4607844,93.6126043 C65.3791811,87.8380074 67.326067,85.6992679 72.7340834,83.9882762 C77.4931378,82.4911585 82.6848335,82.4911585 87.6602086,82.7050325 C100.855768,83.3466543 104.53322,85.27152 103.235296,98.9594532 C102.153692,110.508647 94.3661488,110.722521 82.0358715,110.080899 C69.4892736,109.439277 68.4076703,104.73405 66.4607844,93.6126043 Z M14.9764686,92.9709824 C14.9764686,94.895848 15.4091099,97.2484616 15.4091099,97.2484616 C16.7070338,91.4738647 22.7640122,87.6241335 28.6046698,87.1963856 C24.0619361,85.6992679 15.4091099,86.7686377 14.9764686,92.9709824 Z M98.2599206,97.2484616 C98.2599206,97.2484616 98.9088826,94.6819741 98.6925619,92.9709824 C98.2599206,87.4102595 88.7418118,85.27152 85.0643607,87.1963856 C90.9050184,87.6241335 96.9619967,91.4738647 98.2599206,97.2484616 Z M47.2082461,94.4681001 C45.0450396,106.231168 43.3144744,109.653151 30.5515557,109.867025 C19.3028817,110.294773 11.5153381,110.294773 10.6500555,97.4623355 C9.78477288,83.7744023 14.7601479,82.7050325 27.7393872,82.2772846 C32.4984416,82.0634106 37.6901373,82.2772846 42.2328711,83.9882762 C47.8572081,85.9131418 48.2898494,88.6935033 47.2082461,94.2542262 L47.2082461,94.4681001 Z M71.0035181,42.9244764 C75.3299312,43.5660983 75.1136106,40.9996108 76.6278552,38.4331233 C77.9257791,36.0805098 81.1705889,35.225014 83.5501161,36.9360056 C86.5786053,39.2886192 95.0151108,60.034393 97.1783174,64.7396201 C98.6925619,68.3754773 102.586334,76.0749398 103.451616,79.4969231 C94.7987902,78.8553012 87.8765292,77.3581835 79.0073824,77.9998054 C71.0035181,78.6414273 64.7302192,82.0634106 56.9426756,82.0634106 C49.155132,82.0634106 43.0981537,78.4275533 35.0942895,77.9998054 C26.2251426,77.3581835 19.086561,78.8553012 10.6500555,79.4969231 C11.2990175,76.5026877 21.0334469,55.3291659 23.1966535,50.8378128 C24.7108981,47.6297035 27.9557079,39.2886192 30.3352351,37.1498796 C32.4984416,35.225014 35.9595721,35.8666358 37.4738167,38.2192494 C39.2043819,40.7857369 38.5554199,43.7799723 43.0981537,43.1383504 C42.881833,36.0805098 35.3106101,29.0226692 28.6046698,33.3001484 C24.2782567,36.0805098 20.6008056,45.063216 18.0049578,49.5545691 C14.9764686,55.3291659 11.7316588,61.1037628 8.70316961,67.0922336 C5.8910011,72.8668304 0.0503434222,80.3524189 1.1319467,86.7686377 C1.78090866,90.8322428 5.45835979,87.6241335 5.8910011,95.5374699 C6.10732175,99.3872011 6.10732175,103.236932 7.83788699,106.87279 C11.5153381,114.572252 19.5192023,115 27.0904253,115 C34.0126862,115 43.3144744,115 47.4245668,108.369907 C50.8856973,103.023058 50.6693766,90.6183689 56.7263549,90.6183689 C62.7833333,90.6183689 62.7833333,102.809184 66.0281431,108.156033 C70.1382355,114.786126 79.0073824,115 86.145964,115 C101.072089,115 107.345388,111.791891 107.99435,96.6068397 C108.426991,87.6241335 111.671801,91.2599908 112.753404,87.4102595 C114.267649,81.2079148 108.426991,73.2945783 105.614823,67.9477294 C102.586334,61.9592586 99.3415239,55.9707878 96.0967141,50.196191 C93.7171869,45.7048379 89.8234151,36.5082577 85.7133227,33.7278963 C78.7910617,29.0226692 71.2198388,36.2943838 71.0035181,43.3522243 L71.0035181,42.9244764 Z"></path>
+  
+  </svg>
+</div>
+</a>
+  
+
+  </div>
+</header>
+
+<div class="mobile-header">
+  <p> Data Gators </p>
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+
+<div class="overlay-menu">
+  <header>
+    <div class="intro">
+      <div class="logo-container">
+        <a href="/">
+          <img src='http://localhost:1313/images/logos/logo_500x500.png' alt="Profile DataGators" class="rounded-logo">
+        </a>
+      </div>
+      <h2>DataGators 👋</h2>
+      <h3>Help With Data Science at Allegheny College!</h3>
+      <div class="menu">
+        
+
+        <p>
+            <a href="/about/">
+                About
+            </a>
+        </p>
+
+        <p>
+            <a href="/tutorials/">
+                Tutorials
+            </a>
+        </p>
+
+        <p>
+            <a href="/resources/">
+                Resources
+            </a>
+        </p>
+
+        <p>
+            <a href="/learn/">
+                Learn
+            </a>
+        </p>
+
+        <p>
+            <a href="https://datagators.netlify.app/live/">
+                Jupyter
+            </a>
+        </p>
+
+        
+          
+          <p>
+              <a href="mailto:obonhamcarter@allegheny.edu" target="_blank" rel="external">
+                  
+              </a>
+          </p>
+        
+      </div>
+    </div>
+
+    <div class="socials">
+        
+  
+    <a href="https://datagators.netlify.app/live/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M66.4607844,93.6126043 C65.3791811,87.8380074 67.326067,85.6992679 72.7340834,83.9882762 C77.4931378,82.4911585 82.6848335,82.4911585 87.6602086,82.7050325 C100.855768,83.3466543 104.53322,85.27152 103.235296,98.9594532 C102.153692,110.508647 94.3661488,110.722521 82.0358715,110.080899 C69.4892736,109.439277 68.4076703,104.73405 66.4607844,93.6126043 Z M14.9764686,92.9709824 C14.9764686,94.895848 15.4091099,97.2484616 15.4091099,97.2484616 C16.7070338,91.4738647 22.7640122,87.6241335 28.6046698,87.1963856 C24.0619361,85.6992679 15.4091099,86.7686377 14.9764686,92.9709824 Z M98.2599206,97.2484616 C98.2599206,97.2484616 98.9088826,94.6819741 98.6925619,92.9709824 C98.2599206,87.4102595 88.7418118,85.27152 85.0643607,87.1963856 C90.9050184,87.6241335 96.9619967,91.4738647 98.2599206,97.2484616 Z M47.2082461,94.4681001 C45.0450396,106.231168 43.3144744,109.653151 30.5515557,109.867025 C19.3028817,110.294773 11.5153381,110.294773 10.6500555,97.4623355 C9.78477288,83.7744023 14.7601479,82.7050325 27.7393872,82.2772846 C32.4984416,82.0634106 37.6901373,82.2772846 42.2328711,83.9882762 C47.8572081,85.9131418 48.2898494,88.6935033 47.2082461,94.2542262 L47.2082461,94.4681001 Z M71.0035181,42.9244764 C75.3299312,43.5660983 75.1136106,40.9996108 76.6278552,38.4331233 C77.9257791,36.0805098 81.1705889,35.225014 83.5501161,36.9360056 C86.5786053,39.2886192 95.0151108,60.034393 97.1783174,64.7396201 C98.6925619,68.3754773 102.586334,76.0749398 103.451616,79.4969231 C94.7987902,78.8553012 87.8765292,77.3581835 79.0073824,77.9998054 C71.0035181,78.6414273 64.7302192,82.0634106 56.9426756,82.0634106 C49.155132,82.0634106 43.0981537,78.4275533 35.0942895,77.9998054 C26.2251426,77.3581835 19.086561,78.8553012 10.6500555,79.4969231 C11.2990175,76.5026877 21.0334469,55.3291659 23.1966535,50.8378128 C24.7108981,47.6297035 27.9557079,39.2886192 30.3352351,37.1498796 C32.4984416,35.225014 35.9595721,35.8666358 37.4738167,38.2192494 C39.2043819,40.7857369 38.5554199,43.7799723 43.0981537,43.1383504 C42.881833,36.0805098 35.3106101,29.0226692 28.6046698,33.3001484 C24.2782567,36.0805098 20.6008056,45.063216 18.0049578,49.5545691 C14.9764686,55.3291659 11.7316588,61.1037628 8.70316961,67.0922336 C5.8910011,72.8668304 0.0503434222,80.3524189 1.1319467,86.7686377 C1.78090866,90.8322428 5.45835979,87.6241335 5.8910011,95.5374699 C6.10732175,99.3872011 6.10732175,103.236932 7.83788699,106.87279 C11.5153381,114.572252 19.5192023,115 27.0904253,115 C34.0126862,115 43.3144744,115 47.4245668,108.369907 C50.8856973,103.023058 50.6693766,90.6183689 56.7263549,90.6183689 C62.7833333,90.6183689 62.7833333,102.809184 66.0281431,108.156033 C70.1382355,114.786126 79.0073824,115 86.145964,115 C101.072089,115 107.345388,111.791891 107.99435,96.6068397 C108.426991,87.6241335 111.671801,91.2599908 112.753404,87.4102595 C114.267649,81.2079148 108.426991,73.2945783 105.614823,67.9477294 C102.586334,61.9592586 99.3415239,55.9707878 96.0967141,50.196191 C93.7171869,45.7048379 89.8234151,36.5082577 85.7133227,33.7278963 C78.7910617,29.0226692 71.2198388,36.2943838 71.0035181,43.3522243 L71.0035181,42.9244764 Z"></path>
+  
+  </svg>
+</div>
+</a>
+  
+
+    </div>
+  </header>
+</div>
+
+  <div class="content-wrapper">
+    
+      <div class="breadcrumb">
+  
+
+
+
+
+
+<span >
+  <a href="http://localhost:1313/">DataGators</a>
+   / 
+</span>
+
+
+<span >
+  <a href="http://localhost:1313/tutorials/">Exploratory Steps</a>
+   / 
+</span>
+
+
+<span  class="active">
+  <a href="http://localhost:1313/tutorials/exploratory/intro_mpg/">Exploratory Steps With MPG Data</a>
+  
+</span>
+
+</div>
+
+    
+    <main id="content" class="tutorials">
+
+
+  <h1>Exploratory Steps With MPG Data</h1>
+  <p>Let&rsquo;s explore the <code>mpg</code> dataset from the <code>ggplot2</code> package in R. This lesson will cover how to load the dataset, calculate basic correlations, and create various plots, with detailed explanations for each step.</p>
+<hr>
+<h2 id="introduction-to-r-programming-with-the-mpg-dataset">Introduction to R Programming with the MPG Dataset</h2>
+<p>In this lesson, we will work with the <code>mpg</code> dataset, which is included in the <code>ggplot2</code> package. The dataset contains information about the fuel efficiency (miles per gallon) of various car models, with additional details about each car such as:</p>
+<ul>
+<li><strong>mpg</strong>: Miles per gallon (fuel efficiency).</li>
+<li><strong>cyl</strong>: Number of cylinders in the car engine.</li>
+<li><strong>disp</strong>: Displacement (engine size in cubic inches).</li>
+<li><strong>hp</strong>: Horsepower.</li>
+<li><strong>drat</strong>: Rear axle ratio.</li>
+<li><strong>wt</strong>: Weight of the car (in 1000 pounds).</li>
+<li><strong>qsec</strong>: Quarter mile time.</li>
+<li><strong>vs</strong>: Engine type (0 = V-shaped, 1 = straight).</li>
+<li><strong>am</strong>: Transmission type (0 = automatic, 1 = manual).</li>
+<li><strong>gear</strong>: Number of forward gears.</li>
+<li><strong>carb</strong>: Number of carburetors.</li>
+</ul>
+<p>We will load the dataset, explore basic correlations, and visualize the data using plots.</p>
+<hr>
+<h3 id="step-1-install-and-load-required-libraries">Step 1: Install and Load Required Libraries</h3>
+<p>To work with the <code>mpg</code> dataset, we first need to install and load the <code>ggplot2</code> package. If it&rsquo;s already installed, we can simply load it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Install ggplot2 package if not already installed</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># install.packages(&#34;ggplot2&#34;)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the ggplot2 package</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>install.packages(&quot;ggplot2&quot;)</code> installs the <code>ggplot2</code> package (if it hasn&rsquo;t been installed yet). <code>ggplot2</code> is a popular package for creating data visualizations in R.</li>
+<li><code>library(ggplot2)</code> loads the package into R, so we can access its built-in datasets and plotting functions.</li>
+</ul>
+<hr>
+<h3 id="step-2-load-the-mpg-dataset">Step 2: Load the MPG Dataset</h3>
+<p>The <code>mpg</code> dataset is included in <code>ggplot2</code> by default, so we can load it without any extra steps.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Load the mpg dataset</span>
+</span></span><span class="line"><span class="cl"><span class="nf">data</span><span class="p">(</span><span class="s">&#34;mpg&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Check the first few rows of the dataset</span>
+</span></span><span class="line"><span class="cl"><span class="nf">head</span><span class="p">(</span><span class="n">mpg</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>data(&quot;mpg&quot;)</code> loads the <code>mpg</code> dataset into memory.</li>
+<li><code>head(mpg)</code> shows the first six rows of the dataset, so we can inspect the structure of the data.</li>
+</ul>
+<p><strong>Output:</strong></p>
+<pre tabindex="0"><code>  manufacturer model displ  year cyl trans drv cty hwy fl
+1         audi  a4  1.8  1999   4   auto   f  18  29  2
+2         audi  a4  1.8  1999   4   auto   f  21  29  2
+3         audi  a4  2.0  1999   4   auto   f  21  29  2
+4         audi  a4  2.0  1999   4   auto   f  19  27  2
+5         audi  a4  2.8  1999   6   auto   f  16  26  3
+6         audi  a4  2.8  1999   6   auto   f  18  26  3
+</code></pre><p><strong>Explanation:</strong></p>
+<ul>
+<li>The dataset has columns for the manufacturer, model, engine displacement (<code>displ</code>), number of cylinders (<code>cyl</code>), transmission type (<code>trans</code>), drive type (<code>drv</code>), city and highway fuel efficiency (<code>cty</code>, <code>hwy</code>), and a factor variable <code>fl</code>.</li>
+</ul>
+<hr>
+<h3 id="step-3-calculate-correlations">Step 3: Calculate Correlations</h3>
+<p>We can calculate the correlation between numeric variables such as <code>displ</code> (engine displacement), <code>cty</code> (city mileage), and <code>hwy</code> (highway mileage).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Calculate correlations</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># between numeric variables (displ, cty, hwy)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">cor</span><span class="p">(</span><span class="n">mpg[</span><span class="p">,</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;displ&#34;</span><span class="p">,</span> <span class="s">&#34;cty&#34;</span><span class="p">,</span> <span class="s">&#34;hwy&#34;</span><span class="p">)</span><span class="n">]</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>mpg[, c(&quot;displ&quot;, &quot;cty&quot;, &quot;hwy&quot;)]</code> selects the numeric columns <code>displ</code>, <code>cty</code>, and <code>hwy</code> from the dataset.</li>
+<li><code>cor()</code> calculates the correlation matrix, which shows the strength and direction of the linear relationships between these variables.</li>
+</ul>
+<p><strong>Output:</strong></p>
+<pre tabindex="0"><code>           displ       cty      hwy
+displ  1.0000000 -0.897358 -0.779753
+cty    -0.897358  1.000000  0.918382
+hwy    -0.779753  0.918382  1.000000
+</code></pre><p><strong>Explanation of Output:</strong></p>
+<ul>
+<li><code>displ</code> and <code>cty</code> have a strong negative correlation of <code>-0.90</code>, meaning that as the engine displacement increases, the city mileage tends to decrease.</li>
+<li><code>cty</code> and <code>hwy</code> have a strong positive correlation of <code>0.92</code>, meaning that cars with higher city mileage tend to also have higher highway mileage.</li>
+<li><code>displ</code> and <code>hwy</code> have a moderate negative correlation of <code>-0.78</code>, showing that larger engines tend to have lower highway mileage.</li>
+</ul>
+<hr>
+<h3 id="step-4-create-visualizations">Step 4: Create Visualizations</h3>
+<h4 id="scatter-plot-engine-displacement-vs-highway-mileage">Scatter Plot: Engine Displacement vs Highway Mileage</h4>
+<p>A scatter plot is a great way to visualize the relationship between two continuous variables. Let&rsquo;s plot <code>displ</code> (engine displacement) against <code>hwy</code> (highway mileage).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Scatter plot of Displacement vs Highway Mileage</span>
+</span></span><span class="line"><span class="cl"><span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">displ</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">hwy</span><span class="p">))</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># Color points by car class</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="n">class</span><span class="p">))</span> <span class="o">+</span>  
+</span></span><span class="line"><span class="cl">  <span class="nf">labs</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">title</span> <span class="o">=</span> <span class="s">&#34;Engine Displacement vs Highway Mileage&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="s">&#34;Engine Displacement (L)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="s">&#34;Highway Mileage (mpg)&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">theme_minimal</span><span class="p">()</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>ggplot(mpg, aes(x = displ, y = hwy))</code> sets up the plot with <code>displ</code> on the x-axis and <code>hwy</code> on the y-axis.</li>
+<li><code>geom_point(aes(color = class))</code> creates a scatter plot where each point is colored by the <code>class</code> variable (the car&rsquo;s class).</li>
+<li><code>labs()</code> adds a title and axis labels.</li>
+<li><code>theme_minimal()</code> applies a minimal theme for a cleaner plot.</li>
+</ul>
+<p><strong>Output:</strong>
+This plot will display a scatter plot of engine displacement versus highway mileage, with points colored by car class.</p>
+<hr>
+<h4 id="boxplot-highway-mileage-by-cylinder-count">Boxplot: Highway Mileage by Cylinder Count</h4>
+<p>A boxplot is useful for comparing the distribution of a numeric variable across different categories. We can use it to compare <code>hwy</code> (highway mileage) across different values of <code>cyl</code> (number of cylinders).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Boxplot of Highway Mileage by Number of Cylinders</span>
+</span></span><span class="line"><span class="cl"><span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">   <span class="n">y</span> <span class="o">=</span> <span class="n">hwy</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">cyl</span><span class="p">)))</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">geom_boxplot</span><span class="p">()</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;Highway Mileage by Number of Cylinders&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="s">&#34;Number of Cylinders&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="s">&#34;Highway Mileage (mpg)&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">theme_minimal</span><span class="p">()</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>aes(x = factor(cyl), y = hwy, fill = factor(cyl))</code> specifies that we want to plot <code>hwy</code> (highway mileage) for each category of <code>cyl</code> (number of cylinders). The <code>factor(cyl)</code> ensures that <code>cyl</code> is treated as a categorical variable.</li>
+<li><code>geom_boxplot()</code> creates the boxplot, which shows the distribution of <code>hwy</code> for each cylinder category.</li>
+<li><code>labs()</code> adds the title and axis labels.</li>
+<li><code>theme_minimal()</code> ensures a clean, simple plot design.</li>
+</ul>
+<p><strong>Output:</strong>
+The boxplot will display how highway mileage varies across different cylinder categories, showing the median, interquartile range, and potential outliers.</p>
+<hr>
+<h4 id="histogram-distribution-of-city-mileage">Histogram: Distribution of City Mileage</h4>
+<p>We can create a histogram to visualize the distribution of <code>cty</code> (city mileage).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Histogram of City Mileage</span>
+</span></span><span class="line"><span class="cl"><span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">cty</span><span class="p">))</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">binwidth</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fill</span> <span class="o">=</span> <span class="s">&#34;skyblue&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">color</span> <span class="o">=</span> <span class="s">&#34;black&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl">        <span class="s">&#34;Distribution of City Mileage&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="s">&#34;City Mileage (mpg)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="s">&#34;Frequency&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">theme_minimal</span><span class="p">()</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>aes(x = cty)</code> specifies that we want to plot the distribution of <code>cty</code> (city mileage).</li>
+<li><code>geom_histogram()</code> creates the histogram. <code>binwidth = 1</code> controls the width of the bins, and <code>fill = &quot;skyblue&quot;</code> sets the color of the bars.</li>
+<li><code>labs()</code> adds a title and axis labels.</li>
+<li><code>theme_minimal()</code> applies a minimalistic theme for the plot.</li>
+</ul>
+<p><strong>Output:</strong>
+This histogram will display how city mileage is distributed in the dataset, showing the frequency of different mileage values.</p>
+<hr>
+<h3 id="step-5-conclusion">Step 5: Conclusion</h3>
+<p>In this lesson, we have:</p>
+<ul>
+<li>Loaded the <code>mpg</code> dataset from the <code>ggplot2</code> package.</li>
+<li>Calculated correlations between key numeric variables like <code>displ</code>, <code>cty</code>, and <code>hwy</code>.</li>
+<li>Created scatter plots, boxplots, and histograms to explore the relationships and distributions of the data.</li>
+</ul>
+<p>These techniques are</p>
+<p>fundamental for performing exploratory data analysis (EDA) in R, which is crucial for understanding your data before moving on to more complex analyses.</p>
+<hr>
+<h3 id="next-steps">Next Steps:</h3>
+<ul>
+<li>You can explore other visualizations such as density plots or bar charts.</li>
+<li>You may want to try building models to predict variables like <code>mpg</code> using linear regression or machine learning techniques.</li>
+</ul>
+
+
+
+    </main>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      <p>Made with ❤️ &mdash; Powered by <a href="https://gohugo.io/" target="_blank" rel="external">Hugo</a> and the <a href="https://github.com/bjacquemet/personal-web" target='_blank' rel="external">Personal Web</a> theme. Icons come from the great <a href="https://fontawesome.com/license" target="_blank" rel="external">Font Awesome</a> library</p>
+      <p>© Data Gators</p>
+    </div>
+  </footer>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Raleway:400,400i,600" rel="stylesheet">
+  
+  <script type="text/javascript">
+    document.querySelector('.mobile-header').addEventListener('click', function () {
+      var om = document.querySelector(".overlay-menu");
+      if (document.querySelector('.hamburger').classList.contains("cross")) {
+        document.querySelector('.hamburger').classList.remove("cross");
+        om.style.display = "none";
+        om.style.width = "0%";
+        om.style.height = "0%";
+      }
+      else {
+        document.querySelector('.hamburger').classList.add("cross");
+        om.style.width = "100%";
+        om.style.height = "100vh";
+        om.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

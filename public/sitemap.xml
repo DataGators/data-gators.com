@@ -3,26 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-11-24T03:14:28-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/intro_penguins/</loc>
-    <lastmod>2024-11-24T03:14:28-05:00</lastmod>
+    <lastmod>2024-11-25T13:21:22-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tutorials/</loc>
+    <lastmod>2024-11-25T13:21:22-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/exploratory/intro_synthetic/</loc>
+    <lastmod>2024-11-25T13:09:06-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tutorials/exploratory/intro_penguins/</loc>
     <lastmod>2024-11-24T03:14:28-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tutorials/intro_iris/</loc>
+    <loc>http://localhost:1313/tutorials/exploratory/intro_iris/</loc>
     <lastmod>2024-11-24T03:03:29-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tutorials/intro_mpg/</loc>
+    <loc>http://localhost:1313/tutorials/exploratory/intro_mpg/</loc>
     <lastmod>2024-11-24T03:03:29-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

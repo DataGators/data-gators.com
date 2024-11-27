@@ -3,6 +3,8 @@ title: About Us
 description: About The DataGators
 images: ["/images/logos/dg_logo_short.png"]
 ---
+
+![FriendlyRobot](/images/main/bot.png)
 Hey Researchers in Data at Allegheny College!
 
 If you are a student or faculty at Allegheny College and you need some help with your analysis, then we can help you set-up your analysis in your project.

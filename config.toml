@@ -1,9 +1,9 @@
-baseURL = "https://example.com/"
+baseURL = "https://data-gators.com"
 languageCode = "en-us"
 title = "Data Gators"
 theme = "personal-web_"
 copyright="© Data Gators"
-googleAnalytics = ""
+googleAnalytics = "G-4GE08YPZ2L"
 enableEmoji=true
 enableRobotsTXT=true
 pygmentsUseClasses=true

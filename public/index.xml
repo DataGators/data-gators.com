@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
-    <lastBuildDate>Mon, 25 Nov 2024 13:09:06 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2025 16:28:59 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calendar</title>
+      <link>http://localhost:1313/contacts/calendar/</link>
+      <pubDate>Sun, 02 Feb 2025 16:28:59 -0500</pubDate>
+      <guid>http://localhost:1313/contacts/calendar/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;book-an-appointment&#34;&gt;Book an Appointment!&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/main/dashboard_04.png&#34; alt=&#34;FriendlyRobot&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;appointments-in-the-library&#34;&gt;Appointments In the Library&lt;/h2&gt;&#xA;&lt;!-- Google Calendar Appointment Scheduling begin --&gt;&#xA;&lt;link href=&#34;https://calendar.google.com/calendar/scheduling-button-script.css&#34; rel=&#34;stylesheet&#34;&gt;&#xA;&lt;script src=&#34;https://calendar.google.com/calendar/scheduling-button-script.js&#34; async&gt;&lt;/script&gt;&#xA;&lt;script&gt;&#xA;(function() {&#xA;  var target = document.currentScript;&#xA;  window.addEventListener(&#39;load&#39;, function() {&#xA;    calendar.schedulingButton.load({&#xA;      url: &#39;https://calendar.google.com/calendar/appointments/schedules/AcZssZ1bAzyK-y_whxBNzwSWylpaJOc6P7uzqgpQwFksHpOsP5OwBX3Z3VJj4RsMr46pVhf2GD8YRsFD?gv=true&#39;,&#xA;      color: &#39;#039BE5&#39;,&#xA;      label: &#39;Book an appointment&#39;,&#xA;      target,&#xA;    });&#xA;  });&#xA;})();&#xA;&lt;/script&gt;&#xA;&lt;!-- end Google Calendar Appointment Scheduling --&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;p&gt;Scheduling an appointment with an instructor or tutor is a smart and efficient way for students to ensure they get the help they need. Here are a few key reasons why making an appointment is beneficial:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Exploratory Steps With Synthetic Data</title>
       <link>http://localhost:1313/tutorials/exploratory/intro_synthetic/</link>

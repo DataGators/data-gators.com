@@ -16,7 +16,7 @@ pygmentsCodeFences=true
 
 
 [params.main]
-  latestPublishHeader = "What do we do?!"
+  latestPublishHeader = "We Do Data!"
 
 [taxonomies]
   design = "designs"

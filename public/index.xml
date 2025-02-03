@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
-    <lastBuildDate>Sun, 02 Feb 2025 20:26:59 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2025 01:05:35 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QR Codes</title>
+      <link>http://localhost:1313/contacts/qrcodes/</link>
+      <pubDate>Mon, 03 Feb 2025 01:05:35 -0500</pubDate>
+      <guid>http://localhost:1313/contacts/qrcodes/</guid>
+      <description>&lt;p&gt;Many times, you might be using your phone to make a quick appointment. These QR Codes will hopefully help you save time! The yellow QR Code takes you to the contacts page where you can make an appointment. The green QR Code takes you to the main page of this website so that you can take a look around. Cool, right?!&lt;/p&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;h3 id=&#34;book-an-appointment-using-your-phone&#34;&gt;Book an appointment using your phone!&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.data-gators.com/contacts/calendar/&#34;&gt;http://www.data-gators.com/contacts/calendar/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/qrcodes/calendar.png&#34; alt=&#34;Book an appointment&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Team</title>
       <link>http://localhost:1313/contacts/gators/</link>

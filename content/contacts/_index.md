@@ -3,5 +3,6 @@ title: Contacts
 description: 'Contacts'
 ---
 
-![dataGatorsLogo](/images/main/data_gators_5.png)
-
+![dataGatorsLogo](/images/main/bot.png)
+<!-- add a line drop -->
+<center> &#x200B; </center>

@@ -4,7 +4,7 @@ description: About The DataGators
 images: ["/images/logos/dg_logo_short.png"]
 ---
 
-![FriendlyRobot](/images/main/bot.png)
+![Tutoring](/images/logos/tutoring_logo_22x14.png)
 
 <!-- add a line drop -->
 <center> &#x200B; </center>
@@ -26,7 +26,7 @@ While we do not complete your work for you, nor do we promise to complete all yo
 
 Our goal is to enhance your research by providing the technical support necessary to navigate the computational aspects of your project. Whether you're unsure how to get started with data analysis or need guidance with more advanced tasks, we’re here to help you succeed in your project of computational analysis.
 
-![dataGatorsLogo](/images/main/data_gators_5.png)
+<!-- ![dataGatorsLogo](/images/main/data_gators_5.png) -->
 
 <!-- add a line drop -->
 <center> &#x200B; </center>

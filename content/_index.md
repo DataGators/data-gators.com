@@ -6,7 +6,6 @@ images: ["/images/main/data_gators_5.jpg"]
 
 Hi! Welcome to the DataGator Website!
 
-![dataGatorsLogo](images/logos/dg_logo_1532x313.png)
+![dataGatorsLogo](images/logos/tutoring_logo_22x14.png)
 
-
-[Get to know us better](/about "Get to know us better")
+<!-- [Check out our about page!](/about) -->

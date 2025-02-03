@@ -53,7 +53,7 @@ pygmentsCodeFences=true
 
   gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
   # logo = "/images/logos/dg_logo_short.png" # - default "/images/dg_logo_short.png"
-  logo = "/images/logos/logo_500x500.png" 
+  logo = "/images/logos/logo_dgs_500x500.png" 
 [params.assets]
   favicon = ""
   customCSS = ""

@@ -28,7 +28,7 @@ Hi, I'm Katie. I’m a self-taught programmer with a strong interest in web deve
 
 **Luke**
 
-My name is Luke Barker and I am a senior at Allegheny College and I am a Computer Science major! The programming languages that I am most proficient in are Python and R. I have completed the course CMPSC 301(Data Science) which equipped me with the knowledge to be able to be a member of the Datagators! I can assist you in data wrangling and data visualization along with assistance in how to use R and R studio to do so.
+My name is Luke and I am a senior at Allegheny College and I am a Computer Science major! The programming languages that I am most proficient in are Python and R. I have completed the course CMPSC 301 (Data Science) which equipped me with the knowledge to be able to be a member of the Datagators! I can assist you in data wrangling and data visualization along with assistance in how to use R and R studio to do so.
 
 ---
 

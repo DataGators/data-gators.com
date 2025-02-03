@@ -1,8 +1,8 @@
 ---
-title: Learner
+title: We Do Data
 description: This is the description of our sample project
 date: "2019-05-02T19:47:09+02:00"
-jobDate: 2024
+jobDate: 2025
 work: [] # necessary for projects pages to show on main page
 #techs: [Senior theses, research]
 #designs: [Photoshop]

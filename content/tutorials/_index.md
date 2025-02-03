@@ -1,5 +1,5 @@
 +++
-title = 'TUTORIALS'
+title = 'Tutorials'
 date = 2025-02-02T03:03:29-05:00
 draft = false
 +++
@@ -15,7 +15,9 @@ Tutorials are self-taught lessons that one may use to improve  learning, compreh
 
 Check back often to see new tutorials of hands-on practice, exciting activities and other amazing gems of learning that will benefit your learning in the amazing field of data science!
 
-#### Oh hey, I nearly forgot!
+#### Oh Hey! I Nearly Forgot to Say!!
 
-Did you know that you can locally run the provided Python and R code for your activities on this site? You can copy, paste and hack the code using the Jupyter plug-in [live site](https://datagators.netlify.app/live/lab/index.html) right here!
+Did you know that you can locally run the provided Python and R code for your activities on this site? You can copy, paste and hack the code using the Jupyter plug-in [live site](https://datagators.netlify.app/live/lab/index.html) right here! You can also start up Jupyter's live site by clicking on the glasses under the menu on the left :sparkles: Neat, right?! :cake:
 
+<!-- add a line drop -->
+<center> &#x200B; </center>

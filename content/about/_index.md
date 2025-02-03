@@ -31,7 +31,7 @@ Our goal is to enhance your research by providing the technical support necessar
 <!-- add a line drop -->
 <center> &#x200B; </center>
 
-:smile: The DataGators project was put together by <a href="https://www.oliverbonhamcarter.com" target="_blank">Oliver Bonham-Carter</a>, Ph.D. in effort to enrich pedagogy in Data Science at Allegheny College. 
+:smile: The DataGators project was put together by Associate Professor <a href="https://www.oliverbonhamcarter.com" target="_blank">Oliver Bonham-Carter</a>, in effort to enrich pedagogy in Data Science at Allegheny College. 
 
 
  <!-- This is my about page. :wave:

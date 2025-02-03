@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DataGators on Data Gators</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in DataGators on Data Gators</description>
+    <title>Exploratory Steps on Data Gators</title>
+    <link>http://localhost:1313/tutorials/exploratory/</link>
+    <description>Recent content in Exploratory Steps on Data Gators</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
-    <lastBuildDate>Sun, 02 Feb 2025 18:41:33 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/tutorials/tutorials/</link>
-      <pubDate>Sun, 02 Feb 2025 18:41:33 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/tutorials/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;p&gt;All sorts of tutorials to discoverer!&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f4d6; Following technical tutorials is an excellent way to learn data science at your own pace. Here you will find tutorials and learning exercises to provide you with step-by-step guidance which will help to make complex concepts more accessible.&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f680; Did you know that you can code online? Click on the glasses to get started with Python and R Programming!&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x2728; In each tutorial, the source code is available and the user is invited to copy and paste scripts into provided online Jupyter programming environment to run. While working with the code, please test it and then hack it by modifying it to behave differently to help you better understand how it works. Do not worry about &amp;ldquo;breaking the code&amp;rdquo; because if it does not work, just go back to the tutorial to copy and paste it again.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Calendar</title>
-      <link>http://localhost:1313/contacts/calendar/</link>
-      <pubDate>Sun, 02 Feb 2025 16:28:59 -0500</pubDate>
-      <guid>http://localhost:1313/contacts/calendar/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;book-an-appointment&#34;&gt;Book an Appointment!&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/main/dashboard_04.png&#34; alt=&#34;FriendlyRobot&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;appointments-in-the-library&#34;&gt;Appointments In the Library&lt;/h2&gt;&#xA;&lt;!-- Google Calendar Appointment Scheduling begin --&gt;&#xA;&lt;link href=&#34;https://calendar.google.com/calendar/scheduling-button-script.css&#34; rel=&#34;stylesheet&#34;&gt;&#xA;&lt;script src=&#34;https://calendar.google.com/calendar/scheduling-button-script.js&#34; async&gt;&lt;/script&gt;&#xA;&lt;script&gt;&#xA;(function() {&#xA;  var target = document.currentScript;&#xA;  window.addEventListener(&#39;load&#39;, function() {&#xA;    calendar.schedulingButton.load({&#xA;      url: &#39;https://calendar.google.com/calendar/appointments/schedules/AcZssZ1bAzyK-y_whxBNzwSWylpaJOc6P7uzqgpQwFksHpOsP5OwBX3Z3VJj4RsMr46pVhf2GD8YRsFD?gv=true&#39;,&#xA;      color: &#39;#039BE5&#39;,&#xA;      label: &#39;Book an appointment&#39;,&#xA;      target,&#xA;    });&#xA;  });&#xA;})();&#xA;&lt;/script&gt;&#xA;&lt;!-- end Google Calendar Appointment Scheduling --&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;p&gt;Scheduling an appointment with an instructor or tutor is a smart and efficient way for students to ensure they get the help they need. Here are a few key reasons why making an appointment is beneficial:&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Mon, 25 Nov 2024 13:09:06 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tutorials/exploratory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploratory Steps With Synthetic Data</title>
       <link>http://localhost:1313/tutorials/exploratory/intro_synthetic/</link>
@@ -50,20 +36,6 @@
       <pubDate>Sun, 24 Nov 2024 03:03:29 -0500</pubDate>
       <guid>http://localhost:1313/tutorials/exploratory/intro_mpg/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s explore the &lt;code&gt;mpg&lt;/code&gt; dataset from the &lt;code&gt;ggplot2&lt;/code&gt; package in R. This lesson will cover how to load the dataset, calculate basic correlations, and create various plots, with detailed explanations for each step.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introduction-to-r-programming-with-the-mpg-dataset&#34;&gt;Introduction to R Programming with the MPG Dataset&lt;/h2&gt;&#xA;&lt;p&gt;In this lesson, we will work with the &lt;code&gt;mpg&lt;/code&gt; dataset, which is included in the &lt;code&gt;ggplot2&lt;/code&gt; package. The dataset contains information about the fuel efficiency (miles per gallon) of various car models, with additional details about each car such as:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Reading Materials</title>
-      <link>http://localhost:1313/resources/reading/reading/</link>
-      <pubDate>Mon, 28 Oct 2024 22:46:09 -0400</pubDate>
-      <guid>http://localhost:1313/resources/reading/reading/</guid>
-      <description>&lt;p&gt;This is the Resource page where you can find resources about Data Science.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading-materials&#34;&gt;Reading Materials&lt;/h2&gt;&#xA;&lt;p&gt;Here you will find free textbooks about programming.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Learner</title>
-      <link>http://localhost:1313/portfolio/learner/</link>
-      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
-      <guid>http://localhost:1313/portfolio/learner/</guid>
-      <description>&lt;p&gt;📢 &lt;strong&gt;Need Help with Computational Analysis for Your Research?&lt;/strong&gt; 📢&lt;/p&gt;&#xA;&lt;p&gt;Students and faculty at Allegheny College! Whether you&amp;rsquo;re working on data analysis, programming in R or Python, or need assistance with statistical methods and models, our &lt;strong&gt;Help Desks&lt;/strong&gt; are here for you!&lt;/p&gt;&#xA;&lt;p&gt;We offer assistance with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;R and Python programming&lt;/li&gt;&#xA;&lt;li&gt;Preparing and cleaning data&lt;/li&gt;&#xA;&lt;li&gt;Performing statistical analyses&lt;/li&gt;&#xA;&lt;li&gt;Building models and visualizing data with plots&lt;/li&gt;&#xA;&lt;li&gt;And much more to support your research projects!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Where to find us:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

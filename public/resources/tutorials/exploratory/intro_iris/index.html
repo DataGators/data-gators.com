@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <title>Calendar - Data Gators</title>
-  <link rel='canonical' href='http://localhost:1313/contacts/calendar/' />
+  <title>Exploratory Steps With Iris Data - Data Gators</title>
+  <link rel='canonical' href='http://localhost:1313/resources/tutorials/exploratory/intro_iris/' />
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <meta name='description' content='' />
@@ -19,22 +19,26 @@
 <link rel="stylesheet" href="http://localhost:1313/sass/style.min.eabe1aa4bd266a15f7b39b122bd6a5cc75cb067e5373631ac21d7815d6240d6f.css" integrity="sha256-6r4apL0mahX3s5sSK9alzHXLBn5Tc2Mawh14FdYkDW8=" media="screen">
 <link rel="stylesheet" href="http://localhost:1313/syntax.min.css" integrity="" media="screen">
 
-  <meta property="og:url" content="http://localhost:1313/contacts/calendar/">
+  <meta property="og:url" content="http://localhost:1313/resources/tutorials/exploratory/intro_iris/">
   <meta property="og:site_name" content="Data Gators">
-  <meta property="og:title" content="Calendar">
-  <meta property="og:description" content="Book an Appointment! Appointments In the Library ​ Scheduling an appointment with an instructor or tutor is a smart and efficient way for students to ensure they get the help they need. Here are a few key reasons why making an appointment is beneficial:">
+  <meta property="og:title" content="Exploratory Steps With Iris Data">
+  <meta property="og:description" content="Introduction to R Programming with the Iris Dataset Let’s work with the built-in iris dataset, which contains data on 150 different species of iris flowers. Each entry contains the following measurements for the flowers:
+Sepal length Sepal width Petal length Petal width Species We will go through the steps of loading the dataset, calculating basic correlations, and creating visualizations to explore the relationships between the different features.
+Step 1: Load the Iris Dataset In R, you don’t need to load the iris dataset manually because it is built-in. We can directly access it.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="contacts">
-    <meta property="article:published_time" content="2025-02-02T16:28:59-05:00">
-    <meta property="article:modified_time" content="2025-02-02T16:28:59-05:00">
+    <meta property="article:section" content="resources">
+    <meta property="article:published_time" content="2024-11-24T03:03:29-05:00">
+    <meta property="article:modified_time" content="2024-11-24T03:03:29-05:00">
 
   
-  <meta itemprop="name" content="Calendar">
-  <meta itemprop="description" content="Book an Appointment! Appointments In the Library ​ Scheduling an appointment with an instructor or tutor is a smart and efficient way for students to ensure they get the help they need. Here are a few key reasons why making an appointment is beneficial:">
-  <meta itemprop="datePublished" content="2025-02-02T16:28:59-05:00">
-  <meta itemprop="dateModified" content="2025-02-02T16:28:59-05:00">
-  <meta itemprop="wordCount" content="304">
+  <meta itemprop="name" content="Exploratory Steps With Iris Data">
+  <meta itemprop="description" content="Introduction to R Programming with the Iris Dataset Let’s work with the built-in iris dataset, which contains data on 150 different species of iris flowers. Each entry contains the following measurements for the flowers:
+Sepal length Sepal width Petal length Petal width Species We will go through the steps of loading the dataset, calculating basic correlations, and creating visualizations to explore the relationships between the different features.
+Step 1: Load the Iris Dataset In R, you don’t need to load the iris dataset manually because it is built-in. We can directly access it.">
+  <meta itemprop="datePublished" content="2024-11-24T03:03:29-05:00">
+  <meta itemprop="dateModified" content="2024-11-24T03:03:29-05:00">
+  <meta itemprop="wordCount" content="780">
 </head>
 <body>
 
@@ -44,7 +48,7 @@
   <div class="intro">
     <div class="logo-container">
       <a href="/">
-        <img src='http://localhost:1313/images/logos/logo_500x500.png' alt="Profile Designs" class="rounded-logo">
+        <img src='http://localhost:1313/images/logos/logo_500x500.png' alt="Profile Resources" class="rounded-logo">
       </a>
     </div>
     <h2>DataGators 👋</h2>
@@ -55,12 +59,6 @@
         <p>
             <a href="/about/">
                 About
-            </a>
-        </p>
-
-        <p>
-            <a href="/tutorials/">
-                Tutorials
             </a>
         </p>
 
@@ -128,7 +126,7 @@
     <div class="intro">
       <div class="logo-container">
         <a href="/">
-          <img src='http://localhost:1313/images/logos/logo_500x500.png' alt="Profile Designs" class="rounded-logo">
+          <img src='http://localhost:1313/images/logos/logo_500x500.png' alt="Profile Resources" class="rounded-logo">
         </a>
       </div>
       <h2>DataGators 👋</h2>
@@ -139,12 +137,6 @@
         <p>
             <a href="/about/">
                 About
-            </a>
-        </p>
-
-        <p>
-            <a href="/tutorials/">
-                Tutorials
             </a>
         </p>
 
@@ -208,6 +200,8 @@
 
 
 
+
+
 <span >
   <a href="http://localhost:1313/">DataGators</a>
    / 
@@ -215,69 +209,163 @@
 
 
 <span >
-  <a href="http://localhost:1313/contacts/">Contacts</a>
+  <a href="http://localhost:1313/resources/">Resources</a>
+   / 
+</span>
+
+
+<span >
+  <a href="http://localhost:1313/resources/tutorials/">Exploratory Steps</a>
    / 
 </span>
 
 
 <span  class="active">
-  <a href="http://localhost:1313/contacts/calendar/">Calendar</a>
+  <a href="http://localhost:1313/resources/tutorials/exploratory/intro_iris/">Exploratory Steps With Iris Data</a>
   
 </span>
 
 </div>
 
     
-    <main id="content" class="contacts">
+    <main id="content" class="resources">
 
 
-  <h1>Calendar</h1>
-  <hr>
-<h2 id="book-an-appointment">Book an Appointment!</h2>
-<p><img src="/images/main/dashboard_04.png" alt="FriendlyRobot"></p>
-<h2 id="appointments-in-the-library">Appointments In the Library</h2>
-<!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1bAzyK-y_whxBNzwSWylpaJOc6P7uzqgpQwFksHpOsP5OwBX3Z3VJj4RsMr46pVhf2GD8YRsFD?gv=true',
-      color: '#039BE5',
-      label: 'Book an appointment',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
-<!-- add a line drop -->
-<center> &#x200B; </center>
-<p>Scheduling an appointment with an instructor or tutor is a smart and efficient way for students to ensure they get the help they need. Here are a few key reasons why making an appointment is beneficial:</p>
-<ol>
-<li>
-<p><strong>Guaranteed Time Slot</strong>: By scheduling an appointment, students ensure that they have dedicated time with their instructor or tutor. This avoids the possibility of overlapping with other students’ sessions and guarantees that the tutor will be available to meet with them.</p>
-</li>
-<li>
-<p><strong>Personalized Attention</strong>: With a scheduled appointment, students can expect more focused and personalized support. The instructor or tutor can prepare in advance for the specific topics the student needs help with, making the session more effective.</p>
-</li>
-<li>
-<p><strong>Better Time Management</strong>: When students book appointments, they can plan their study time more efficiently. Knowing exactly when they will meet with their instructor or tutor allows them to organize their schedule around these sessions, ensuring they stay on track.</p>
-</li>
-<li>
-<p><strong>Less Waiting Time</strong>: Without an appointment, students may have to wait for an available tutor or instructor, especially if there are other students in need of help. An appointment guarantees they won’t be left waiting.</p>
-</li>
-<li>
-<p><strong>Professionalism and Responsibility</strong>: Scheduling appointments shows that the student is taking their learning seriously and respecting the time of their instructor or tutor. It sets a tone of professionalism that benefits both the student and the educator.</p>
-</li>
-<li>
-<p><strong>Improved Communication</strong>: When students book an appointment, they often have the opportunity to briefly outline what they need help with in advance. This allows the instructor or tutor to come prepared, making the meeting more productive.</p>
-</li>
-</ol>
-<p>In summary, making an appointment to meet with an instructor or tutor is a convenient, effective, and professional way to get the academic support a student needs without the hassle of waiting or conflicting schedules.</p>
+  <h1>Exploratory Steps With Iris Data</h1>
+  <h2 id="introduction-to-r-programming-with-the-iris-dataset">Introduction to R Programming with the Iris Dataset</h2>
+<p>Let&rsquo;s work with the built-in <code>iris</code> dataset, which contains data on 150 different species of iris flowers. Each entry contains the following measurements for the flowers:</p>
+<ul>
+<li>Sepal length</li>
+<li>Sepal width</li>
+<li>Petal length</li>
+<li>Petal width</li>
+<li>Species</li>
+</ul>
+<p>We will go through the steps of loading the dataset, calculating basic correlations, and creating visualizations to explore the relationships between the different features.</p>
 <hr>
+<h3 id="step-1-load-the-iris-dataset">Step 1: Load the Iris Dataset</h3>
+<p>In R, you don&rsquo;t need to load the <code>iris</code> dataset manually because it is built-in. We can directly access it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Load the iris dataset</span>
+</span></span><span class="line"><span class="cl"><span class="nf">data</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Check the first few rows of the dataset</span>
+</span></span><span class="line"><span class="cl"><span class="nf">head</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>data(iris)</code> loads the dataset into memory.</li>
+<li><code>head(iris)</code> displays the first six rows of the <code>iris</code> dataset to give us an idea of its structure.</li>
+</ul>
+<p><strong>Output:</strong></p>
+<pre tabindex="0"><code>  Sepal.Length Sepal.Width Petal.Length Petal.Width    Species
+1           5.1          3.5           1.4          0.2     setosa
+2           4.9          3.0           1.4          0.2     setosa
+3           4.7          3.2           1.3          0.2     setosa
+4           4.6          3.1           1.5          0.2     setosa
+5           5.0          3.6           1.4          0.2     setosa
+6           5.4          3.9           1.7          0.4     setosa
+</code></pre><h3 id="step-2-calculate-correlations">Step 2: Calculate Correlations</h3>
+<p>We can calculate the correlation between numeric variables in the dataset to explore how they are related.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Calculate correlations between </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># numeric features (excluding the Species column)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">cor</span><span class="p">(</span><span class="n">iris[</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="m">4</span><span class="n">]</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>iris[, 1:4]</code> selects all rows and the first four columns (which contain the numeric data: sepal length, sepal width, petal length, and petal width).</li>
+<li><code>cor()</code> computes the correlation matrix, which measures the linear relationships between pairs of variables.</li>
+</ul>
+<p><strong>Output:</strong></p>
+<pre tabindex="0"><code>               Sepal.Length Sepal.Width Petal.Length Petal.Width
+Sepal.Length        1.000000   -0.117570     0.871754     0.817941
+Sepal.Width        -0.117570    1.000000    -0.428440    -0.366125
+Petal.Length        0.871754   -0.428440     1.000000     0.962865
+Petal.Width         0.817941   -0.366125     0.962865     1.000000
+</code></pre><p><strong>Explanation of Output:</strong></p>
+<ul>
+<li>
+<p>The correlation values range from -1 to 1, where:</p>
+<ul>
+<li><code>1</code> indicates a perfect positive correlation.</li>
+<li><code>-1</code> indicates a perfect negative correlation.</li>
+<li><code>0</code> indicates no linear correlation.</li>
+</ul>
+</li>
+<li>
+<p>For example, Sepal Length and Petal Length have a high positive correlation (<code>0.87</code>), while Sepal Width and Petal Length have a moderate negative correlation (<code>-0.43</code>).</p>
+</li>
+</ul>
+<hr>
+<h3 id="step-3-create-basic-plots">Step 3: Create Basic Plots</h3>
+<h4 id="scatter-plot-sepal-length-vs-petal-length">Scatter Plot: Sepal Length vs Petal Length</h4>
+<p>We can plot Sepal Length against Petal Length to visualize their relationship.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Scatter plot of Sepal Length vs Petal Length</span>
+</span></span><span class="line"><span class="cl"><span class="nf">plot</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Sepal.Length</span><span class="p">,</span> <span class="n">iris</span><span class="o">$</span><span class="n">Petal.Length</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">     <span class="n">main</span> <span class="o">=</span> <span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">        Scatter Plot of Sepal Length vs Petal Length&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">     <span class="n">xlab</span> <span class="o">=</span> <span class="s">&#34;Sepal Length&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">     <span class="n">ylab</span> <span class="o">=</span> <span class="s">&#34;Petal Length&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">     <span class="n">pch</span> <span class="o">=</span> <span class="m">19</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">     <span class="n">col</span> <span class="o">=</span> <span class="n">iris</span><span class="o">$</span><span class="n">Species</span><span class="p">)</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>plot()</code> is used to create a scatter plot. The <code>pch = 19</code> argument sets the point type (solid circle), and <code>col = iris$Species</code> colors the points according to the flower species.</li>
+<li><code>main</code>, <code>xlab</code>, and <code>ylab</code> set the title and axis labels for the plot.</li>
+</ul>
+<p><strong>Output:</strong>
+This plot will show a scatter plot where each point represents a flower, and the color indicates the species.</p>
+<hr>
+<h4 id="boxplot-sepal-length-by-species">Boxplot: Sepal Length by Species</h4>
+<p>A boxplot allows us to compare the distribution of sepal length across different species.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Boxplot of Sepal Length grouped by Species</span>
+</span></span><span class="line"><span class="cl"><span class="nf">boxplot</span><span class="p">(</span><span class="n">Sepal.Length</span> <span class="o">~</span> <span class="n">Species</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">iris</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">main</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;Boxplot of Sepal Length by Species&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">xlab</span> <span class="o">=</span> <span class="s">&#34;Species&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ylab</span> <span class="o">=</span> <span class="s">&#34;Sepal Length&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">col</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;lightblue&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;lightgreen&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s">&#34;lightcoral&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="p">)</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li><code>Sepal.Length ~ Species</code> specifies that we want to plot Sepal Length for each species.</li>
+<li><code>boxplot()</code> creates the boxplot, and the <code>col</code> argument specifies the colors for each species group.</li>
+</ul>
+<p><strong>Output:</strong>
+This boxplot will display three boxes, one for each species, showing the range, median, and interquartile range of Sepal Length.</p>
+<hr>
+<h4 id="pair-plot-visualizing-relationships-between-all-variables">Pair Plot: Visualizing Relationships Between All Variables</h4>
+<p>To explore the relationships between all the numeric variables simultaneously, we can use a pair plot (also known as a scatterplot matrix).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Install and load the GGally </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># package if not already installed</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># install.packages(&#34;GGally&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">GGally</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create a pair plot of the numeric variables</span>
+</span></span><span class="line"><span class="cl"><span class="nf">ggpairs</span><span class="p">(</span><span class="n">iris[</span><span class="p">,</span> <span class="m">1</span><span class="o">:</span><span class="m">4</span><span class="n">]</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">aes</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="n">iris</span><span class="o">$</span><span class="n">Species</span><span class="p">))</span>
+</span></span></code></pre></div><p><strong>Explanation:</strong></p>
+<ul>
+<li>The <code>ggpairs()</code> function from the <code>GGally</code> package creates a matrix of scatter plots, showing the pairwise relationships between all numeric columns in the <code>iris</code> dataset.</li>
+<li>The <code>aes(color = iris$Species)</code> argument colors the points by species, making it easier to distinguish between the species in the plots.</li>
+</ul>
+<p><strong>Output:</strong>
+This will generate a matrix of scatter plots, histograms, and correlations, making it easy to visually inspect the relationships between sepal length, sepal width, petal length, and petal width.</p>
+<hr>
+<h3 id="step-4-conclusion">Step 4: Conclusion</h3>
+<p>In this lesson, we have:</p>
+<ul>
+<li>Loaded and explored the <code>iris</code> dataset.</li>
+<li>Calculated correlations between numeric variables.</li>
+<li>Created scatter plots, boxplots, and pair plots to visualize relationships between the features.</li>
+</ul>
+<p>This exercise helps in understanding both the basic analysis and visualization techniques in R, which are essential for data exploration in data science.</p>
+<hr>
+<h3 id="next-steps">Next Steps:</h3>
+<ul>
+<li>You can try modifying the plots to explore other variables or try additional visualizations like histograms, density plots, or heatmaps.</li>
+<li>Experiment with different <code>ggplot2</code> functions for more advanced visualizations.</li>
+</ul>
 
 
 

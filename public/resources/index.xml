@@ -10,11 +10,11 @@
     <lastBuildDate>Mon, 28 Oct 2024 22:46:09 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Resources</title>
-      <link>http://localhost:1313/resources/resources/</link>
+      <title>Reading Materials</title>
+      <link>http://localhost:1313/resources/reading/reading/</link>
       <pubDate>Mon, 28 Oct 2024 22:46:09 -0400</pubDate>
-      <guid>http://localhost:1313/resources/resources/</guid>
-      <description>&lt;p&gt;This is the Resource page where you can find resources about Data Science.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tutorials&#34;&gt;Tutorials&lt;/h2&gt;&#xA;&lt;p&gt;Here you will find a listing of tutorials.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;&#xA;&lt;p&gt;Here you will find free textbooks about programming.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/resources/reading/reading/</guid>
+      <description>&lt;p&gt;This is the Resource page where you can find resources about Data Science.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading-materials&#34;&gt;Reading Materials&lt;/h2&gt;&#xA;&lt;p&gt;Here you will find free textbooks about programming.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

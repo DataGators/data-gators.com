@@ -60,6 +60,7 @@ pygmentsCodeFences=true
 
 [params.social]
   glasses = "https://datagators.netlify.app/live/"
+  calendar = "/contacts/calendar/"
 #  github = "https://github.com/"
 #  twitter = "https://twitter.com/"
 #  linkedin = "https://www.linkedin.com/in/"
@@ -85,12 +86,12 @@ pygmentsCodeFences=true
   url = "/about/"
   weight = -140
 
-#[[menu.main]]
-#  identifier = "Tutorials"
-#  name = "Tutorials"
-#  title = "Tutorials"
-#  url = "/tutorials/"
-#  weight = -130
+[[menu.main]]
+  identifier = "Tutorials"
+  name = "Tutorials"
+  title = "Tutorial"
+  url = "/tutorials/"
+  weight = -130
 
 [[menu.main]]
   identifier = "resources"

@@ -1,41 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Exploratory Steps on Data Gators</title>
+    <title>Tutorials on Data Gators</title>
     <link>http://localhost:1313/tutorials/</link>
-    <description>Recent content in Exploratory Steps on Data Gators</description>
+    <description>Recent content in Tutorials on Data Gators</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
-    <lastBuildDate>Mon, 25 Nov 2024 13:09:06 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2025 18:41:33 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Exploratory Steps With Synthetic Data</title>
-      <link>http://localhost:1313/tutorials/exploratory/intro_synthetic/</link>
-      <pubDate>Mon, 25 Nov 2024 13:09:06 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/exploratory/intro_synthetic/</guid>
-      <description>&lt;h1 id=&#34;lesson-introduction-to-r-programming-and-data-science&#34;&gt;Lesson: Introduction to R Programming and Data Science&lt;/h1&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;In this lesson, we will introduce you to R programming by loading a synthetic dataset, performing basic correlations, and visualizing the data with several plots. After each code block, we&amp;rsquo;ll explain how the code works step by step.&lt;/p&gt;&#xA;&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;&#xA;&lt;p&gt;Before we begin, make sure that you have R installed. You can download R from &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;CRAN&lt;/a&gt; and use RStudio as an IDE to write and execute R code.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploratory Steps with Penguins Data</title>
-      <link>http://localhost:1313/tutorials/exploratory/intro_penguins/</link>
-      <pubDate>Sun, 24 Nov 2024 03:14:28 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/exploratory/intro_penguins/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-r-programming-with-the-penguin-dataset&#34;&gt;Introduction to R Programming with the Penguin Dataset&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s work with the &lt;code&gt;penguins&lt;/code&gt; dataset, which contains data about three species of penguins in the Palmer Archipelago, Antarctica. The dataset includes measurements for:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bill length&lt;/strong&gt; (in mm)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bill depth&lt;/strong&gt; (in mm)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flipper length&lt;/strong&gt; (in mm)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Body mass&lt;/strong&gt; (in grams)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Species&lt;/strong&gt; (species of the penguin)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We will perform basic exploratory data analysis (EDA) by calculating correlations and creating visualizations to better understand the relationships between these variables.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploratory Steps With Iris Data</title>
-      <link>http://localhost:1313/tutorials/exploratory/intro_iris/</link>
-      <pubDate>Sun, 24 Nov 2024 03:03:29 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/exploratory/intro_iris/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-r-programming-with-the-iris-dataset&#34;&gt;Introduction to R Programming with the Iris Dataset&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s work with the built-in &lt;code&gt;iris&lt;/code&gt; dataset, which contains data on 150 different species of iris flowers. Each entry contains the following measurements for the flowers:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sepal length&lt;/li&gt;&#xA;&lt;li&gt;Sepal width&lt;/li&gt;&#xA;&lt;li&gt;Petal length&lt;/li&gt;&#xA;&lt;li&gt;Petal width&lt;/li&gt;&#xA;&lt;li&gt;Species&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We will go through the steps of loading the dataset, calculating basic correlations, and creating visualizations to explore the relationships between the different features.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;step-1-load-the-iris-dataset&#34;&gt;Step 1: Load the Iris Dataset&lt;/h3&gt;&#xA;&lt;p&gt;In R, you don&amp;rsquo;t need to load the &lt;code&gt;iris&lt;/code&gt; dataset manually because it is built-in. We can directly access it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploratory Steps With MPG Data</title>
-      <link>http://localhost:1313/tutorials/exploratory/intro_mpg/</link>
-      <pubDate>Sun, 24 Nov 2024 03:03:29 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/exploratory/intro_mpg/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s explore the &lt;code&gt;mpg&lt;/code&gt; dataset from the &lt;code&gt;ggplot2&lt;/code&gt; package in R. This lesson will cover how to load the dataset, calculate basic correlations, and create various plots, with detailed explanations for each step.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introduction-to-r-programming-with-the-mpg-dataset&#34;&gt;Introduction to R Programming with the MPG Dataset&lt;/h2&gt;&#xA;&lt;p&gt;In this lesson, we will work with the &lt;code&gt;mpg&lt;/code&gt; dataset, which is included in the &lt;code&gt;ggplot2&lt;/code&gt; package. The dataset contains information about the fuel efficiency (miles per gallon) of various car models, with additional details about each car such as:&lt;/p&gt;</description>
+      <title>About</title>
+      <link>http://localhost:1313/tutorials/tutorials/</link>
+      <pubDate>Sun, 02 Feb 2025 18:41:33 -0500</pubDate>
+      <guid>http://localhost:1313/tutorials/tutorials/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;All sorts of tutorials to discoverer!&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f4d6; Following technical tutorials is an excellent way to learn data science at your own pace. Here you will find tutorials and learning exercises to provide you with step-by-step guidance which will help to make complex concepts more accessible.&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f680; Did you know that you can code online? Click on the glasses to get started with Python and R Programming!&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x2728; In each tutorial, the source code is available and the user is invited to copy and paste scripts into provided online Jupyter programming environment to run. While working with the code, please test it and then hack it by modifying it to behave differently to help you better understand how it works. Do not worry about &amp;ldquo;breaking the code&amp;rdquo; because if it does not work, just go back to the tutorial to copy and paste it again.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

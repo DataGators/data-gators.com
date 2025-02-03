@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/tutorials/tutorials/</link>
+      <link>http://localhost:1313/tutorials/about/</link>
       <pubDate>Sun, 02 Feb 2025 18:41:33 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/tutorials/</guid>
+      <guid>http://localhost:1313/tutorials/about/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;All sorts of tutorials to discoverer!&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f4d6; Following technical tutorials is an excellent way to learn data science at your own pace. Here you will find tutorials and learning exercises to provide you with step-by-step guidance which will help to make complex concepts more accessible.&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f680; Did you know that you can code online? Click on the glasses to get started with Python and R Programming!&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x2728; In each tutorial, the source code is available and the user is invited to copy and paste scripts into provided online Jupyter programming environment to run. While working with the code, please test it and then hack it by modifying it to behave differently to help you better understand how it works. Do not worry about &amp;ldquo;breaking the code&amp;rdquo; because if it does not work, just go back to the tutorial to copy and paste it again.&lt;/p&gt;</description>
     </item>
     <item>

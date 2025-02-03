@@ -5,7 +5,11 @@ images: ["/images/logos/dg_logo_short.png"]
 ---
 
 ![FriendlyRobot](/images/main/bot.png)
-Hey Researchers in Data at Allegheny College!
+
+<!-- add a line drop -->
+<center> &#x200B; </center>
+
+#### Hey Researchers in Data at Allegheny College!
 
 If you are a student or faculty at Allegheny College and you need some help with your analysis, then we can help you set-up your analysis in your project.
 
@@ -23,6 +27,11 @@ While we do not complete your work for you, nor do we promise to complete all yo
 Our goal is to enhance your research by providing the technical support necessary to navigate the computational aspects of your project. Whether you're unsure how to get started with data analysis or need guidance with more advanced tasks, we’re here to help you succeed in your project of computational analysis.
 
 ![dataGatorsLogo](/images/main/data_gators_5.png)
+
+<!-- add a line drop -->
+<center> &#x200B; </center>
+
+:smile: The DataGators project was put together by <a href="https://www.oliverbonhamcarter.com" target="_blank">Oliver Bonham-Carter</a>, Ph.D. in effort to enrich pedagogy in Data Science at Allegheny College. 
 
 
  <!-- This is my about page. :wave:

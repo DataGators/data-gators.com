@@ -17,4 +17,4 @@ All sorts of tutorials to discoverer!
 Click on the glasses under the menu to open the programming environment and get started in this amazing learning journey!
 
 
-[Exploratory](http://www.datagators.com/tutorials/exploratory/)
+[Exploratory](https://data-gators.com/tutorials/exploratory/)

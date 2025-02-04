@@ -12,7 +12,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/resources/bioinformatics_resources/</loc>
+    <lastmod>2025-02-04T11:42:33-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/resources/general/</loc>
+    <lastmod>2025-02-04T11:42:33-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/resources/womenincomputing/</loc>
+    <lastmod>2025-02-04T11:42:33-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/resources/writing/</loc>
     <lastmod>2025-02-04T11:42:33-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

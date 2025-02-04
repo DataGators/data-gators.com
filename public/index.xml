@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
-    <lastBuildDate>Mon, 03 Feb 2025 01:05:35 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2025 11:42:33 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General Resources</title>
+      <link>http://localhost:1313/resources/general/</link>
+      <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
+      <guid>http://localhost:1313/resources/general/</guid>
+      <description>&lt;p&gt;&amp;#x1f680; Welcome to a resources page for Data Science research. Here you will find a list of links for data, tools, tutorials and related resources that may be very helpful to your work. Note: If you find any resources that you think are important, please let me know [obonhamcarter(a)allegheny(dot)com]. &amp;#x1f604;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;iframe width=&#39;100%&#39; height=&#39;800&#39; src=&#39;https://rdrr.io/snippets/embed/&#39; frameborder=&#39;0&#39;&gt;&lt;/iframe&gt;&#xA;&lt;hr&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt;&#xA;&amp;#x200B;&#xA;&lt;/center&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Textbooks&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Wickham, Hadley, and Garrett Grolemund. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data., O&amp;rsquo;Reilly Media, Inc., 2016.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>QR Codes</title>
       <link>http://localhost:1313/contacts/qrcodes/</link>
@@ -64,13 +71,6 @@
       <pubDate>Sun, 24 Nov 2024 03:03:29 -0500</pubDate>
       <guid>http://localhost:1313/tutorials/exploratory/intro_mpg/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s explore the &lt;code&gt;mpg&lt;/code&gt; dataset from the &lt;code&gt;ggplot2&lt;/code&gt; package in R. This lesson will cover how to load the dataset, calculate basic correlations, and create various plots, with detailed explanations for each step.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introduction-to-r-programming-with-the-mpg-dataset&#34;&gt;Introduction to R Programming with the MPG Dataset&lt;/h2&gt;&#xA;&lt;p&gt;In this lesson, we will work with the &lt;code&gt;mpg&lt;/code&gt; dataset, which is included in the &lt;code&gt;ggplot2&lt;/code&gt; package. The dataset contains information about the fuel efficiency (miles per gallon) of various car models, with additional details about each car such as:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Reading Materials</title>
-      <link>http://localhost:1313/resources/reading/reading/</link>
-      <pubDate>Mon, 28 Oct 2024 22:46:09 -0400</pubDate>
-      <guid>http://localhost:1313/resources/reading/reading/</guid>
-      <description>&lt;p&gt;This is the Resource page where you can find resources about Data Science.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading-materials&#34;&gt;Reading Materials&lt;/h2&gt;&#xA;&lt;p&gt;Here you will find free textbooks about programming.&lt;/p&gt;</description>
     </item>
     <item>
       <title>We Do Data</title>

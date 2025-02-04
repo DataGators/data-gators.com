@@ -7,14 +7,14 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
-    <lastBuildDate>Mon, 28 Oct 2024 22:46:09 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2025 11:42:33 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Reading Materials</title>
-      <link>http://localhost:1313/resources/reading/reading/</link>
-      <pubDate>Mon, 28 Oct 2024 22:46:09 -0400</pubDate>
-      <guid>http://localhost:1313/resources/reading/reading/</guid>
-      <description>&lt;p&gt;This is the Resource page where you can find resources about Data Science.&lt;/p&gt;&#xA;&lt;h2 id=&#34;reading-materials&#34;&gt;Reading Materials&lt;/h2&gt;&#xA;&lt;p&gt;Here you will find free textbooks about programming.&lt;/p&gt;</description>
+      <title>General Resources</title>
+      <link>http://localhost:1313/resources/general/</link>
+      <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
+      <guid>http://localhost:1313/resources/general/</guid>
+      <description>&lt;p&gt;&amp;#x1f680; Welcome to a resources page for Data Science research. Here you will find a list of links for data, tools, tutorials and related resources that may be very helpful to your work. Note: If you find any resources that you think are important, please let me know [obonhamcarter(a)allegheny(dot)com]. &amp;#x1f604;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;iframe width=&#39;100%&#39; height=&#39;800&#39; src=&#39;https://rdrr.io/snippets/embed/&#39; frameborder=&#39;0&#39;&gt;&lt;/iframe&gt;&#xA;&lt;hr&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt;&#xA;&amp;#x200B;&#xA;&lt;/center&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Textbooks&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Wickham, Hadley, and Garrett Grolemund. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data., O&amp;rsquo;Reilly Media, Inc., 2016.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

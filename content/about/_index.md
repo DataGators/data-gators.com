@@ -4,7 +4,9 @@ description: About The DataGators
 images: ["/images/logos/dg_logo_short.png"]
 ---
 
-![Tutoring](/images/logos/tutoring_logo_22x14.png)
+<!-- ![Tutoring](/images/logos/tutoring_logo_22x14.png) -->
+
+<!-- ![Network](/images/main/network_02.png) -->
 
 <!-- add a line drop -->
 <center> &#x200B; </center>
@@ -16,6 +18,11 @@ If you are a student or faculty at Allegheny College and you need some help with
 As members of the Department of Computer and Information Science at Allegheny College, we often complete computational work and analyses for classes, senior thesis projects, and for other areas. We understand that there are many complex and often frustrating steps in computation that must be handled before the larger steps of the analytical project can be started. Our service is here to assist students and faculty with the technical aspects of their research, providing support to get you started and guiding you through the process.
 
 While we do not complete your work for you, nor do we promise to complete all your project's computer code, we _can_ meet with you to brainstorm solutions to overcome the computational challenges of your project in analysis. Our help desk is made up of talented students in computing who can offer solutions for completing the following types of tasks.
+
+![Network](/images/main/network_02.png)
+
+<!-- add a line drop -->
+<center> &#x200B; </center>
 
 + **Coding and debugging**: The creation of parts of code that will be used to complete some computatioan task.
 + **Data Wrangling**: The process of cleaning, organizing, and transforming raw data into a usable format for analysis.

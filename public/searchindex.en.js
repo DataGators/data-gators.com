@@ -141,7 +141,7 @@ var relearn_searchindex = [
     "description": "Learner Section",
     "tags": [],
     "title": "Learner",
-    "uri": "/portfolio/index.html"
+    "uri": "/learner/index.html"
   },
   {
     "breadcrumb": "DataGators \u003e Learner",
@@ -149,7 +149,7 @@ var relearn_searchindex = [
     "description": "This is the description of our sample project",
     "tags": [],
     "title": "We Do Data",
-    "uri": "/portfolio/learner/index.html"
+    "uri": "/learner/we_do_data/index.html"
   },
   {
     "breadcrumb": "DataGators",

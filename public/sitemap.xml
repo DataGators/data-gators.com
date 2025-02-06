@@ -103,13 +103,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/portfolio/index.html</loc>
+    <loc>http://localhost:1313/learner/index.html</loc>
     <lastmod>2019-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/portfolio/learner/index.html</loc>
+    <loc>http://localhost:1313/learner/we_do_data/index.html</loc>
     <lastmod>2019-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

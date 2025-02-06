@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Resources on Data Gators</title>
-    <link>http://localhost:1313/resources/</link>
-    <description>Recent content in Resources on Data Gators</description>
+    <title>Resources :: Data Gators</title>
+    <link>http://localhost:1313/resources/index.html</link>
+    <description>​ Welcome Statement Hi! Welcome to research!&#xA;Of research, a wise person once wrote that, one never completes a research project in isolation of others. This bright quote signifies that finding and correctly harnessing appropriate resources for research is what makes for a successful conclusion.&#xA;Research is a systematic process of investigating a specific topic or question to gather information, analyze data, and reach conclusions. It involves forming hypotheses, collecting data, analyzing it, and sharing findings.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
@@ -11,31 +11,31 @@
     <atom:link href="http://localhost:1313/resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BioMedical and Bioinformatics Resources</title>
-      <link>http://localhost:1313/resources/bioinformatics_resources/</link>
+      <link>http://localhost:1313/resources/bioinformatics_resources/index.html</link>
       <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
-      <guid>http://localhost:1313/resources/bioinformatics_resources/</guid>
-      <description>&lt;p&gt;Welcome to a resources page for Bioinformatics research. Here you will find a list of links for data, tools, tutorials and related resources that may be very helpful to your work.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Software&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Installations&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://posit.co/&#34;&gt;RStudio&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://cran.rstudio.com/&#34;&gt;R Programming Language&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;Python Programming Language&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mac.github.com/&#34;&gt;Git for Mac&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://windows.github.com/&#34;&gt;Git for Windows&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://git-scm.com/&#34;&gt;Git for all platforms&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;Python Programming Language&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.pythonforbiologists.org/&#34;&gt;Python for Biologists&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://biopython.org/DIST/docs/tutorial/Tutorial.html&#34;&gt;BioPython&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Online Tools&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/&#34;&gt;sentiment viz Tweet Sentiment Visualization&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.jdoodle.com/execute-r-online/&#34;&gt;Online R programming&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://rdrr.io/snippets/&#34;&gt;Snippets &amp;ndash; Run any R code you line online&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.jdoodle.com/execute-r-online/&#34;&gt;JDoodle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Python Programming Resources&lt;/p&gt;</description>
+      <guid>http://localhost:1313/resources/bioinformatics_resources/index.html</guid>
+      <description>Welcome to a resources page for Bioinformatics research. Here you will find a list of links for data, tools, tutorials and related resources that may be very helpful to your work.&#xA;Software&#xA;Installations&#xA;RStudio R Programming Language Python Programming Language Git for Mac Git for Windows Git for all platforms Python Programming Language Python for Biologists BioPython Online Tools&#xA;sentiment viz Tweet Sentiment Visualization Online R programming Snippets – Run any R code you line online JDoodle Python Programming Resources</description>
     </item>
     <item>
       <title>General Resources</title>
-      <link>http://localhost:1313/resources/general/</link>
+      <link>http://localhost:1313/resources/general/index.html</link>
       <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
-      <guid>http://localhost:1313/resources/general/</guid>
-      <description>&lt;p&gt;&amp;#x1f680; Welcome to a resources page for Data Science research. Here you will find a list of links for data, tools, tutorials and related resources that may be very helpful to your work. Note: If you find any resources that you think are important, please let me know [obonhamcarter(a)allegheny(dot)com]. &amp;#x1f604;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;iframe width=&#39;100%&#39; height=&#39;800&#39; src=&#39;https://rdrr.io/snippets/embed/&#39; frameborder=&#39;0&#39;&gt;&lt;/iframe&gt;&#xA;&lt;hr&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt;&#xA;&amp;#x200B;&#xA;&lt;/center&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Textbooks&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Wickham, Hadley, and Garrett Grolemund. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data., O&amp;rsquo;Reilly Media, Inc., 2016.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/resources/general/index.html</guid>
+      <description>🚀 Welcome to a resources page for Data Science research. Here you will find a list of links for data, tools, tutorials and related resources that may be very helpful to your work. Note: If you find any resources that you think are important, please let me know [obonhamcarter(a)allegheny(dot)com]. 😄&#xA;​ Textbooks&#xA;Wickham, Hadley, and Garrett Grolemund. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data., O’Reilly Media, Inc., 2016.</description>
     </item>
     <item>
       <title>Women In Computing</title>
-      <link>http://localhost:1313/resources/womenincomputing/</link>
+      <link>http://localhost:1313/resources/womenincomputing/index.html</link>
       <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
-      <guid>http://localhost:1313/resources/womenincomputing/</guid>
-      <description>&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt;&#xA;&amp;#x200B;&#xA;&lt;img src=&#34;http://localhost:1313/images/resources/ncwit_logo.png&#34; alt=&#34;NCWIT&#34; style=&#34;width:300px;&#34;/&gt;&#xA;&lt;p&gt;​&lt;/p&gt;&#xA;&lt;/center&gt;&#xA;&lt;h2 id=&#34;opportunities-for-women-in-computing&#34;&gt;Opportunities for Women in Computing&lt;/h2&gt;&#xA;&lt;p&gt;Below are some links from National Center for Women &amp;amp; Information Technology (NCWIT) which offers women support, encouragement and information to help women to gain experience in computing and to build meaningful careers in computing technology.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The National Center for Women &amp;amp; Information Technology (NCWIT) is the farthest-reaching network of change leaders focused on advancing innovation by correcting underrepresentation in computing.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/resources/womenincomputing/index.html</guid>
+      <description>​ ​&#xA;Opportunities for Women in Computing Below are some links from National Center for Women &amp; Information Technology (NCWIT) which offers women support, encouragement and information to help women to gain experience in computing and to build meaningful careers in computing technology.&#xA;The National Center for Women &amp; Information Technology (NCWIT) is the farthest-reaching network of change leaders focused on advancing innovation by correcting underrepresentation in computing.</description>
     </item>
     <item>
       <title>Writing Resources</title>
-      <link>http://localhost:1313/resources/writing/</link>
+      <link>http://localhost:1313/resources/writing/index.html</link>
       <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
-      <guid>http://localhost:1313/resources/writing/</guid>
-      <description>&lt;h2 id=&#34;the-steps-of-writing-an-introduction&#34;&gt;The Steps of Writing an Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Writing a thesis introduction is a crucial part of your overall thesis work. It sets the stage for your research and provides the reader with an overview of the key elements of your study. Here are the basic steps to help you write a compelling thesis introduction:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Start with a Hook:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Begin your introduction with a compelling hook or an engaging anecdote that captures the reader&amp;rsquo;s attention. This could be a relevant quote, a surprising fact, or a thought-provoking question.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/resources/writing/index.html</guid>
+      <description>The Steps of Writing an Introduction Writing a thesis introduction is a crucial part of your overall thesis work. It sets the stage for your research and provides the reader with an overview of the key elements of your study. Here are the basic steps to help you write a compelling thesis introduction:&#xA;Start with a Hook: Begin your introduction with a compelling hook or an engaging anecdote that captures the reader’s attention. This could be a relevant quote, a surprising fact, or a thought-provoking question.</description>
     </item>
   </channel>
 </rss>

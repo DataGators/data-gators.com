@@ -1,7 +1,7 @@
 baseURL = "https://data-gators.com"
 languageCode = "en-us"
 title = "Data Gators"
-theme = "personal-web_"
+theme = "hugo-theme-relearn-7.3.2"
 copyright="© Data Gators"
 googleAnalytics = "G-4GE08YPZ2L"
 enableEmoji=true

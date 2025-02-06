@@ -6,7 +6,7 @@ jobDate: 2025
 work: [] # necessary for projects pages to show on main page
 #techs: [Senior theses, research]
 #designs: [Photoshop]
-thumbnail: learner/sample.png
+# thumbnail: sample.png
 #projectUrl: https://www.data-gators.com
 # testimonial:
 #   name: John Doe
@@ -14,6 +14,8 @@ thumbnail: learner/sample.png
 #   image: sample-project/john.jpg
 #   text: Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin
 ---
+
+<!-- ![sample](/images/logos/sample.png) -->
 
 📢 **Need Help with Computational Analysis for Your Research?** 📢
 

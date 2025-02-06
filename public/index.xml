@@ -1,104 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DataGators on Data Gators</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in DataGators on Data Gators</description>
+    <title>DataGators :: Data Gators</title>
+    <link>http://localhost:1313/index.html</link>
+    <description>Welcome</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
-    <lastBuildDate>Tue, 04 Feb 2025 11:42:33 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2025 12:11:43 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BioMedical and Bioinformatics Resources</title>
-      <link>http://localhost:1313/resources/bioinformatics_resources/</link>
-      <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
-      <guid>http://localhost:1313/resources/bioinformatics_resources/</guid>
-      <description>&lt;p&gt;Welcome to a resources page for Bioinformatics research. Here you will find a list of links for data, tools, tutorials and related resources that may be very helpful to your work.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Software&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Installations&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://posit.co/&#34;&gt;RStudio&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://cran.rstudio.com/&#34;&gt;R Programming Language&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;Python Programming Language&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mac.github.com/&#34;&gt;Git for Mac&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://windows.github.com/&#34;&gt;Git for Windows&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://git-scm.com/&#34;&gt;Git for all platforms&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;Python Programming Language&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.pythonforbiologists.org/&#34;&gt;Python for Biologists&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://biopython.org/DIST/docs/tutorial/Tutorial.html&#34;&gt;BioPython&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Online Tools&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/&#34;&gt;sentiment viz Tweet Sentiment Visualization&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.jdoodle.com/execute-r-online/&#34;&gt;Online R programming&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://rdrr.io/snippets/&#34;&gt;Snippets &amp;ndash; Run any R code you line online&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.jdoodle.com/execute-r-online/&#34;&gt;JDoodle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Python Programming Resources&lt;/p&gt;</description>
+      <title>Resources</title>
+      <link>http://localhost:1313/resources/index.html</link>
+      <pubDate>Tue, 04 Feb 2025 12:11:43 -0500</pubDate>
+      <guid>http://localhost:1313/resources/index.html</guid>
+      <description>​ Welcome Statement Hi! Welcome to research!&#xA;Of research, a wise person once wrote that, one never completes a research project in isolation of others. This bright quote signifies that finding and correctly harnessing appropriate resources for research is what makes for a successful conclusion.&#xA;Research is a systematic process of investigating a specific topic or question to gather information, analyze data, and reach conclusions. It involves forming hypotheses, collecting data, analyzing it, and sharing findings.</description>
     </item>
     <item>
-      <title>General Resources</title>
-      <link>http://localhost:1313/resources/general/</link>
-      <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
-      <guid>http://localhost:1313/resources/general/</guid>
-      <description>&lt;p&gt;&amp;#x1f680; Welcome to a resources page for Data Science research. Here you will find a list of links for data, tools, tutorials and related resources that may be very helpful to your work. Note: If you find any resources that you think are important, please let me know [obonhamcarter(a)allegheny(dot)com]. &amp;#x1f604;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;iframe width=&#39;100%&#39; height=&#39;800&#39; src=&#39;https://rdrr.io/snippets/embed/&#39; frameborder=&#39;0&#39;&gt;&lt;/iframe&gt;&#xA;&lt;hr&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt;&#xA;&amp;#x200B;&#xA;&lt;/center&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Textbooks&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Wickham, Hadley, and Garrett Grolemund. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data., O&amp;rsquo;Reilly Media, Inc., 2016.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Women In Computing</title>
-      <link>http://localhost:1313/resources/womenincomputing/</link>
-      <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
-      <guid>http://localhost:1313/resources/womenincomputing/</guid>
-      <description>&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt;&#xA;&amp;#x200B;&#xA;&lt;img src=&#34;http://localhost:1313/images/resources/ncwit_logo.png&#34; alt=&#34;NCWIT&#34; style=&#34;width:300px;&#34;/&gt;&#xA;&lt;p&gt;​&lt;/p&gt;&#xA;&lt;/center&gt;&#xA;&lt;h2 id=&#34;opportunities-for-women-in-computing&#34;&gt;Opportunities for Women in Computing&lt;/h2&gt;&#xA;&lt;p&gt;Below are some links from National Center for Women &amp;amp; Information Technology (NCWIT) which offers women support, encouragement and information to help women to gain experience in computing and to build meaningful careers in computing technology.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The National Center for Women &amp;amp; Information Technology (NCWIT) is the farthest-reaching network of change leaders focused on advancing innovation by correcting underrepresentation in computing.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Writing Resources</title>
-      <link>http://localhost:1313/resources/writing/</link>
-      <pubDate>Tue, 04 Feb 2025 11:42:33 -0500</pubDate>
-      <guid>http://localhost:1313/resources/writing/</guid>
-      <description>&lt;h2 id=&#34;the-steps-of-writing-an-introduction&#34;&gt;The Steps of Writing an Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Writing a thesis introduction is a crucial part of your overall thesis work. It sets the stage for your research and provides the reader with an overview of the key elements of your study. Here are the basic steps to help you write a compelling thesis introduction:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Start with a Hook:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Begin your introduction with a compelling hook or an engaging anecdote that captures the reader&amp;rsquo;s attention. This could be a relevant quote, a surprising fact, or a thought-provoking question.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>QR Codes</title>
-      <link>http://localhost:1313/contacts/qrcodes/</link>
+      <title>Contacts</title>
+      <link>http://localhost:1313/contacts/index.html</link>
       <pubDate>Mon, 03 Feb 2025 01:05:35 -0500</pubDate>
-      <guid>http://localhost:1313/contacts/qrcodes/</guid>
-      <description>&lt;p&gt;Many times, you might be using your phone to make a quick appointment. These QR Codes will hopefully help you save time! The yellow QR Code takes you to the contacts page where you can make an appointment. The green QR Code takes you to the main page of this website so that you can take a look around. Cool, right?!&lt;/p&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;h3 id=&#34;book-an-appointment-using-your-phone&#34;&gt;Book an appointment using your phone!&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.data-gators.com/contacts/calendar/&#34;&gt;http://www.data-gators.com/contacts/calendar/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/qrcodes/calendar.png&#34; alt=&#34;Book an appointment&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/contacts/index.html</guid>
+      <description>Contacts</description>
     </item>
     <item>
-      <title>The Team</title>
-      <link>http://localhost:1313/contacts/gators/</link>
-      <pubDate>Sun, 02 Feb 2025 20:26:59 -0500</pubDate>
-      <guid>http://localhost:1313/contacts/gators/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/logos/dg_logo_1532x313.png&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Alish&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello, my name is Alish. I am a software engineer and data scientist with experience in Python, C++, JavaScript, and R. I am passionate about helping others utilize technology to empower themselves and their communities. I enjoy developing applications that provide accessible resources, enabling people to learn, grow, and make informed decisions in an increasingly digital world.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Daniel&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;A goal oriented passionate software engineer who started from Addis Ababa, Ethiopia. driven to make an impact in every step and action I take. I like working with software and being challenged with logic or algorithmic problems. I am comfortable working with big data manipulations, data organization and visualization, and machine learning.&lt;/p&gt;</description>
+      <title>Tutorials</title>
+      <link>http://localhost:1313/tutorials/index.html</link>
+      <pubDate>Sun, 02 Feb 2025 03:03:29 -0500</pubDate>
+      <guid>http://localhost:1313/tutorials/index.html</guid>
+      <description>​ Hooray For Tutorials! Tutorials are self-taught lessons that one may use to improve learning, comprehension and over-all vision in a field. Here, you will find a series of fun and informational activities to help you explore and enjoy the depth of data science with computer programming. By the way, tutorials, in addition to other forms of self teachings, also help you to develop problem-solving skills, foster curiosity, and will provide you with a long-lasting foundation this ever-evolving field. You adventure in analytics and programming begin here!</description>
     </item>
     <item>
-      <title>About</title>
-      <link>http://localhost:1313/tutorials/about/</link>
-      <pubDate>Sun, 02 Feb 2025 18:41:33 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/about/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/main/dashboard_02.png&#34; alt=&#34;graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;all-sorts-of-tutorials-to-discoverer&#34;&gt;All sorts of tutorials to discoverer!&lt;/h3&gt;&#xA;&lt;p&gt;&amp;#x1f4d6; Following technical tutorials is an excellent way to learn data science at your own pace. Here you will find tutorials and learning exercises to provide you with step-by-step guidance which will help to make complex concepts more accessible.&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f680; Did you know that you can code online? Click on the glasses to get started with Python and R Programming!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Calendar</title>
-      <link>http://localhost:1313/contacts/calendar/</link>
-      <pubDate>Sun, 02 Feb 2025 16:28:59 -0500</pubDate>
-      <guid>http://localhost:1313/contacts/calendar/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;book-an-appointment&#34;&gt;Book an Appointment!&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/main/dashboard_04.png&#34; alt=&#34;FriendlyRobot&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;appointments-in-the-library&#34;&gt;Appointments In the Library&lt;/h2&gt;&#xA;&lt;!-- Google Calendar Appointment Scheduling begin --&gt;&#xA;&lt;link href=&#34;https://calendar.google.com/calendar/scheduling-button-script.css&#34; rel=&#34;stylesheet&#34;&gt;&#xA;&lt;script src=&#34;https://calendar.google.com/calendar/scheduling-button-script.js&#34; async&gt;&lt;/script&gt;&#xA;&lt;script&gt;&#xA;(function() {&#xA;  var target = document.currentScript;&#xA;  window.addEventListener(&#39;load&#39;, function() {&#xA;    calendar.schedulingButton.load({&#xA;      url: &#39;https://calendar.google.com/calendar/appointments/schedules/AcZssZ1bAzyK-y_whxBNzwSWylpaJOc6P7uzqgpQwFksHpOsP5OwBX3Z3VJj4RsMr46pVhf2GD8YRsFD?gv=true&#39;,&#xA;      color: &#39;#039BE5&#39;,&#xA;      label: &#39;Book an appointment&#39;,&#xA;      target,&#xA;    });&#xA;  });&#xA;})();&#xA;&lt;/script&gt;&#xA;&lt;!-- end Google Calendar Appointment Scheduling --&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;p&gt;Making an appointment to meet with an DataGator is a wonderful way to be sure that your questions get answers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploratory Steps With Synthetic Data</title>
-      <link>http://localhost:1313/tutorials/exploratory/intro_synthetic/</link>
-      <pubDate>Mon, 25 Nov 2024 13:09:06 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/exploratory/intro_synthetic/</guid>
-      <description>&lt;h1 id=&#34;lesson-introduction-to-r-programming-and-data-science&#34;&gt;Lesson: Introduction to R Programming and Data Science&lt;/h1&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;In this lesson, we will introduce you to R programming by loading a synthetic dataset, performing basic correlations, and visualizing the data with several plots. After each code block, we&amp;rsquo;ll explain how the code works step by step.&lt;/p&gt;&#xA;&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;&#xA;&lt;p&gt;Before we begin, make sure that you have R installed. You can download R from &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;CRAN&lt;/a&gt; and use RStudio as an IDE to write and execute R code.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploratory Steps with Penguins Data</title>
-      <link>http://localhost:1313/tutorials/exploratory/intro_penguins/</link>
-      <pubDate>Sun, 24 Nov 2024 03:14:28 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/exploratory/intro_penguins/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-r-programming-with-the-penguin-dataset&#34;&gt;Introduction to R Programming with the Penguin Dataset&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s work with the &lt;code&gt;penguins&lt;/code&gt; dataset, which contains data about three species of penguins in the Palmer Archipelago, Antarctica. The dataset includes measurements for:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bill length&lt;/strong&gt; (in mm)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bill depth&lt;/strong&gt; (in mm)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flipper length&lt;/strong&gt; (in mm)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Body mass&lt;/strong&gt; (in grams)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Species&lt;/strong&gt; (species of the penguin)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We will perform basic exploratory data analysis (EDA) by calculating correlations and creating visualizations to better understand the relationships between these variables.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploratory Steps With Iris Data</title>
-      <link>http://localhost:1313/tutorials/exploratory/intro_iris/</link>
-      <pubDate>Sun, 24 Nov 2024 03:03:29 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/exploratory/intro_iris/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-r-programming-with-the-iris-dataset&#34;&gt;Introduction to R Programming with the Iris Dataset&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s work with the built-in &lt;code&gt;iris&lt;/code&gt; dataset, which contains data on 150 different species of iris flowers. Each entry contains the following measurements for the flowers:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sepal length&lt;/li&gt;&#xA;&lt;li&gt;Sepal width&lt;/li&gt;&#xA;&lt;li&gt;Petal length&lt;/li&gt;&#xA;&lt;li&gt;Petal width&lt;/li&gt;&#xA;&lt;li&gt;Species&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We will go through the steps of loading the dataset, calculating basic correlations, and creating visualizations to explore the relationships between the different features.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;step-1-load-the-iris-dataset&#34;&gt;Step 1: Load the Iris Dataset&lt;/h3&gt;&#xA;&lt;p&gt;In R, you don&amp;rsquo;t need to load the &lt;code&gt;iris&lt;/code&gt; dataset manually because it is built-in. We can directly access it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploratory Steps With MPG Data</title>
-      <link>http://localhost:1313/tutorials/exploratory/intro_mpg/</link>
-      <pubDate>Sun, 24 Nov 2024 03:03:29 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/exploratory/intro_mpg/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s explore the &lt;code&gt;mpg&lt;/code&gt; dataset from the &lt;code&gt;ggplot2&lt;/code&gt; package in R. This lesson will cover how to load the dataset, calculate basic correlations, and create various plots, with detailed explanations for each step.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introduction-to-r-programming-with-the-mpg-dataset&#34;&gt;Introduction to R Programming with the MPG Dataset&lt;/h2&gt;&#xA;&lt;p&gt;In this lesson, we will work with the &lt;code&gt;mpg&lt;/code&gt; dataset, which is included in the &lt;code&gt;ggplot2&lt;/code&gt; package. The dataset contains information about the fuel efficiency (miles per gallon) of various car models, with additional details about each car such as:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>We Do Data</title>
-      <link>http://localhost:1313/portfolio/learner/</link>
+      <title>Learner</title>
+      <link>http://localhost:1313/portfolio/index.html</link>
       <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
-      <guid>http://localhost:1313/portfolio/learner/</guid>
-      <description>&lt;p&gt;📢 &lt;strong&gt;Need Help with Computational Analysis for Your Research?&lt;/strong&gt; 📢&lt;/p&gt;&#xA;&lt;p&gt;Students and faculty at Allegheny College! Whether you&amp;rsquo;re working on data analysis, programming in R or Python, or need assistance with statistical methods and models, our &lt;strong&gt;Help Desks&lt;/strong&gt; are here for you!&lt;/p&gt;&#xA;&lt;p&gt;We offer assistance with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;R and Python programming&lt;/li&gt;&#xA;&lt;li&gt;Preparing and cleaning data&lt;/li&gt;&#xA;&lt;li&gt;Performing statistical analyses&lt;/li&gt;&#xA;&lt;li&gt;Building models and visualizing data with plots&lt;/li&gt;&#xA;&lt;li&gt;And much more to support your research projects!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Where to find us:&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/portfolio/index.html</guid>
+      <description>Learner Section</description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>http://localhost:1313/about/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/index.html</guid>
+      <description>About The DataGators</description>
     </item>
   </channel>
 </rss>

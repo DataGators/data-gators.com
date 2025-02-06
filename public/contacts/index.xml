@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Contacts on Data Gators</title>
-    <link>http://localhost:1313/contacts/</link>
-    <description>Recent content in Contacts on Data Gators</description>
+    <title>Contacts :: Data Gators</title>
+    <link>http://localhost:1313/contacts/index.html</link>
+    <description>Contacts</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
@@ -11,24 +11,24 @@
     <atom:link href="http://localhost:1313/contacts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>QR Codes</title>
-      <link>http://localhost:1313/contacts/qrcodes/</link>
+      <link>http://localhost:1313/contacts/qrcodes/index.html</link>
       <pubDate>Mon, 03 Feb 2025 01:05:35 -0500</pubDate>
-      <guid>http://localhost:1313/contacts/qrcodes/</guid>
-      <description>&lt;p&gt;Many times, you might be using your phone to make a quick appointment. These QR Codes will hopefully help you save time! The yellow QR Code takes you to the contacts page where you can make an appointment. The green QR Code takes you to the main page of this website so that you can take a look around. Cool, right?!&lt;/p&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;h3 id=&#34;book-an-appointment-using-your-phone&#34;&gt;Book an appointment using your phone!&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.data-gators.com/contacts/calendar/&#34;&gt;http://www.data-gators.com/contacts/calendar/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/qrcodes/calendar.png&#34; alt=&#34;Book an appointment&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/contacts/qrcodes/index.html</guid>
+      <description>Many times, you might be using your phone to make a quick appointment. These QR Codes will hopefully help you save time! The yellow QR Code takes you to the contacts page where you can make an appointment. The green QR Code takes you to the main page of this website so that you can take a look around. Cool, right?!&#xA;​ Book an appointment using your phone! http://www.data-gators.com/contacts/calendar/</description>
     </item>
     <item>
       <title>The Team</title>
-      <link>http://localhost:1313/contacts/gators/</link>
+      <link>http://localhost:1313/contacts/gators/index.html</link>
       <pubDate>Sun, 02 Feb 2025 20:26:59 -0500</pubDate>
-      <guid>http://localhost:1313/contacts/gators/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/logos/dg_logo_1532x313.png&#34; alt=&#34;Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Alish&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hello, my name is Alish. I am a software engineer and data scientist with experience in Python, C++, JavaScript, and R. I am passionate about helping others utilize technology to empower themselves and their communities. I enjoy developing applications that provide accessible resources, enabling people to learn, grow, and make informed decisions in an increasingly digital world.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Daniel&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;A goal oriented passionate software engineer who started from Addis Ababa, Ethiopia. driven to make an impact in every step and action I take. I like working with software and being challenged with logic or algorithmic problems. I am comfortable working with big data manipulations, data organization and visualization, and machine learning.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/contacts/gators/index.html</guid>
+      <description>Alish&#xA;Hello, my name is Alish. I am a software engineer and data scientist with experience in Python, C++, JavaScript, and R. I am passionate about helping others utilize technology to empower themselves and their communities. I enjoy developing applications that provide accessible resources, enabling people to learn, grow, and make informed decisions in an increasingly digital world.</description>
     </item>
     <item>
       <title>Calendar</title>
-      <link>http://localhost:1313/contacts/calendar/</link>
+      <link>http://localhost:1313/contacts/calendar/index.html</link>
       <pubDate>Sun, 02 Feb 2025 16:28:59 -0500</pubDate>
-      <guid>http://localhost:1313/contacts/calendar/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;book-an-appointment&#34;&gt;Book an Appointment!&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/main/dashboard_04.png&#34; alt=&#34;FriendlyRobot&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;appointments-in-the-library&#34;&gt;Appointments In the Library&lt;/h2&gt;&#xA;&lt;!-- Google Calendar Appointment Scheduling begin --&gt;&#xA;&lt;link href=&#34;https://calendar.google.com/calendar/scheduling-button-script.css&#34; rel=&#34;stylesheet&#34;&gt;&#xA;&lt;script src=&#34;https://calendar.google.com/calendar/scheduling-button-script.js&#34; async&gt;&lt;/script&gt;&#xA;&lt;script&gt;&#xA;(function() {&#xA;  var target = document.currentScript;&#xA;  window.addEventListener(&#39;load&#39;, function() {&#xA;    calendar.schedulingButton.load({&#xA;      url: &#39;https://calendar.google.com/calendar/appointments/schedules/AcZssZ1bAzyK-y_whxBNzwSWylpaJOc6P7uzqgpQwFksHpOsP5OwBX3Z3VJj4RsMr46pVhf2GD8YRsFD?gv=true&#39;,&#xA;      color: &#39;#039BE5&#39;,&#xA;      label: &#39;Book an appointment&#39;,&#xA;      target,&#xA;    });&#xA;  });&#xA;})();&#xA;&lt;/script&gt;&#xA;&lt;!-- end Google Calendar Appointment Scheduling --&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;p&gt;Making an appointment to meet with an DataGator is a wonderful way to be sure that your questions get answers.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/contacts/calendar/index.html</guid>
+      <description>Book an Appointment! Appointments In the Library ​ Making an appointment to meet with an DataGator is a wonderful way to be sure that your questions get answers.</description>
     </item>
   </channel>
 </rss>

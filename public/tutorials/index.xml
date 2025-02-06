@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tutorials on Data Gators</title>
-    <link>http://localhost:1313/tutorials/</link>
-    <description>Recent content in Tutorials on Data Gators</description>
+    <title>Tutorials :: Data Gators</title>
+    <link>http://localhost:1313/tutorials/index.html</link>
+    <description>​ Hooray For Tutorials! Tutorials are self-taught lessons that one may use to improve learning, comprehension and over-all vision in a field. Here, you will find a series of fun and informational activities to help you explore and enjoy the depth of data science with computer programming. By the way, tutorials, in addition to other forms of self teachings, also help you to develop problem-solving skills, foster curiosity, and will provide you with a long-lasting foundation this ever-evolving field. You adventure in analytics and programming begin here!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
@@ -11,10 +11,17 @@
     <atom:link href="http://localhost:1313/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/tutorials/about/</link>
+      <link>http://localhost:1313/tutorials/about/index.html</link>
       <pubDate>Sun, 02 Feb 2025 18:41:33 -0500</pubDate>
-      <guid>http://localhost:1313/tutorials/about/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;!-- add a line drop --&gt;&#xA;&lt;center&gt; &amp;#x200B; &lt;/center&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/main/dashboard_02.png&#34; alt=&#34;graphic&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;all-sorts-of-tutorials-to-discoverer&#34;&gt;All sorts of tutorials to discoverer!&lt;/h3&gt;&#xA;&lt;p&gt;&amp;#x1f4d6; Following technical tutorials is an excellent way to learn data science at your own pace. Here you will find tutorials and learning exercises to provide you with step-by-step guidance which will help to make complex concepts more accessible.&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f680; Did you know that you can code online? Click on the glasses to get started with Python and R Programming!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/tutorials/about/index.html</guid>
+      <description>​ All sorts of tutorials to discoverer! 📖 Following technical tutorials is an excellent way to learn data science at your own pace. Here you will find tutorials and learning exercises to provide you with step-by-step guidance which will help to make complex concepts more accessible.&#xA;🚀 Did you know that you can code online? Click on the glasses to get started with Python and R Programming!</description>
+    </item>
+    <item>
+      <title>Exploratory Steps</title>
+      <link>http://localhost:1313/tutorials/exploratory/index.html</link>
+      <pubDate>Sun, 02 Feb 2025 03:03:29 -0500</pubDate>
+      <guid>http://localhost:1313/tutorials/exploratory/index.html</guid>
+      <description>Below are some simple tutorials to follow where you will learn general data exploration. What is data exploration, you ask?&#xA;​ Data exploration is the process of analyzing raw data to find patterns, characteristics, and relationships. It’s the first step in the data analysis process. Why is data exploration important?</description>
     </item>
   </channel>
 </rss>

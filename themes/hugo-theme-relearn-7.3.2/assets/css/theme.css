@@ -2455,6 +2455,7 @@ body #R-logo svg * {
 }
 
 .logo-image {
+  margin-top: -3rem;
   margin-bottom: -3rem; /* Adjust the spacing between the image and text */
   width: 250px; /* Set the desired width */
   height: auto; /* Maintain aspect ratio */

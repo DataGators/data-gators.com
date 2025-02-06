@@ -2423,14 +2423,15 @@ a#R-logo {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #002144;
 }
 
 a#R-logo span {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 a#R-logo span:hover {
-  color: white;
+  color: #669639;
 }
 
 a#R-logo:hover {
@@ -2656,6 +2657,10 @@ body #R-logo svg * {
   border-inline-end-color: var(--INTERNAL-MENU-BORDER-color);
   border-inline-end-style: solid;
   border-inline-end-width: 1px;
+}
+
+#R-header-wrapper{
+  background-color: #002144;
 }
 
 #topics > ul {

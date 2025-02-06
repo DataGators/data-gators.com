@@ -362,6 +362,7 @@ a:focus,
 
 #R-sidebar .footermargin {
   flex-grow: 1;
+  align-self: start;
 }
 
 #R-content-wrapper hr {
@@ -1960,6 +1961,28 @@ html[dir='rtl'] .menu-control span {
 .footerVisitedLinks,
 .footerFooter {
   display: none;
+  width: 100%;
+  position: relative;
+}
+
+.footer-icon-container {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+}
+
+.footer-icon {
+  margin-right: 1rem;
+  color: #333;
+  display: inline-block;
+}
+
+.footer-icon:hover {
+  color: #ffffff; /* Adjust the hover color as needed */
+}
+
+.footer-icon i {
+  font-size: 1.5rem; /* Adjust the icon size as needed */
 }
 
 .showLangSwitch,

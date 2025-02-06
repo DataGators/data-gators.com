@@ -49,7 +49,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DataGators",
-    "content": "​",
+    "content": "​ Links QR Codes Calendar Gators",
     "description": "Contacts",
     "tags": [],
     "title": "Contacts",

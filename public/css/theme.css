@@ -2973,6 +2973,8 @@ body #R-logo svg * {
 
 .logo-image {
   margin-bottom: 0.5rem; /* Adjust the spacing between the image and text */
+  width: 100px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .logo-text {

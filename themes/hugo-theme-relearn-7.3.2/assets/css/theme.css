@@ -2425,6 +2425,14 @@ a#R-logo {
   text-align: center;
 }
 
+a#R-logo span {
+  color: black;
+}
+
+a#R-logo span:hover {
+  color: white;
+}
+
 a#R-logo:hover {
   color: var(--MENU-SECTIONS-BG-color);
 }
@@ -2448,6 +2456,8 @@ body #R-logo svg * {
 
 .logo-image {
   margin-bottom: 0.5rem; /* Adjust the spacing between the image and text */
+  width: 100px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .logo-text {

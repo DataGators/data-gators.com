@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learner :: Data Gators</title>
+    <link>http://localhost:1313/learner/index.html</link>
+    <description>Learner Section</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Data Gators</copyright>
+    <lastBuildDate>Thu, 02 May 2019 19:47:09 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/learner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We Do Data</title>
+      <link>http://localhost:1313/learner/we_do_data/index.html</link>
+      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
+      <guid>http://localhost:1313/learner/we_do_data/index.html</guid>
+      <description>This is the description of our sample project</description>
+    </item>
+  </channel>
+</rss>

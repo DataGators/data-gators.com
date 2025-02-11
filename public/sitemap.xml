@@ -1,111 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/index.html</loc>
     <lastmod>2025-02-04T12:11:43-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/resources/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/resources/index.html</loc>
     <lastmod>2025-02-04T12:11:43-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/resources/bioinformatics_resources/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/resources/bioinformatics_resources/index.html</loc>
     <lastmod>2025-02-04T11:42:33-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/resources/general/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/resources/general/index.html</loc>
     <lastmod>2025-02-04T11:42:33-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/resources/womenincomputing/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/resources/womenincomputing/index.html</loc>
     <lastmod>2025-02-04T11:42:33-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/resources/writing/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/resources/writing/index.html</loc>
     <lastmod>2025-02-04T11:42:33-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/contacts/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/contacts/index.html</loc>
     <lastmod>2025-02-03T01:05:35-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/contacts/qrcodes/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/contacts/qrcodes/index.html</loc>
     <lastmod>2025-02-03T01:05:35-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/contacts/gators/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/contacts/gators/index.html</loc>
     <lastmod>2025-02-02T20:26:59-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/about/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/about/index.html</loc>
     <lastmod>2025-02-02T18:41:33-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/contacts/calendar/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/contacts/calendar/index.html</loc>
     <lastmod>2025-02-02T16:28:59-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/exploratory/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/exploratory/index.html</loc>
     <lastmod>2025-02-02T03:03:29-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/index.html</loc>
     <lastmod>2025-02-02T03:03:29-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/exploratory/intro_synthetic/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/exploratory/intro_synthetic/index.html</loc>
     <lastmod>2024-11-25T13:09:06-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/exploratory/intro_penguins/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/exploratory/intro_penguins/index.html</loc>
     <lastmod>2024-11-24T03:14:28-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/exploratory/intro_iris/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/exploratory/intro_iris/index.html</loc>
     <lastmod>2024-11-24T03:03:29-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tutorials/exploratory/intro_mpg/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/exploratory/intro_mpg/index.html</loc>
     <lastmod>2024-11-24T03:03:29-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/portfolio/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/learner/index.html</loc>
     <lastmod>2019-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/portfolio/learner/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/learner/we_do_data/index.html</loc>
     <lastmod>2019-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/about/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/designs/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/designs/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/techs/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/techs/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

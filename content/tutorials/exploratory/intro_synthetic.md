@@ -4,7 +4,7 @@ date = 2024-11-25T13:09:06-05:00
 draft = false
 +++
 
-# Lesson: Introduction to R Programming and Data Science
+### Lesson: Introduction to R Programming and Data Science
 
 ## Overview
 In this lesson, we will introduce you to R programming by loading a synthetic dataset, performing basic correlations, and visualizing the data with several plots. After each code block, we'll explain how the code works step by step.

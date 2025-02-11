@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Learner on Data Gators</title>
-    <link>http://localhost:1313/portfolio/</link>
-    <description>Recent content in Learner on Data Gators</description>
+    <title>Learner :: Data Gators</title>
+    <link>http://localhost:1313/portfolio/index.html</link>
+    <description>Learner Section</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>
@@ -11,10 +11,10 @@
     <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>We Do Data</title>
-      <link>http://localhost:1313/portfolio/learner/</link>
+      <link>http://localhost:1313/portfolio/learner/index.html</link>
       <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
-      <guid>http://localhost:1313/portfolio/learner/</guid>
-      <description>&lt;p&gt;📢 &lt;strong&gt;Need Help with Computational Analysis for Your Research?&lt;/strong&gt; 📢&lt;/p&gt;&#xA;&lt;p&gt;Students and faculty at Allegheny College! Whether you&amp;rsquo;re working on data analysis, programming in R or Python, or need assistance with statistical methods and models, our &lt;strong&gt;Help Desks&lt;/strong&gt; are here for you!&lt;/p&gt;&#xA;&lt;p&gt;We offer assistance with:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;R and Python programming&lt;/li&gt;&#xA;&lt;li&gt;Preparing and cleaning data&lt;/li&gt;&#xA;&lt;li&gt;Performing statistical analyses&lt;/li&gt;&#xA;&lt;li&gt;Building models and visualizing data with plots&lt;/li&gt;&#xA;&lt;li&gt;And much more to support your research projects!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Where to find us:&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/portfolio/learner/index.html</guid>
+      <description>This is the description of our sample project</description>
     </item>
   </channel>
 </rss>

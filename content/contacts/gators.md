@@ -42,8 +42,6 @@ Hi, I'm Orion. I'm a data scientist, and I've got plenty of experience with data
 
 email: __obonhamcarter(A)allegheny(dot)edu__
 
-Hi I am an Associate Professor at Allegheny College in the Department of Computer and Information Science (CIS). I am honored to be a part of this great team of thinkers! I teach Data Science, Database Systems and other courses where SQL, R programming and Python play central roles. Much of my research involves (you guessed it) data and computational, mathematical and statistical analysis. My recent work involved building an engin to connect parallel ideas from articles across the millions scientific publications that are curated by National Center for Biotechnology Information and PubMed. Yummy!
+Hi I am an Associate Professor at Allegheny College in the Department of Computer and Information Science (CIS). I am honored to be a part of this great team of thinkers! I teach Data Science, Database Systems and other courses where SQL, R programming and Python play central roles. Much of my research involves (you guessed it) data and computational, mathematical and statistical analysis. My recent work involved building an engin to connect parallel ideas from articles across the millions of scientific publications that are curated by National Center for Biotechnology Information and PubMed. Yummy!
 
 ---
-
-

@@ -17,7 +17,7 @@ Check back often to see new tutorials of hands-on practice, exciting activities 
 
 #### Oh Hey! I Nearly Forgot to Say!!
 
-Did you know that you can locally run the provided Python and R code for your activities on this site? You can copy, paste and hack the code using the Jupyter plug-in [live site](https://datagators.netlify.app/live/lab/index.html) right here! You can also start up Jupyter's live site by clicking on the glasses under the menu on the left :sparkles: Neat, right?! :cake:
+Did you know that you can locally run the provided Python and R code for your activities on this site? You can copy, paste and hack the code using the Jupyter plug-in [live site](https://datagators.netlify.app/live/lab/index.html) right here! You can also start up Jupyter's live site by clicking on the icon under the menu on the left :sparkles: Neat, right?! :cake:
 
 <!-- add a line drop -->
 <center> &#x200B; </center>

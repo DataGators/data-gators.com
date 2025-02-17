@@ -110,6 +110,11 @@ html {
   width: 100%;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   background-color: var(--INTERNAL-MAIN-BG-color);
   color: var(--INTERNAL-MAIN-TEXT-color);
@@ -205,6 +210,8 @@ a:focus,
 }
 
 .searchbox {
+  display: flex;
+  align-items: center;
   background-color: var(--INTERNAL-MENU-SEARCH-BG-color);
   border-color: var(--INTERNAL-MENU-SEARCH-BORDER-color);
   border-radius: 4px;
@@ -277,6 +284,10 @@ a:focus,
   overflow: hidden;
   position: relative; /* PS */
   z-index: 100;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 #R-sidebar .padding {
@@ -1966,23 +1977,18 @@ html[dir='rtl'] .menu-control span {
 }
 
 .footer-icon-container {
-  position: absolute;
-  bottom: 0;
-  left: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .footer-icon {
-  margin-right: 1rem;
-  color: #333;
-  display: inline-block;
+  margin: 0 0.5rem;
 }
 
-.footer-icon:hover {
-  color: #ffffff; /* Adjust the hover color as needed */
-}
-
-.footer-icon i {
-  font-size: 1.5rem; /* Adjust the icon size as needed */
+.footer-text {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .showLangSwitch,
@@ -2714,6 +2720,59 @@ body #R-logo svg * {
   padding-bottom: 1rem;
 }
 
+.footer-content {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  margin: 0 0.5rem;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#R-menu-footer {
+  padding-bottom: 1rem;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  margin: 0 0.5rem;
+  color: #333;
+  display: inline-block;
+}
+
+.footer-icon:hover {
+  color: #ffffff; /* Adjust the hover color as needed */
+}
+
+.footer-icon i {
+  font-size: 1.5rem; /* Adjust the icon size as needed */
+}
+
+.footer-text {
+  margin: 0;
+}
+
 article .R-taxonomy ul,
 article .R-taxonomy li {
   list-style: none;
@@ -2733,6 +2792,16 @@ body.notfound p {
 body.notfound #R-body {
   margin-inline-start: 0;
   max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+body.notfound h1 {
+  color: var(--MAIN-TEXT-color);
+  line-height: 1;
+  font-size: 5rem;
+  overflow: hidden;
+}
+body.notfound h1 span {
   min-width: 100%;
   width: 100%;
 }
@@ -2847,12 +2916,12 @@ body.notfound #shrug svg {
 
 .cstyle.accent {
   --VARIABLE-BOX-color: var(--INTERNAL-ACCENT-color);
-  --VARIABLE-BOX-TEXT-color: var(--INTERNAL-MAIN-TEXT-color);
+  --VARIABLE-BOX-TEXT-color: var (--INTERNAL-MAIN-TEXT-color);
 }
 
 .cstyle.blue {
   --VARIABLE-BOX-color: var(--INTERNAL-BOX-BLUE-color);
-  --VARIABLE-BOX-TEXT-color: var(--INTERNAL-BOX-BLUE-TEXT-color);
+  --VARIABLE-BOX-TEXT-color: var (--INTERNAL-BOX-BLUE-TEXT-color);
 }
 
 .cstyle.cyan {

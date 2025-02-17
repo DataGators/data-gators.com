@@ -240,13 +240,13 @@ a:focus,
   top: 0.45rem;
 }
 
-.searchbox > :last-child {
-  inset-inline-end: 0.5rem;
+.searchbox > :nth-child(2) {
+  inset-inline-start: 2.5rem;
   position: absolute;
 }
 
 #R-sidebar .searchbox > :first-child,
-#R-sidebar .searchbox > :last-child {
+#R-sidebar .searchbox > :nth-child(2) {
   color: var(--INTERNAL-MENU-SEARCH-color);
   opacity: 0.65;
 }
@@ -257,7 +257,7 @@ a:focus,
 
 .searchbox input {
   display: inline-block;
-  width: 100%;
+  width:93%;
   height: 1.875rem;
   background: transparent;
   border: 0;
@@ -2958,7 +2958,7 @@ body.notfound #shrug svg {
   --VARIABLE-BOX-color: var(--INTERNAL-CODE-BLOCK-BORDER-color);
   --VARIABLE-BOX-CAPTION-color: var(--INTERNAL-CODE-BLOCK-color);
   --VARIABLE-BOX-BG-color: var(--INTERNAL-CODE-BLOCK-BG-color);
-  --VARIABLE-BOX-TEXT-color: var(--INTERNAL-CODE-BLOCK-color);
+  --VARIABLE-BOX-TEXT-color: var (--INTERNAL-CODE-BLOCK-color);
 }
 
 .cstyle.transparent {

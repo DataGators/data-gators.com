@@ -124,105 +124,92 @@ print(any(iris$Sepal.Length <= 0))
 
 **Explanation:**
 
--`plot()` is used to create a scatter plot. The `pch = 19` argument sets the point type (solid circle), and `col = iris$Species` colors the points according to the flower species.
+-`is.na()` checks to see if any of the values within the dataset are missing. The use of `any()` serves as a wrapper to see if any of the values are missing, rather than for a specific value.
 
--`main`, `xlab`, and `ylab` set the title and axis labels for the plot.
+- `duplicated()` checks to see if any of the rows within the dataset are duplicated.
+
+- `boxplot()` creates a boxplot of the `Sepal.Length` variable within the dataset given the argument of `iris$Sepal.Length`.
+
+- `levels()` returns the levels of the `Species` factor within the dataset given the argument of `iris$Species`.
+
+- `any(iris$Sepal.Length <= 0)` to see if any of the values within the `Sepal.Length` variable are zero or negative.
 
 **Output:**
 
-This plot will show a scatter plot where each point represents a flower, and the color indicates the species.
+```r
+
+Checking for NA values in the dataset:
+[1] FALSE
+
+Checking for duplicate rows in the dataset:
+[1] TRUE
+
+Boxplot for Sepal.Length to check for outliers:
+[Bloxplot image is attached below]
+
+Levels of the Species factor:
+[1] "setosa"     "versicolor" "virginica"
+
+Checking for zero or negative values in Sepal.Length:
+[1] FALSE
+
+```
+
+![image](img/plot.png)
 
 ---
 
-#### Boxplot: Sepal Length by Species
+### Step 4: Cleaning the data
 
-A boxplot allows us to compare the distribution of sepal length across different species.
+In this step, we'll take a look at some of the data cleaning techniques that you can use in R to prepare the data for analysis. We already know from the previous step that there is a duplicate row in the dataset, so let's remove it. Let's also check the dataset after it has been cleaned to make sure that the duplicate row has been removed, and there's no missing values beyond the one we removed.
 
 ```r
 
-# Boxplot of Sepal Length grouped by Species
+print("\nRemoving duplicate rows from the dataset:\n")
+iris <- iris[-which(duplicated(iris)),]
 
-boxplot(Sepal.Length ~ Species, data= iris,
-
-        main=
-
-          "Boxplot of Sepal Length by Species",
-
-        xlab="Species",
-
-        ylab="Sepal Length",
-
-        col=c(
-
-          "lightblue", 
-
-          "lightgreen",
-
-          "lightcoral")
-
-          )
+str(iris)
 
 ```
 
 **Explanation:**
 
--`Sepal.Length ~ Species` specifies that we want to plot Sepal Length for each species.
-
--`boxplot()` creates the boxplot, and the `col` argument specifies the colors for each species group.
+- `which(duplicated(iris))` returns the indices of the duplicate rows within the dataset.
+- `iris[-which(duplicated(iris)),]` removes the duplicate rows from the dataset.
+- `str(iris)` prints the structure of the cleaned dataset, as we had done in step 2.
 
 **Output:**
-
-This boxplot will display three boxes, one for each species, showing the range, median, and interquartile range of Sepal Length.
-
----
-
-#### Pair Plot: Visualizing Relationships Between All Variables
-
-To explore the relationships between all the numeric variables simultaneously, we can use a pair plot (also known as a scatterplot matrix).
 
 ```r
 
-# Install and load the GGally 
+Removing duplicate rows from the dataset:
 
-# package if not already installed
+[1] FALSE
 
-# install.packages("GGally")
-
-library(GGally)
-
-
-# Create a pair plot of the numeric variables
-
-ggpairs(iris[, 1:4],
-
-  aes(color= iris$Species))
+'data.frame':   149 obs. of  5 variables:
+ $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+ $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+ $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+ $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+ $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
 
 ```
 
-**Explanation:**
+#### Results of cleaning the data
 
-- The `ggpairs()` function from the `GGally` package creates a matrix of scatter plots, showing the pairwise relationships between all numeric columns in the `iris` dataset.
-- The `aes(color = iris$Species)` argument colors the points by species, making it easier to distinguish between the species in the plots.
+As you can see, in comparison to the `str(iris)` in step 2, once we've removed the duplicate row, there now are 149 observations instead of 150, and there are now no outliers or other abnormal values. Now the data is ready for analysis!
 
-**Output:**
+### Step 5: Conclusion
 
-This will generate a matrix of scatter plots, histograms, and correlations, making it easy to visually inspect the relationships between sepal length, sepal width, petal length, and petal width.
+In this lesson, we've gone through the basics of loading and exploring the `iris` dataset in R. We've also seen how to check for missing values, outliers, and duplicate rows in the dataset.
+We've also seen how to remove duplicate rows from the dataset, and how to use `ggplot2` to create visualizations of the data. It is an important practice to check your data once you've found a source that you're comfortable with, and that you feel is reliable and accurate. Even small abnormalities within data can cause issues with your analyses, and might be hidden until you visualize the data and come across them. Being sure to check your data through visualizations and pre-processing is an important part of ensuring that your analyses are accurate and reliable.
 
----
-
-### Step 4: Conclusion
-
-In this lesson, we have:
-
-- Loaded and explored the `iris` dataset.
-- Calculated correlations between numeric variables.
-- Created scatter plots, boxplots, and pair plots to visualize relationships between the features.
-
-This exercise helps in understanding both the basic analysis and visualization techniques in R, which are essential for data exploration in data science.
+Good work, you've learned the basics of data pre-processing in R!
 
 ---
 
-### Next Steps:
+### What's Next?
 
 - You can try modifying the plots to explore other variables or try additional visualizations like histograms, density plots, or heatmaps.
 - Experiment with different `ggplot2` functions for more advanced visualizations.
+- Try out graphing specific attributes of the dataset, or create your own visualizations to illustrate interactions between variables.

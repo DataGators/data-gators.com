@@ -1,6 +1,6 @@
 ---
 title: Events
-description: 'News about events'
+description: 'Events'
 ---
 
 ### 📢 Upcoming Events! 📢

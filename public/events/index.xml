@@ -3,7 +3,7 @@
   <channel>
     <title>Events :: Data Gators</title>
     <link>http://localhost:1313/events/index.html</link>
-    <description>News about events</description>
+    <description>Events</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Data Gators</copyright>

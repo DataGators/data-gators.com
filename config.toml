@@ -107,6 +107,14 @@ pygmentsCodeFences=true
   url = "/Contacts/"
   weight = -110
 
+
+[[menu.main]]
+  identifier = "Events"
+  name = "Events"
+  title = "Events"
+  url = "/events/"
+  weight = -100
+
 #[[menu.main]]
 #  identifier = "Jupyter"
 #  name = "Jupyter"

@@ -1,7 +1,7 @@
 var relearn_searchindex = [
   {
     "breadcrumb": "",
-    "content": "Hi! Welcome to the DataGator Website! Are you stuck on a project where you have to use and analyze data? If you need help getting started using computational tools and methods such as Machine Learning, statistical models, visualization techniques or similar? Do you just need to brainstorm some ideas about your project in analysis?\nThen drop by the Campus Center of Library for help on your project. Check the calendar see when the tables are open and to make an appointment!\nThe illustrious DataGators will help you get started with your computational project. When you go to their table, be sure to bring your computer and your idea to start the discussion.\nOpen to all students and faculty. Organized and supported by the Department of Computer and Information Science and the Office of the Associate Provost for Institutional Effectiveness, Strategic Planning, and Assessment.",
+    "content": "📢 Students and faculty at Allegheny College! 📢 Hi! Welcome to the DataGator Website! Are you stuck on a project where you have to use and analyze data? If you need help getting started using computational tools and methods such as Machine Learning, statistical models, visualization techniques or similar? Do you just need to brainstorm some ideas about your project in analysis?\nThen drop by the Campus Center of Library for help on your project. Check the calendar see when the tables are open and to make an appointment!\nWhat we do Whether you’re working on data analysis, programming in R, Python or something else!, and need assistance with statistical methods and models, our Help Desks are here for you! Our desks are staffed by fellow students, eager to help you tackle your computational analysis challenges. Stop by and get the support you need to succeed in your research!\nWe offer assistance with:\nR and Python programming Preparing and cleaning data Performing statistical analyses Building models and visualizing data with plots And much more to support your research projects! Where to find us:\nCampus Center Help Desk Library Help Desk The illustrious DataGators will help you get started with your computational project. When you go to their table, be sure to bring your computer and your idea to start the discussion. Let us help you bring your data to life! ✨\nOpen to all students and faculty. Organized and supported by the Department of Computer and Information Science and the Office of the Associate Provost for Institutional Effectiveness, Strategic Planning, and Assessment.",
     "description": "Welcome",
     "tags": [],
     "title": "DataGators",
@@ -137,22 +137,6 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "DataGators",
-    "content": "You’ll add here a general introduction of your calendar, events and etc.",
-    "description": "Learner Section",
-    "tags": [],
-    "title": "Learner",
-    "uri": "/learner/index.html"
-  },
-  {
-    "breadcrumb": "DataGators \u003e Learner",
-    "content": "📢 Need Help with Computational Analysis for Your Research? 📢\nStudents and faculty at Allegheny College! Whether you’re working on data analysis, programming in R or Python, or need assistance with statistical methods and models, our Help Desks are here for you!\nWe offer assistance with:\nR and Python programming Preparing and cleaning data Performing statistical analyses Building models and visualizing data with plots And much more to support your research projects! Where to find us:\nCampus Center Help Desk Library Help Desk Our desks are staffed by fellow students, eager to help you tackle your computational analysis challenges. Stop by and get the support you need to succeed in your research!\nLet us help you bring your data to life! ✨",
-    "description": "This is the description of our sample project",
-    "tags": [],
-    "title": "We Do Data",
-    "uri": "/learner/we_do_data/index.html"
-  },
-  {
-    "breadcrumb": "DataGators",
     "content": "​ Hey Researchers in Data at Allegheny College! If you are a student or faculty at Allegheny College and you need some help with your analysis, then we can help you set-up your analysis in your project.\nAs members of the Department of Computer and Information Science at Allegheny College, we often complete computational work and analyses for classes, senior thesis projects, and for other areas. We understand that there are many complex and often frustrating steps in computation that must be handled before the larger steps of the analytical project can be started. Our service is here to assist students and faculty with the technical aspects of their research, providing support to get you started and guiding you through the process.\nWhile we do not complete your work for you, nor do we promise to complete all your project’s computer code, we can meet with you to brainstorm solutions to overcome the computational challenges of your project in analysis. Our help desk is made up of talented students in computing who can offer solutions for completing the following types of tasks.\n​ Coding and debugging: The creation of parts of code that will be used to complete some computatioan task. Data Wrangling: The process of cleaning, organizing, and transforming raw data into a usable format for analysis. Programming Support: Whether you’re working in Python, R, or another language, our students can assist in writing and debugging code to fit your research needs. Statistical Modeling: Design and implementation of statistical models to analyze data effectively and draw meaningful conclusions. Visualization: Creation of informative plots and graphs that help illustrate the findings of your research. And More: Got a question about the a computational step in a project? Then stop by one of our help desks and ask! Our goal is to enhance your research by providing the technical support necessary to navigate the computational aspects of your project. Whether you’re unsure how to get started with data analysis or need guidance with more advanced tasks, we’re here to help you succeed in your project of computational analysis.\n​ 😄 The DataGators project was put together by Associate Professor Oliver Bonham-Carter, in effort to enrich pedagogy in Data Science at Allegheny College.",
     "description": "About The DataGators",
     "tags": [],
@@ -166,6 +150,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "designs",
     "uri": "/designs/index.html"
+  },
+  {
+    "breadcrumb": "DataGators",
+    "content": "📢 Upcoming Events! 📢 Are you currently working on a research project that involves data? Do you need help getting started with your analysis? Are you interested in working with analysis and automation, and looking for ideas to get started? Have no fear, the DataGators are here!\n​ ​ Come to our workshops! - What: Data Science Workshop Series - When: Mondays, March 17th, 24th, and 31st from 5:00 PM to 6:15 PM. - Where: The Pell Classroom in the Library. - Who: Open to all students and faculty. What to expect 🌟 Even the greatest of (data) scientists had to get their start somewhere. While it was unlikely their entrance into the research spotlight of the world’s stage, came by-way of a DataGators event (although never say never!), their start must have come from a similar type of event! Come, and get your start with us at a data science workshop where we cover some of the steps that will help you to work with data and to create your own results. Cool, right?!\nSome of the pre-highlights include, but are not limited to An Illustrious DataGator will share the secrets of the Data Scientists to get you started by guiding you through some of the basics and even beyond!\n📈 Hone your skills in data manipulation, analysis, and visualization. Who knows? You might discover your new favorite data tool! 🎉 Discover the power of R or Python programming and learn to wrangle, clean and analyze your data like a pro! 💻 Learn how to work with analysis, tools and create visualizations. 🚀 Explore hacks and other possibilities that you can put to use in your senior thesis research project(s)! 🌐 Connect with fellow enthusiasts, share insights, and build a network of Data Science aficionados! What to bring Bring your laptop, your curiosity, and your enthusiasm! We will provide the rest!",
+    "description": "News about events",
+    "tags": [],
+    "title": "Events",
+    "uri": "/events/index.html"
   },
   {
     "breadcrumb": "DataGators",

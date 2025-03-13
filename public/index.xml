@@ -31,18 +31,18 @@
       <description>​ Hooray For Tutorials! Tutorials are self-taught lessons that one may use to improve learning, comprehension and over-all vision in a field. Here, you will find a series of fun and informational activities to help you explore and enjoy the depth of data science with computer programming. By the way, tutorials, in addition to other forms of self teachings, also help you to develop problem-solving skills, foster curiosity, and will provide you with a long-lasting foundation this ever-evolving field. You adventure in analytics and programming begin here!</description>
     </item>
     <item>
-      <title>Learner</title>
-      <link>http://localhost:1313/learner/index.html</link>
-      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
-      <guid>http://localhost:1313/learner/index.html</guid>
-      <description>Learner Section</description>
-    </item>
-    <item>
       <title>About Us</title>
       <link>http://localhost:1313/about/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/index.html</guid>
       <description>About The DataGators</description>
+    </item>
+    <item>
+      <title>Events</title>
+      <link>http://localhost:1313/events/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/events/index.html</guid>
+      <description>News about events</description>
     </item>
   </channel>
 </rss>

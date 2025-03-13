@@ -1,14 +1,7 @@
-
-
-
 +++
-
-title = 'Data Pre-processing with Iris Dataset'
-
-date = 2024-11-24T03:03:29-05:00
-
+title = "Lesson 1"
+subtitle = "Data Pre-processing with Iris Dataset"
 draft = false
-
 +++
 
 ## Introduction to Pre-Processing data in R with the Iris Dataset

@@ -3,8 +3,8 @@
 # Core modules (mandatory)
 #jupyterlite-core==0.4.0
 jupyterlite-core==0.5.1
-jupyterlab4.3.5
-notebook7.3.2
+jupyterlab==4.3.5
+notebook==7.3.2
 seaborn==0.13.2 # Not sure that this library installs properly ...
 
 

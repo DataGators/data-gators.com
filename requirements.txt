@@ -11,7 +11,8 @@ seaborn==0.13.2 # Not sure that this library installs properly ...
 
 
 # Python kernel (optional)
-jupyterlite-pyodide-kernel==0.4.1
+#jupyterlite-pyodide-kernel==0.4.1
+jupyterlite-pyodide-kernel==0.5.2
 
 # JavaScript kernel (optional)
 jupyterlite-javascript-kernel==0.3.0

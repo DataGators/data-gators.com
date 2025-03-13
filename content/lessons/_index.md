@@ -1,64 +1,63 @@
----
-title: Lessons
-description: 'Lessons'
----
++++
+title = 'Lessons'
+date = 2025-03-13T03:03:29-05:00
+draft = false
++++
 
-![dataGatorsLogo](/images/main/bot.png)
 <!-- add a line drop -->
 <center> &#x200B; </center>
 
-# Data Gators Tutorials
+## Welcome to Data Gators Lessons
 
-This repository is intended to contain R-Code tutorials for the Data Gators. The tutorials are intended to be educational and example code for students learning R, as well as for students interested in learning more about the language that are not part of the computer science and information science department directly.
+This section of the site contains a **series of lessons** designed to help students and faculty at Allegheny College navigate the complexities of computational research. Whether you're new to data science or looking for guidance on advanced techniques, these lessons will provide hands-on tutorials and step-by-step guides to support your learning.
+
+### What You'll Learn
+The lessons cover a range of topics to assist with data analysis and computational tasks, including:
+
+- **Getting Started with Data Exploration** – Understanding datasets, identifying patterns, and preparing data for analysis
+- **Data Wrangling** – Cleaning, structuring, and transforming raw data for better usability
+- **Programming Support** – Writing, debugging, and optimizing code in Python, R, and other languages
+- **Statistical Modeling** – Implementing models to analyze data and derive meaningful insights
+- **Data Visualization** – Creating informative charts, graphs, and other visual representations
+
+### Who We Are
+**Data Gators** is a support initiative within the Department of Computer and Information Science at Allegheny College. Our goal is to assist researchers by providing guidance on computational challenges, ensuring you have the technical foundation needed for successful analysis.
+
+While we won't complete your work for you, we're here to help you **understand** and **apply** the tools and techniques necessary to advance your research.
 
 ## Getting Started
 
 ### Prerequisites
 
-Make sure you have the following installed on your computer:
+Our lessons can be completed using either local installations or cloud-based solutions:
 
-- **R**
-- R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS.
+#### Option 1: Google Colab (Recommended for Beginners)
+- A Google account
+- Web browser
+- No installation required
+- [Access Google Colab](https://colab.research.google.com)
 
-  - [Click here to install R on your computer (WINDOWS)](https://cran.r-project.org/bin/windows/base/)
-  - [Click here to install R on your computer (MAC)](https://cran.r-project.org/bin/macosx/)
-  - [Click here to install R on your computer (LINUX)](https://cran.r-project.org/bin/linux/)
-- **RStudio**
-- RStudio is a free, open-source, cross-platform integrated development environment (IDE) for R.
+#### Option 2: Local Installation
+- **R** - Statistical computing environment
+  - [Windows Installation](https://cran.r-project.org/bin/windows/base/)
+  - [MacOS Installation](https://cran.r-project.org/bin/macosx/)
+  - [Linux Installation](https://cran.r-project.org/bin/linux/)
+- **RStudio** - IDE for R
+  - [Download RStudio](https://posit.co/download/rstudio-desktop/)
 
-  - [Click here to install RStudio on your computer (ALL PLATFORMS)](https://posit.co/download/rstudio-desktop/)
-- VSCode (optional). RStudio also works as an environment to code in, but VSCode is easier to use for some people. Do note that VSCode is a multilingual platform for coding, while RStudio is specifically made with R in mind.
+{{% notice info %}}
+Individual lessons will specify any additional requirements needed for that specific tutorial.
+{{% /notice %}}
 
-  - [Click here to install VSCode on your computer (ALL PLATFORMS)](https://code.visualstudio.com/Download)
+### Need Help?
 
-### Repository Set-Up
+## Data Gators Availability
 
-1. Clone the repository to your local machine using the following link: [Data Gators Tutorial 1: Data Loading and Pre-Processing]()
-2. Open the repository in RStudio (you can also use VSCode if you like).
-3. Run the code in the `tutorial-01-preprocessing.r` file to get started with the tutorial(s). Be sure to read the comments to learn more about the code. And don't be afraid to make your own changes to test out the code and see how it affects the code!
+Check our [Main Calendar](https://calendar.google.com/calendar/u/0/r?cid=Y19lOWY2YjRmZGU3ZjQ5MWZmZjI3NjdjZGJhOGY3N2ZlMmE5MjQxZTViYmFhNDU4NDFkNDAzODI5MmNjMWY3MWZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) or [schedule an appointment](https://data-gators.com/contacts/calendar/).
 
-# Data Gators Website
-
-- https://datagators.netlify.app/
-
-# Data Gators Availability
-
-## [Main Calendar](https://calendar.google.com/calendar/u/0/r?cid=Y19lOWY2YjRmZGU3ZjQ5MWZmZjI3NjdjZGJhOGY3N2ZlMmE5MjQxZTViYmFhNDU4NDFkNDAzODI5MmNjMWY3MWZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
-
-- The below link is used for scheduling appointments, refer to the open hours below the link to compare with your schedule to determine availability.
-
-## Register for an appointment!
-
-- [Click here to register!](https://data-gators.com/contacts/calendar/)
-
-Below are the hours of our lovely Data Gators.
-
-## Alish (TH 15:00-17:00 EST)
-
-## Danny (W 15:00-17:00 EST)
-
-## Katie (M 12:00-14:00 EST)
-
-## Luke (TH 11:00AM-14:00 EST)
-
-## Orion (TH 09:00-11:00 EST)
+Available Hours:
+- **Alish**: Thursday 15:00-17:00 EST
+- **Danny**: Wednesday 15:00-17:00 EST
+- **Katie**: Monday 12:00-14:00 EST
+- **Luke**: Thursday 11:00-14:00 EST
+- **Orion**: Thursday 09:00-11:00 EST

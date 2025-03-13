@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/lessons/lesson_1/index.html</loc>
+    <lastmod>2025-02-02T03:03:29-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/index.html</loc>
-    <lastmod>2025-02-04T12:11:43-05:00</lastmod>
+    <lastmod>2025-03-13T03:03:29-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/lessons/index.html</loc>
+    <lastmod>2025-03-13T03:03:29-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -87,6 +99,12 @@
   <url>
     <loc>http://localhost:1313/tutorials/exploratory/intro_penguins/index.html</loc>
     <lastmod>2024-11-24T03:14:28-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/lessons/lesson_01_preprocessing/index.html</loc>
+    <lastmod>2024-11-24T03:03:29-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

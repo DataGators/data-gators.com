@@ -1,5 +1,5 @@
 +++
-title = "Lesson 1"
+title = "Lesson 2"
 subtitle = "Data Cleaning and Visualization in R"
 date = 2025-02-02T03:03:29-05:00
 draft = false

@@ -4,9 +4,13 @@ subtitle = "Data Pre-processing with Iris Dataset"
 draft = false
 +++
 
-## Introduction to Pre-Processing data in R with the Iris Dataset
+# Pre-Processing data in R with the Iris Dataset
 
-Let's work with the built-in `iris` dataset, which contains data on 150 different species of iris flowers. Each entry contains the following measurements for the flowers:
+## 📘 Overview
+
+Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results, and worst-case scenario, lead to misinformation.
+
+For this lesson, let's work with the built-in `iris` dataset, which contains data on 50 iris flowers across different species of iris flowers. Each entry contains the following measurements for the flowers:
 
 - Sepal length
 - Sepal width
@@ -16,9 +20,12 @@ Let's work with the built-in `iris` dataset, which contains data on 150 differen
 
 We will break down the basic steps that make up loading, viewing, and cleaning up the dataset. At the end, we will see the benefit and importance of having a clean dataset, and how failing to adequately do so can cause issues with our analyses.
 
----
 
-### Step 1: Load the required packages
+Required packages:
+* datasets
+* ggplot2
+
+## 📦 Package Installation
 
 In this lesson, we will be using the `datasets` and `ggplot2` packages for our code. Let's start!
 
@@ -152,7 +159,7 @@ Checking for zero or negative values in Sepal.Length:
 
 ![image](img/plot.png)
 
----
+
 
 ### Step 4: Cleaning the data
 
@@ -201,7 +208,7 @@ We've also seen how to remove duplicate rows from the dataset, and how to use `g
 
 Good work, you've learned the basics of data pre-processing in R!
 
----
+
 
 ### What's Next?
 

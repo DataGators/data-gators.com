@@ -8,7 +8,7 @@ draft = false
 
 ## 📘 Overview
 
-Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results, and worst-case scenario, lead to misinformation.
+Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results and provide you with the wrong information for your project or study.
 
 For this lesson, let's work with the built-in `iris` dataset, which contains data on 50 iris flowers across different species of iris flowers. Each entry contains the following measurements for the flowers:
 

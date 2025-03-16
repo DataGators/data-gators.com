@@ -115,12 +115,12 @@ pygmentsCodeFences=true
   url = "/events/"
   weight = -100
 
-#[[menu.main]]
-#  identifier = "Jupyter"
-#  name = "Jupyter"
-#  title = "Jupyter"
-#  url = "https://datagators.netlify.app/live/"
-#  weight = -100
+[[menu.main]]
+  identifier = "Lessons"
+  name = "Lessons"
+  title = "Lessons"
+  url = "https://data-gators.com/lessons/"
+  weight = -90
 
 
 [sitemap]

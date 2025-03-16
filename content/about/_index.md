@@ -4,6 +4,8 @@ description: About The DataGators
 images: ["/images/logos/dg_logo_short.png"]
 ---
 
+
+
 <!-- ![Tutoring](/images/logos/tutoring_logo_22x14.png) -->
 
 <!-- ![Network](/images/main/network_02.png) -->

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 7.3.2">
+    <meta name="description" content="Pre-Processing data in R with the Iris Dataset 📘 Overview Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results and provide you with the wrong information for your project or study.
+For this lesson, let’s work with the built-in iris dataset, which contains data on 50 iris flowers across different species of iris flowers. Each entry contains the following measurements for the flowers:">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Lesson 1 :: Data Gators">
+    <meta name="twitter:description" content="Pre-Processing data in R with the Iris Dataset 📘 Overview Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results and provide you with the wrong information for your project or study.
+For this lesson, let’s work with the built-in iris dataset, which contains data on 50 iris flowers across different species of iris flowers. Each entry contains the following measurements for the flowers:">
+    <meta property="og:url" content="http://localhost:1313/lessons/lesson_1/index.html">
+    <meta property="og:site_name" content="Data Gators">
+    <meta property="og:title" content="Lesson 1 :: Data Gators">
+    <meta property="og:description" content="Pre-Processing data in R with the Iris Dataset 📘 Overview Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results and provide you with the wrong information for your project or study.
+For this lesson, let’s work with the built-in iris dataset, which contains data on 50 iris flowers across different species of iris flowers. Each entry contains the following measurements for the flowers:">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Lessons">
+    <meta itemprop="name" content="Lesson 1 :: Data Gators">
+    <meta itemprop="description" content="Pre-Processing data in R with the Iris Dataset 📘 Overview Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results and provide you with the wrong information for your project or study.
+For this lesson, let’s work with the built-in iris dataset, which contains data on 50 iris flowers across different species of iris flowers. Each entry contains the following measurements for the flowers:">
+    <meta itemprop="wordCount" content="1184">
+    <title>Lesson 1 :: Data Gators</title>
+    <link href="/css/fontawesome-all.min.css?1742168937" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1742168937" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1742168937" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1742168937" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1742168937" rel="stylesheet">
+    <link href="/css/theme.css?1742168937" rel="stylesheet">
+    <link href="/css/format-html.css?1742168937" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.min = ``;
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        var select = document.querySelector("#R-select-variant");
+        if (select) {
+          select.value = variant;
+        }
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/lessons/lesson_1/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#-overview">📘 Overview</a></li>
+    <li><a href="#-package-installation">📦 Package Installation</a>
+      <ul>
+        <li><a href="#step-2-load-and-check-data">Step 2: Load and Check Data</a></li>
+        <li><a href="#step-3-checking-the-data">Step 3: Checking the data</a></li>
+        <li><a href="#step-4-cleaning-the-data">Step 4: Cleaning the data</a></li>
+        <li><a href="#step-5-conclusion">Step 5: Conclusion</a></li>
+        <li><a href="#whats-next">What&rsquo;s Next?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">DataGators</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/lessons/index.html"><span itemprop="name">Lessons</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Lesson 1</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/lessons/index.html" title="Lessons (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/lessons/lesson_2/index.html" title="Lesson 2 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable lessons" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="lesson-1">Lesson 1</h1>
+
+<h1 id="pre-processing-data-in-r-with-the-iris-dataset">Pre-Processing data in R with the Iris Dataset</h1>
+<h2 id="-overview">📘 Overview</h2>
+<p>Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results and provide you with the wrong information for your project or study.</p>
+<p>For this lesson, let&rsquo;s work with the built-in <code>iris</code> dataset, which contains data on 50 iris flowers across different species of iris flowers. Each entry contains the following measurements for the flowers:</p>
+<ul>
+<li>Sepal length</li>
+<li>Sepal width</li>
+<li>Petal length</li>
+<li>Petal width</li>
+<li>Species</li>
+</ul>
+<p>We will break down the basic steps that make up loading, viewing, and cleaning up the dataset. At the end, we will see the benefit and importance of having a clean dataset, and how failing to adequately do so can cause issues with our analyses.</p>
+<p>Required packages:</p>
+<ul>
+<li>datasets</li>
+<li>ggplot2</li>
+</ul>
+<h2 id="-package-installation">📦 Package Installation</h2>
+<p>In this lesson, we will be using the <code>datasets</code> and <code>ggplot2</code> packages for our code. Let&rsquo;s start!</p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="kr">if</span> <span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">datasets</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Install the &#39;datasets&#39; package if it is not installed</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">install.packages</span><span class="p">(</span><span class="s">&#34;datasets&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Load the &#39;datasets&#39; package</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">library</span><span class="p">(</span><span class="n">datasets</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">if</span> <span class="p">(</span><span class="o">!</span><span class="nf">require</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">install.packages</span><span class="p">(</span><span class="s">&#34;ggplot2&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li><code>if (!require(datasets))</code> checks to see if the datasets package is installed. The same goes for the same statement checking to see if <code>ggplot2</code> is installed.</li>
+<li><code>install.packages()</code> is used to install the corresponding package that is included within the parentheses.</li>
+<li><code>library()</code> is used to load the methods or functions within the specified package for use within code. Without this command, we would not be able to use the methods contained in the package.</li>
+</ul>
+<h3 id="step-2-load-and-check-data">Step 2: Load and Check Data</h3>
+<p>We are going to load in the dataset, and then check its structure and dimensions.</p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">data</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Display the first few rows of the dataset</span>
+</span></span><span class="line"><span class="cl"><span class="nf">cat</span><span class="p">(</span><span class="s">&#34;\nFirst few rows of the iris dataset:\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="nf">head</span><span class="p">(</span><span class="n">iris</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Display the structure of the dataset</span>
+</span></span><span class="line"><span class="cl"><span class="nf">cat</span><span class="p">(</span><span class="s">&#34;\nStructure of the iris dataset:\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">str</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span></span></span></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>
+<p><code>data(iris)</code> loads in the <code>iris</code> dataset.</p>
+</li>
+<li>
+<p><code>head(iris)</code> displays the first few rows of the dataset.</p>
+</li>
+<li>
+<p><code>str(iris)</code> displays the structure of the dataset, including the number of observations (<code>n</code>) and variables (<code>length</code>).</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">First</span> <span class="n">few</span> <span class="n">rows</span> <span class="n">of</span> <span class="n">the</span> <span class="n">iris</span> <span class="n">dataset</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">Sepal.Length</span> <span class="n">Sepal.Width</span> <span class="n">Petal.Length</span> <span class="n">Petal.Width</span> <span class="n">Species</span>
+</span></span><span class="line"><span class="cl"><span class="m">1</span>          <span class="m">5.1</span>         <span class="m">3.5</span>          <span class="m">1.4</span>         <span class="m">0.2</span>  <span class="n">setosa</span>
+</span></span><span class="line"><span class="cl"><span class="m">2</span>          <span class="m">4.9</span>         <span class="m">3.0</span>          <span class="m">1.4</span>         <span class="m">0.2</span>  <span class="n">setosa</span>
+</span></span><span class="line"><span class="cl"><span class="m">3</span>          <span class="m">4.7</span>         <span class="m">3.2</span>          <span class="m">1.3</span>         <span class="m">0.2</span>  <span class="n">setosa</span>
+</span></span><span class="line"><span class="cl"><span class="m">4</span>          <span class="m">4.6</span>         <span class="m">3.1</span>          <span class="m">1.5</span>         <span class="m">0.2</span>  <span class="n">setosa</span>
+</span></span><span class="line"><span class="cl"><span class="m">5</span>          <span class="m">5.0</span>         <span class="m">3.6</span>          <span class="m">1.4</span>         <span class="m">0.2</span>  <span class="n">setosa</span>
+</span></span><span class="line"><span class="cl"><span class="m">6</span>          <span class="m">5.4</span>         <span class="m">3.9</span>          <span class="m">1.7</span>         <span class="m">0.4</span>  <span class="n">setosa</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Structure</span> <span class="n">of</span> <span class="n">the</span> <span class="n">iris</span> <span class="n">dataset</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s">&#39;data.frame&#39;</span><span class="o">:</span>   <span class="m">150</span> <span class="n">obs.</span> <span class="n">of</span>  <span class="m">5</span> <span class="n">variables</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Sepal.Length</span><span class="o">:</span> <span class="n">num</span>  <span class="m">5.1</span> <span class="m">4.9</span> <span class="m">4.7</span> <span class="m">4.6</span> <span class="m">5</span> <span class="m">5.4</span> <span class="m">4.6</span> <span class="m">5</span> <span class="m">4.4</span> <span class="m">4.9</span> <span class="kc">...</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Sepal.Width</span> <span class="o">:</span> <span class="n">num</span>  <span class="m">3.5</span> <span class="m">3</span> <span class="m">3.2</span> <span class="m">3.1</span> <span class="m">3.6</span> <span class="m">3.9</span> <span class="m">3.4</span> <span class="m">3.4</span> <span class="m">2.9</span> <span class="m">3.1</span> <span class="kc">...</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Petal.Length</span><span class="o">:</span> <span class="n">num</span>  <span class="m">1.4</span> <span class="m">1.4</span> <span class="m">1.3</span> <span class="m">1.5</span> <span class="m">1.4</span> <span class="m">1.7</span> <span class="m">1.4</span> <span class="m">1.5</span> <span class="m">1.4</span> <span class="m">1.5</span> <span class="kc">...</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Petal.Width</span> <span class="o">:</span> <span class="n">num</span>  <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.4</span> <span class="m">0.3</span> <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.1</span> <span class="kc">...</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Species</span>     <span class="o">:</span> <span class="n">Factor</span> <span class="n">w</span><span class="o">/</span> <span class="m">3</span> <span class="n">levels</span> <span class="s">&#34;setosa&#34;</span><span class="p">,</span><span class="s">&#34;versicolor&#34;</span><span class="p">,</span><span class="n">..</span><span class="o">:</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="kc">...</span></span></span></code></pre></div>
+<h3 id="step-3-checking-the-data">Step 3: Checking the data</h3>
+<p>Now that we&rsquo;ve got the dataset loaded, and can draw some basic information from it, let&rsquo;s make sure there&rsquo;s no missing or irregular values.</p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">cat</span><span class="p">(</span><span class="s">&#34;\nChecking for NA values in the dataset:\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="nf">any</span><span class="p">(</span><span class="nf">is.na</span><span class="p">(</span><span class="n">iris</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">cat</span><span class="p">(</span><span class="s">&#34;\nChecking for duplicate rows in the dataset:\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="nf">any</span><span class="p">(</span><span class="nf">duplicated</span><span class="p">(</span><span class="n">iris</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">cat</span><span class="p">(</span><span class="s">&#34;\nBoxplot for Sepal.Length to check for outliers:\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">boxplot</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Sepal.Length</span><span class="p">,</span> <span class="n">main</span><span class="o">=</span><span class="s">&#34;Boxplot for Sepal Length&#34;</span><span class="p">,</span> <span class="n">ylab</span><span class="o">=</span><span class="s">&#34;Sepal Length&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">cat</span><span class="p">(</span><span class="s">&#34;\nLevels of the Species factor:\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="nf">levels</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Species</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">cat</span><span class="p">(</span><span class="s">&#34;\nChecking for zero or negative values in Sepal.Length:\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="nf">any</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Sepal.Length</span> <span class="o">&lt;=</span> <span class="m">0</span><span class="p">))</span></span></span></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<p>-<code>is.na()</code> checks to see if any of the values within the dataset are missing. The use of <code>any()</code> serves as a wrapper to see if any of the values are missing, rather than for a specific value.</p>
+<ul>
+<li>
+<p><code>duplicated()</code> checks to see if any of the rows within the dataset are duplicated.</p>
+</li>
+<li>
+<p><code>boxplot()</code> creates a boxplot of the <code>Sepal.Length</code> variable within the dataset given the argument of <code>iris$Sepal.Length</code>.</p>
+</li>
+<li>
+<p><code>levels()</code> returns the levels of the <code>Species</code> factor within the dataset given the argument of <code>iris$Species</code>.</p>
+</li>
+<li>
+<p><code>any(iris$Sepal.Length &lt;= 0)</code> to see if any of the values within the <code>Sepal.Length</code> variable are zero or negative.</p>
+</li>
+</ul>
+<p><strong>Output:</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">Checking</span> <span class="kr">for</span> <span class="kc">NA</span> <span class="n">values</span> <span class="kr">in</span> <span class="n">the</span> <span class="n">dataset</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">[1]</span> <span class="kc">FALSE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Checking</span> <span class="kr">for</span> <span class="n">duplicate</span> <span class="n">rows</span> <span class="kr">in</span> <span class="n">the</span> <span class="n">dataset</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">[1]</span> <span class="kc">TRUE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Boxplot</span> <span class="kr">for</span> <span class="n">Sepal.Length</span> <span class="n">to</span> <span class="n">check</span> <span class="kr">for</span> <span class="n">outliers</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">[Bloxplot</span> <span class="n">image</span> <span class="n">is</span> <span class="n">attached</span> <span class="n">below]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Levels</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Species</span> <span class="n">factor</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">[1]</span> <span class="s">&#34;setosa&#34;</span>     <span class="s">&#34;versicolor&#34;</span> <span class="s">&#34;virginica&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Checking</span> <span class="kr">for</span> <span class="n">zero</span> <span class="n">or</span> <span class="n">negative</span> <span class="n">values</span> <span class="kr">in</span> <span class="n">Sepal.Length</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">[1]</span> <span class="kc">FALSE</span></span></span></code></pre></div>
+<p><a href="#R-image-1633f6eb52ea88bfb50ae1edbc09a192" class="lightbox-link"><img alt="image" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/lessons/plot.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1633f6eb52ea88bfb50ae1edbc09a192"><img alt="image" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/lessons/plot.png"></a></p>
+<h3 id="step-4-cleaning-the-data">Step 4: Cleaning the data</h3>
+<p>In this step, we&rsquo;ll take a look at some of the data cleaning techniques that you can use in R to prepare the data for analysis. We already know from the previous step that there is a duplicate row in the dataset, so let&rsquo;s remove it. Let&rsquo;s also check the dataset after it has been cleaned to make sure that the duplicate row has been removed, and there&rsquo;s no missing values beyond the one we removed.</p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="s">&#34;\nRemoving duplicate rows from the dataset:\n&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">iris</span> <span class="o">&lt;-</span> <span class="n">iris[</span><span class="o">-</span><span class="nf">which</span><span class="p">(</span><span class="nf">duplicated</span><span class="p">(</span><span class="n">iris</span><span class="p">)),</span><span class="n">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">str</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span></span></span></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li><code>which(duplicated(iris))</code> returns the indices of the duplicate rows within the dataset.</li>
+<li><code>iris[-which(duplicated(iris)),]</code> removes the duplicate rows from the dataset.</li>
+<li><code>str(iris)</code> prints the structure of the cleaned dataset, as we had done in step 2.</li>
+</ul>
+<p><strong>Output:</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">Removing</span> <span class="n">duplicate</span> <span class="n">rows</span> <span class="n">from</span> <span class="n">the</span> <span class="n">dataset</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">[1]</span> <span class="kc">FALSE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s">&#39;data.frame&#39;</span><span class="o">:</span>   <span class="m">149</span> <span class="n">obs.</span> <span class="n">of</span>  <span class="m">5</span> <span class="n">variables</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Sepal.Length</span><span class="o">:</span> <span class="n">num</span>  <span class="m">5.1</span> <span class="m">4.9</span> <span class="m">4.7</span> <span class="m">4.6</span> <span class="m">5</span> <span class="m">5.4</span> <span class="m">4.6</span> <span class="m">5</span> <span class="m">4.4</span> <span class="m">4.9</span> <span class="kc">...</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Sepal.Width</span> <span class="o">:</span> <span class="n">num</span>  <span class="m">3.5</span> <span class="m">3</span> <span class="m">3.2</span> <span class="m">3.1</span> <span class="m">3.6</span> <span class="m">3.9</span> <span class="m">3.4</span> <span class="m">3.4</span> <span class="m">2.9</span> <span class="m">3.1</span> <span class="kc">...</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Petal.Length</span><span class="o">:</span> <span class="n">num</span>  <span class="m">1.4</span> <span class="m">1.4</span> <span class="m">1.3</span> <span class="m">1.5</span> <span class="m">1.4</span> <span class="m">1.7</span> <span class="m">1.4</span> <span class="m">1.5</span> <span class="m">1.4</span> <span class="m">1.5</span> <span class="kc">...</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Petal.Width</span> <span class="o">:</span> <span class="n">num</span>  <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.4</span> <span class="m">0.3</span> <span class="m">0.2</span> <span class="m">0.2</span> <span class="m">0.1</span> <span class="kc">...</span>
+</span></span><span class="line"><span class="cl"> <span class="o">$</span> <span class="n">Species</span>     <span class="o">:</span> <span class="n">Factor</span> <span class="n">w</span><span class="o">/</span> <span class="m">3</span> <span class="n">levels</span> <span class="s">&#34;setosa&#34;</span><span class="p">,</span><span class="s">&#34;versicolor&#34;</span><span class="p">,</span><span class="n">..</span><span class="o">:</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="m">1</span> <span class="kc">...</span></span></span></code></pre></div>
+<h4 id="results-of-cleaning-the-data">Results of cleaning the data</h4>
+<p>As you can see, in comparison to the <code>str(iris)</code> in step 2, once we&rsquo;ve removed the duplicate row, there now are 149 observations instead of 150, and there are now no outliers or other abnormal values. Now the data is ready for analysis!</p>
+<h3 id="step-5-conclusion">Step 5: Conclusion</h3>
+<p>In this lesson, we&rsquo;ve gone through the basics of loading and exploring the <code>iris</code> dataset in R. We&rsquo;ve also seen how to check for missing values, outliers, and duplicate rows in the dataset.
+We&rsquo;ve also seen how to remove duplicate rows from the dataset, and how to use <code>ggplot2</code> to create visualizations of the data. It is an important practice to check your data once you&rsquo;ve found a source that you&rsquo;re comfortable with, and that you feel is reliable and accurate. Even small abnormalities within data can cause issues with your analyses, and might be hidden until you visualize the data and come across them. Being sure to check your data through visualizations and pre-processing is an important part of ensuring that your analyses are accurate and reliable.</p>
+<p>Good work, you&rsquo;ve learned the basics of data pre-processing in R!</p>
+<h3 id="whats-next">What&rsquo;s Next?</h3>
+<ul>
+<li>You can try modifying the plots to explore other variables or try additional visualizations like histograms, density plots, or heatmaps.</li>
+<li>Experiment with different <code>ggplot2</code> functions for more advanced visualizations.</li>
+<li>Try out graphing specific attributes of the dataset, or create your own visualizations to illustrate interactions between variables.</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+                              
+          <a id="R-logo" class="R-default logo-container" href="/index.html">
+            <img src="/images/logos/CIS_DataGator.svg" alt="Data Gators Logo" class="logo-image">
+            <span class="logo-text">Data Gators</span>
+          </a>
+        </div>
+        
+        <script>
+          window.index_js_url="/searchindex.en.js?1742168937";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1742168937" defer></script>
+        <script src="/js/lunr/lunr.min.js?1742168937" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1742168937" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1742168937" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1742168937" defer></script>
+        <script src="/js/search.js?1742168937" defer></script>
+      </div>
+      
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="parent " data-nav-id="/lessons/index.html"><a class="padding" href="/lessons/index.html">Lessons</a><ul id="R-subsections-f44827b5d83617f17c3ee4fb05143c6b" class="collapsible-menu">
+            <li class="active " data-nav-id="/lessons/lesson_1/index.html"><a class="padding" href="/lessons/lesson_1/index.html">Lesson 1</a></li>
+            <li class="" data-nav-id="/lessons/lesson_2/index.html"><a class="padding" href="/lessons/lesson_2/index.html">Lesson 2</a></li></ul></li>
+            <li class="" data-nav-id="/resources/index.html"><a class="padding" href="/resources/index.html">Resources</a><ul id="R-subsections-99e912a437a5f6bb24332b3308c69481" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/contacts/index.html"><a class="padding" href="/contacts/index.html">Contacts</a><ul id="R-subsections-386e28e59253ce448fadf003d324fdb8" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/tutorials/index.html"><a class="padding" href="/tutorials/index.html">Tutorials</a><ul id="R-subsections-e1e8c1e70c5500b49e8dda2dc550651a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/about/index.html"><a class="padding" href="/about/index.html">About Us</a></li>
+            <li class="" data-nav-id="/events/index.html"><a class="padding" href="/events/index.html">Events</a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div class="footer-icon-container">
+            <a href="https://github.com/DataGators/data-gators.com" target="_blank" class="footer-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://datagators.netlify.app/live/lab/index.html" target="_blank" class="footer-icon"><i class="fa-solid fa-code"></i></a>
+            <a href="http://www.data-gators.com/contacts/calendar/" target="_blank" class="footer-icon"><i class="fa-solid fa-calendar"></i></a>
+          </div>
+          </div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/lessons/lesson_1/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.relearn.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.relearn.markVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+            <p>© Data Gators</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1742168937" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1742168937" defer></script>
+    <script src="/js/theme.js?1742168937" defer></script>
+  </body>
+</html>

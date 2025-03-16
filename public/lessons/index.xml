@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lessons :: Data Gators</title>
+    <link>http://localhost:1313/lessons/index.html</link>
+    <description>​ Welcome to Data Gators Lessons This section of the site contains a series of lessons designed to help students and faculty at Allegheny College navigate the complexities of computational research. Whether you’re new to data science or looking for guidance on advanced techniques, these lessons will provide hands-on tutorials and step-by-step guides to support your learning.&#xA;What You’ll Learn The lessons cover a range of topics to assist with data analysis and computational tasks, including:</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Data Gators</copyright>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/lessons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lesson 1</title>
+      <link>http://localhost:1313/lessons/lesson_1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lessons/lesson_1/index.html</guid>
+      <description>Pre-Processing data in R with the Iris Dataset 📘 Overview Data pre-processing is an important part of any aspect of data analysis. Regardless of what field of study you may find yourself in, ensuring the validity of your data is paramount to establishing a credible basis to your work. Otherwise, it can lead to inaccurate results and provide you with the wrong information for your project or study.&#xA;For this lesson, let’s work with the built-in iris dataset, which contains data on 50 iris flowers across different species of iris flowers. Each entry contains the following measurements for the flowers:</description>
+    </item>
+    <item>
+      <title>Lesson 2</title>
+      <link>http://localhost:1313/lessons/lesson_2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lessons/lesson_2/index.html</guid>
+      <description>Data Cleaning and Visualization in R 📘 Overview Data cleaning is a crucial first step in any data analysis project. It is estimated that 80% of a data scientist’s work involves data preparation, with around 60% of that time dedicated to cleaning and organizing data.&#xA;In this lesson, we will use the nycflights13::flights dataset to learn practical data cleaning and visualization techniques. This dataset contains over 300,000 flights departing from New York City in 2013.</description>
+    </item>
+  </channel>
+</rss>

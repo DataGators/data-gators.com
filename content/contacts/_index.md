@@ -31,12 +31,13 @@ Looking for help with your Data Science project and need some help getting start
 
 Find the DataGators at the following places for the Spring 2025 Semester.
 
-| Day | Begin to End | Location |
+| Day | Begin to End | Location | DataGator |
 |---|---|---|
-| Monday    | 12:00pm to 2:00pm | Campus Center; first floor |
-| Wednesday | 3:00pm to 5:00pm | Pelletier Library; tutorials area |
-| Thursday  | 9:00am to 2:00pm | Pelletier Library; tutorials area|
-| Thursday  | 3:00pm to 5:00pm | Pelletier Library; tutorials area |
+| Monday    | 12:00pm to 2:00pm | Campus Center; first floor | **Katie** |
+| Wednesday | 3:00pm to 5:00pm | Pelletier Library; tutorials area | **Daniel** |
+| Thursday  | 9:00am to 2:00pm | Pelletier Library; tutorials area| **Orion** |
+| Thursday  | 11:00pm to 2:00pm | Pelletier Library; tutorials area | **Luke** |
+| Thursday  | 3:00pm to 5:00pm | Pelletier Library; tutorials area | *Alish* |
 
 ## Who Are the Gators?
 

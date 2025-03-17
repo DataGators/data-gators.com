@@ -20,10 +20,14 @@ For this lesson, let's work with the built-in `iris` dataset, which contains dat
 
 We will break down the basic steps that make up loading, viewing, and cleaning up the dataset. At the end, we will see the benefit and importance of having a clean dataset, and how failing to adequately do so can cause issues with our analyses.
 
+{{% notice info %}}
+**Expected Duration:** 45 minutes  
+This is an introductory lesson - no prior R knowledge required!
 
 Required packages:
 * datasets
 * ggplot2
+{{% /notice %}}
 
 ## 📦 Package Installation
 
@@ -43,6 +47,23 @@ if (!require(ggplot2)) {
 }
 
 ```
+
+## 📌 Dataset Overview
+
+The `Air-Quality` dataset contains:
+
+- **unique_id** -	Unique record identifier
+- **indicator_id** -	Identifier of the type of measured value across time and space
+- **name** -	Name of the indicator
+- **measure** -	How the indicator is measured
+- **measure_info** -	Information (such as units) about the measure
+- **geo_type_name** -	Geography type
+- **geo_join_id** -	Identifier of the neighborhood geographic area, used for joining to mapping geography files to make thematic maps
+- **geo_place_name** -	Neighborhood name
+- **time_period** -	Description of the time that the data applies to 
+- **start_date** -	Date value for the start of the time_period
+- **data_value** -	The actual data value for this indicator, measure, place, and time
+- **message** -	notes that apply to the data value
 
 **Explanation:**
 

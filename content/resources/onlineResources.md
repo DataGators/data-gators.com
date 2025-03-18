@@ -1,8 +1,10 @@
 +++
 title = "Online Resources"
-date = 2025-03-18T21:30:44-05:00
+date = 2025-02-04T11:42:33-05:00
 draft = false
 +++
+
+:rocket: Welcome to a resources page for Data Science research. Here you will find a list of links for pages of online analysis tools. This means that you can play with data without having to write a line of code. Note: If you find any resources that you think are important, please let me know [obonhamcarter(a)allegheny(dot)com]. :smile:
 
 <!-- add a line drop -->
 <center>

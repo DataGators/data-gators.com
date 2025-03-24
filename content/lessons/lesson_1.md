@@ -1,5 +1,5 @@
 +++
-title = "Lesson 1"
+title = "Lesson_1"
 subtitle = "Data Pre-processing with Iris Dataset"
 draft = false
 +++

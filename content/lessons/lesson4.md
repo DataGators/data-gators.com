@@ -9,8 +9,7 @@ draft = false
 Data Visualization and Analysis with the Iris Dataset
 In this lesson, we will explore the **Iris dataset** using R. We will create advanced visualizations, including **decision trees** and **correlation plots**, to analyze the relationships between different features of the dataset.
 
-<!-- [Link to the Colab Template](https://colab.research.google.com/drive/1sPNX9brpkIkzCnD7k24L7X1gcIgUmEpO?usp=sharing) -->
-
+[Link to the Colab Template](https://colab.research.google.com/drive/1St3GRnPkB14f3E2zZ65BEqIoym017Oy9#scrollTo=Cp2j3_3z25yp)
 
 **Expected Duration:** 45 minutes
 
@@ -30,7 +29,7 @@ graphics.off()
 cat("\014")
 
 # Load necessary libraries
-packages <- c("tidyverse", "psych", "ggplot2", "car", "caret", "rpart", "rpart.plot")
+packages <- c("tidyverse", "ggplot2", "car", "caret", "rpart", "rpart.plot")
 
 for (pkg in packages) {
   if (!require(pkg, character.only = TRUE)) {
@@ -42,7 +41,7 @@ for (pkg in packages) {
 
 **Explanation:**
 
-- `if (!require(datasets))` checks to see if the `datasets` package is installed. The same goes for the same statement checking to see if `ggplot2` is installed.
+- `if (!require(pkg))` checks to see if all of the packages are installed.
 - `install.packages()` is used to install the corresponding package that is included within the parentheses.
 - `library()` is used to load the methods or functions within the specified package for use in our code. Without this command, we would not be able to use the methods contained in the package.
 
@@ -176,9 +175,7 @@ Now that we have trained the decision tree model, we will evaluate its performan
 ```r
 # Make predictions
 predictions <- predict(tree_model, test_data, type = "class")
-```
 
-```r
 # Compute confusion matrix
 conf_matrix <- confusionMatrix(predictions, test_data$Species)
 print(conf_matrix)
@@ -281,7 +278,6 @@ cor_matrix <- cor(iris[,1:4])
 print(cor_matrix)
 
 # Visualize correlation matrix
-library(corrplot)
 corrplot::corrplot(cor_matrix, method = "circle", type = "upper")
 ```
 

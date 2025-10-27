@@ -1,0 +1,211 @@
+/* Custom CSS overrides for Data Gators website */
+/* This file overrides the bright green menu header color and adds social icons */
+
+:root {
+  /* Override the bright green menu header with a more subtle color */
+  /* Original green: rgba(116, 181, 89, 1) */
+  
+  /* Option 1: Dark blue that matches your accent color theme */
+  
+  --MENU-HEADER-BG-color: #002144; /* Dark blue header */
+  --MENU-HEADER-BORDER-color: #002144; /* Matching border */
+
+  /* --MENU-HEADER-BG-color: rgba(45, 85, 135, 1); Dark blue header */
+  /* --MENU-HEADER-BORDER-color: rgba(70, 110, 160, 1); Matching border */
+  
+  /* Option 2: Uncomment below for a darker green instead */
+  /* --MENU-HEADER-BG-color: rgba(60, 100, 45, 1); */
+  /* --MENU-HEADER-BORDER-color: rgba(80, 130, 65, 1); */
+  
+  /* Option 3: Uncomment below for a neutral gray */
+  /* --MENU-HEADER-BG-color: rgba(70, 80, 90, 1); */
+  /* --MENU-HEADER-BORDER-color: rgba(90, 100, 110, 1); */
+  
+  /* Option 4: Uncomment below to match your accent color (#FD3519) */
+  /* --MENU-HEADER-BG-color: rgba(253, 53, 25, 1); */
+  /* --MENU-HEADER-BORDER-color: rgba(255, 80, 55, 1); */
+}
+
+/* Header space - this controls the blue background area */
+#R-header-wrapper {
+  min-height: 80px !important; /* Increased to accommodate larger logo */
+}
+
+#R-header {
+  padding: 0.75rem !important; /* Increased spacing around larger logo area */
+}
+
+#R-logo {
+  padding: 0.25rem 0.5rem !important; /* Reduce logo padding */
+}
+
+/* 
+ * LOGO SIZE CONTROL
+ * =================
+ * To change your logo size, modify the 'height' value in the .logo-image rule below:
+ * - Smaller logo: Use 2rem (≈32px) or 2.5rem (≈40px)
+ * - Current size: 3rem (≈48px)
+ * - Larger logo: Use 4rem (≈64px) or 5rem (≈80px)
+ * 
+ * The blue header background size will remain unchanged.
+ * Only the image within it will resize.
+ */
+
+.logo-image {
+  max-height: 200px !important; /* Increased maximum height constraint */
+  height:10rem !important; /* was 10rem LARGER SIZE: Changed from 3rem to 4rem (≈64px) */
+  width: auto !important; /* Maintains aspect ratio */
+  object-fit: contain !important; /* Ensures image fits within bounds */
+  display: block !important; /* Proper display for sizing */
+}
+
+/* Alternative sizing options - uncomment one to use */
+/* Small logo (2rem ≈ 32px) */
+/* .logo-image { height: 2rem !important; max-height: 35px !important; } */
+
+/* Medium logo (2.5rem ≈ 40px) */
+/* .logo-image { height: 2.5rem !important; max-height: 45px !important; } */
+
+/* Large logo (4rem ≈ 64px) */
+/* .logo-image { height: 4rem !important; max-height: 70px !important; } */
+
+/* Extra large logo (5rem ≈ 80px) */
+/* .logo-image { height: 5rem !important; max-height: 85px !important; } */
+
+/* Logo container adjustments to center image within blue space */
+#R-logo {
+  /* padding: 0.5rem !important; Increased padding for larger logo */
+  padding: 0.0rem !important; /* Increased padding for larger logo */
+  display: flex !important;
+  align-items: center !important; /* Vertically center logo */
+  justify-content: center !important; /* Horizontally center logo */
+  min-height: inherit !important; /* Uses parent container height */
+}
+
+/* Ensure logo container doesn't affect header background size */
+#R-logo .logo-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.logo-text {
+  font-size: 1rem !important; /* Reduce text size if using text logo */
+  margin-left: 0.5rem !important; /* Space between image and text */
+}
+
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-icons a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #FD3519; /* Use your accent color */
+  transform: translateY(-2px);
+}
+
+.social-icons a:focus {
+  outline: 2px solid #FD3519;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Copyright text styling */
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.copyright a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #FD3519;
+}
+
+/* Home link and icon hover styling - Override theme's hover color */
+/* Override the theme's CSS variable for link hover color in header area */
+#R-header a:hover,
+#R-header a:active,
+#R-header a:focus,
+#R-logo a:hover,
+#R-logo a:active,
+#R-logo a:focus,
+#R-homelinks a:hover,
+#R-homelinks a:active,
+#R-homelinks a:focus {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Target logo text specifically */
+#R-header .logo-text:hover,
+#R-logo .logo-text:hover,
+#R-header a:hover .logo-text,
+#R-logo a:hover .logo-text {
+  color: white !important;
+}
+
+/* Target any icons in the header/logo area on hover */
+#R-header a:hover i,
+#R-logo a:hover i,
+#R-homelinks a:hover i {
+  color: white !important;
+}
+
+/* More specific selectors for different theme structures */
+#R-sidebar #R-header a:hover,
+#R-sidebar #R-logo a:hover,
+#R-sidebar #R-homelinks a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Ensure logo image doesn't get affected by color changes */
+#R-logo a:hover .logo-image,
+#R-header a:hover .logo-image {
+  filter: none !important; /* Prevents color filter on image */
+  opacity: 1 !important; /* Ensure image stays visible */
+}
+
+/* Nuclear option - very specific override for header hover */
+body #R-sidebar #R-header-wrapper #R-header #R-logo a:hover,
+body #R-sidebar #R-header-wrapper #R-header #R-logo a:hover *:not(img),
+body #R-sidebar #R-homelinks a:hover,
+body #R-sidebar #R-homelinks a:hover *:not(img) {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Override the theme's hover color specifically for header area */
+#R-header a:hover,
+#R-header a:active,
+#R-header a:focus {
+  color: white !important;
+}
+
+/* Additional targeting for home links */
+#R-homelinks a:hover,
+#R-homelinks a:active, 
+#R-homelinks a:focus {
+  color: white !important;
+}

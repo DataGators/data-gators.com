@@ -1,7 +1,8 @@
 baseURL = "https://data-gators.com"
 languageCode = "en-us"
 title = "Data Gators"
-theme = "hugo-theme-relearn-7.3.2"
+#theme = "hugo-theme-relearn-7.3.2"
+theme = "hugo-theme-relearn"
 copyright="© Data Gators"
 googleAnalytics = "G-4GE08YPZ2L"
 enableEmoji=true
@@ -56,12 +57,12 @@ pygmentsCodeFences=true
   logo = "/images/logos/logo_dgs_500x500.png" 
 [params.assets]
   favicon = ""
-  customCSS = ""
+  customCSS = ["css/custom.css"]
 
 [params.social]
   glasses = "https://datagators.netlify.app/live/"
   calendar = "/contacts/calendar/"
-#  github = "https://github.com/"
+  github = "https://github.com/DataGators"
 #  twitter = "https://twitter.com/"
 #  linkedin = "https://www.linkedin.com/in/"
 #  medium = "https://medium.com/"

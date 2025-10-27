@@ -1,0 +1,50 @@
+{{- /* Custom footer with social icons */ -}}
+<div class="social-icons">
+  {{- with .Site.Params.social.glasses }}
+    <a href="{{ . }}" target="_blank" rel="noopener" title="Data Gators Live Site">
+      <i class="fas fa-glasses"></i>
+    </a>
+  {{- end }}
+  {{- with .Site.Params.social.calendar }}
+    <a href="{{ . }}" title="Calendar">
+      <i class="fas fa-calendar"></i>
+    </a>
+  {{- end }}
+  {{- with .Site.Params.social.github }}
+    <a href="{{ . }}" target="_blank" rel="noopener" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  {{- end }}
+  {{- with .Site.Params.social.twitter }}
+    <a href="{{ . }}" target="_blank" rel="noopener" title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  {{- end }}
+  {{- with .Site.Params.social.linkedin }}
+    <a href="{{ . }}" target="_blank" rel="noopener" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  {{- end }}
+  {{- with .Site.Params.social.youtube }}
+    <a href="{{ . }}" target="_blank" rel="noopener" title="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+  {{- end }}
+  {{- with .Site.Params.social.instagram }}
+    <a href="{{ . }}" target="_blank" rel="noopener" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  {{- end }}
+  {{- with .Site.Params.social.facebook }}
+    <a href="{{ . }}" target="_blank" rel="noopener" title="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+  {{- end }}
+  {{- with .Site.Params.contact.email }}
+    <a href="mailto:{{ . }}" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  {{- end }}
+</div>
+
+<p class="copyright">Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>

@@ -1,0 +1,16 @@
+# Simplified requirements for Netlify build
+# Core JupyterLite components only
+
+# Core modules (mandatory)
+jupyterlite-core==0.5.1
+jupyterlab~=4.3.5
+
+# Python kernel (essential)
+jupyterlite-pyodide-kernel==0.5.2
+
+# Basic plotting
+matplotlib
+numpy
+pandas
+
+# Keep the build lightweight for Netlify

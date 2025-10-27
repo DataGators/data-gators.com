@@ -1,26 +1,21 @@
 [build]
   publish = "public"
   command = """
-    # Install JupyterLite and dependencies
-    pip install jupyterlite &&
-    # Build the Hugo site
-    hugo --minify --gc &&
-
-    # ref for below code: https://github.com/r-wasm/jupyterlite-webr-kernel
-    git clone https://github.com/r-wasm/jupyterlite-webr-kernel
-    cd jupyterlite-webr-kernel
-    pip install .
-    cd ..
+    # Build the Hugo site first (this must succeed)
+    hugo --minify --gc
     
-    # Build the JupyterLite environment
-    jupyter lite build --output-dir public/live
+    # Try to build JupyterLite (don't fail the whole build if this fails)
+    echo "Building JupyterLite environment..."
+    pip install --upgrade pip || echo "pip upgrade failed"
+    pip install -r requirements.txt || echo "requirements install failed"  
+    jupyter lite build --output-dir public/live --debug || echo "JupyterLite build failed, continuing without it"
   """
 
 [build.environment]
-#  HUGO_VERSION = "0.109.0"
-  HUGO_VERSION = "0.140.0"
+  HUGO_VERSION = "0.151.0"
   HUGO_BASEURL = "/"
   PYTHON_VERSION = "3.11"
+  NODE_VERSION = "18"
 
 [[headers]]
   for = "/*" # This defines which paths this specific [[headers]] block will cover.

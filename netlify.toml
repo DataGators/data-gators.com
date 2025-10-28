@@ -13,6 +13,8 @@
     cd ..
     
     # Build the JupyterLite environment with contents from files directory
+    # Create files directory if it doesn't exist
+    mkdir -p files
     jupyter lite build --contents files --output-dir public/live
   """
 

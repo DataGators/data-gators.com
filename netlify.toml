@@ -9,6 +9,7 @@
     pip install .
     cd ..
 
+
     # Try to build JupyterLite (don't fail the whole build if this fails)
     echo "Building JupyterLite environment..."
     pip install --upgrade pip || echo "pip upgrade failed"

@@ -589,3 +589,219 @@ To target other elements in the header area:
 - **Theme Updates**: Won't be lost when theme is updated (uses override approach)
 
 The Home link now properly displays white text on hover, providing clear visibility against the dark blue header background.
+
+## Logo Display Issues on Netlify Deployment
+
+**Date:** October 27, 2025  
+**Issue:** Logo image not displaying on Netlify published site despite showing correctly in local Hugo development
+
+### Problem Description
+
+The `CIS_DataGator.svg` logo image appeared correctly when running Hugo locally (`hugo server`), but disappeared completely when the site was deployed to Netlify. The logo was completely missing from the rendered HTML output on the published site.
+
+**Symptoms:**
+- Logo visible during local development with `hugo server`
+- Logo completely absent from Netlify-deployed site
+- HTML output showed missing logo element entirely
+- No 404 errors for the image file (file was present in the built site)
+
+### Root Cause Analysis
+
+The issue was caused by a combination of **BaseURL configuration problems** and **absolute path resolution issues**:
+
+#### 1. **Incorrect BaseURL Override in Netlify**
+
+**File:** `netlify.toml`
+
+**Problem Configuration:**
+```toml
+[build.environment]
+  HUGO_BASEURL = "/"  # ❌ Incorrect - too generic
+```
+
+**Site Configuration:**
+```toml
+# config.toml
+baseURL = "https://data-gators.com"  # ✅ Correct full URL
+```
+
+**Issue:** Netlify's `HUGO_BASEURL = "/"` was overriding the site's proper baseURL configuration. When Hugo builds with just `"/"` as the baseURL, it lacks the full domain context needed for proper asset path resolution in production environments.
+
+#### 2. **Absolute Path Resolution Problems**
+
+**Theme File:** `themes/hugo-theme-relearn/layouts/partials/logo.html`
+
+**Original Problematic Code:**
+```html
+<img src="/images/logos/CIS_DataGator.svg" alt="..." class="logo-image">
+```
+
+**Issue:** The absolute path `/images/logos/CIS_DataGator.svg` works in Hugo's development server but can fail in production when baseURL configuration is inconsistent.
+
+#### 3. **Local vs Production Environment Differences**
+
+- **Hugo Dev Server (`hugo server`)**: More forgiving with asset paths and baseURL mismatches
+- **Netlify Build Process**: Stricter adherence to exact baseURL configuration
+- **Asset Path Resolution**: Production environment requires consistent baseURL between config files and build environment
+
+### Solution Implementation
+
+#### **Fix 1: Corrected BaseURL in Netlify Configuration**
+
+**File:** `netlify.toml`
+
+**Changed from:**
+```toml
+[build.environment]
+  HUGO_BASEURL = "/"
+```
+
+**Changed to:**
+```toml
+[build.environment]
+  HUGO_BASEURL = "https://data-gators.com"
+```
+
+**Rationale:** This ensures consistency between `config.toml` and Netlify's build environment, allowing Hugo to generate correct asset paths.
+
+#### **Fix 2: Created Site-Specific Logo Override**
+
+**File:** `layouts/partials/logo.html` (created new file)
+
+**Implementation:**
+```html
+<a id="R-logo" class="R-default logo-container" href="{{ "/" | relURL }}">
+  <img src="{{ "/images/logos/CIS_DataGator.svg" | relURL }}" alt="{{ .Site.Params.linkTitle | default .Site.Title }} Logo" class="logo-image" style="display: block !important; visibility: visible !important;">
+  <span class="logo-text">{{ .Site.Params.linkTitle | default .Site.Title }}</span>
+</a>
+```
+
+**Key Improvements:**
+
+1. **Hugo's `relURL` Function**: `{{ "/images/logos/CIS_DataGator.svg" | relURL }}`
+   - Generates correct relative URLs regardless of baseURL configuration
+   - Works in both development and production environments
+   - Automatically handles path prefix requirements
+
+2. **Explicit Visibility CSS**: `style="display: block !important; visibility: visible !important;"`
+   - Prevents accidental hiding by CSS conflicts
+   - Ensures logo remains visible even with theme updates
+
+3. **Site Override Approach**: 
+   - Created `/layouts/partials/logo.html` in site root
+   - Overrides theme's template without modifying theme files
+   - Survives theme updates since it's site-specific
+
+### Technical Details
+
+#### **Hugo Template Function Usage**
+
+| Function | Purpose | Example |
+|----------|---------|---------|
+| `relURL` | Generates correct relative URLs | `{{ "/path/file.jpg" \| relURL }}` |
+| `absURL` | Generates absolute URLs with domain | `{{ "/path/file.jpg" \| absURL }}` |
+| `resources.Get` | Gets resource from assets or static | `{{ resources.Get "images/logo.svg" }}` |
+
+#### **BaseURL Configuration Best Practices**
+
+**Development:**
+```toml
+# config.toml
+baseURL = "http://localhost:1313"  # For local development
+```
+
+**Production:**
+```toml
+# config.toml  
+baseURL = "https://data-gators.com"  # Full production URL
+
+# netlify.toml
+[build.environment]
+  HUGO_BASEURL = "https://data-gators.com"  # Match config.toml
+```
+
+#### **File Override Hierarchy**
+
+Hugo's template resolution order:
+1. `/layouts/partials/logo.html` ← **Site-specific override** (highest priority)
+2. `/themes/theme-name/layouts/partials/logo.html` ← Theme default
+3. Hugo's built-in templates ← Fallback
+
+### Verification Steps
+
+1. ✅ **Local Development**: Logo appears correctly with `hugo server`
+2. ✅ **Build Process**: Hugo builds without logo-related errors
+3. ✅ **Netlify Deploy**: Logo displays on published Netlify site
+4. ✅ **HTML Output**: Logo element present in rendered HTML
+5. ✅ **Asset Loading**: SVG file loads without 404 errors
+6. ✅ **Responsive Design**: Logo scales correctly on mobile devices
+
+### Prevention Guidelines
+
+#### **For Future Theme Updates:**
+
+1. **Keep Site Override**: Never delete `/layouts/partials/logo.html`
+2. **Test Locally First**: Always verify logo display with `hugo server`
+3. **Check Build Output**: Ensure logo paths are correct in generated HTML
+4. **Netlify Deploy Preview**: Test on deploy preview before merging to main
+
+#### **For New Hugo Sites:**
+
+1. **Consistent BaseURL**: Ensure `config.toml` and `netlify.toml` use identical baseURL values
+2. **Use Hugo Functions**: Prefer `relURL` and `absURL` over hardcoded paths  
+3. **Site-Specific Overrides**: Create template overrides for critical elements
+4. **Asset Organization**: Keep all logos in `/static/images/logos/` for consistency
+
+### Troubleshooting Guide
+
+#### **If Logo Still Doesn't Show After Fix:**
+
+1. **Clear Netlify Build Cache:**
+   ```bash
+   # In Netlify dashboard: Site Settings → Build & Deploy → Environment Variables
+   # Add: HUGO_ENABLEGITINFO = true
+   # Trigger new deploy
+   ```
+
+2. **Verify File Paths:**
+   ```bash
+   # Check that file exists in built site
+   ls public/images/logos/CIS_DataGator.svg
+   ```
+
+3. **Test Different Image Formats:**
+   ```html
+   <!-- Try PNG instead of SVG temporarily -->
+   <img src="{{ "/images/logos/dg_logo_clean.png" | relURL }}" alt="...">
+   ```
+
+4. **Check Browser Developer Tools:**
+   - Network tab: Look for 404 errors on logo file
+   - Elements tab: Verify logo HTML is present
+   - Console: Check for JavaScript errors affecting display
+
+#### **Alternative Image Formats:**
+
+If SVG continues to have issues:
+
+```html
+<!-- PNG fallback -->
+<img src="{{ "/images/logos/dg_logo_clean.png" | relURL }}" alt="...">
+
+<!-- Multiple format support -->
+<picture>
+  <source srcset="{{ "/images/logos/CIS_DataGator.webp" | relURL }}" type="image/webp">
+  <source srcset="{{ "/images/logos/CIS_DataGator.svg" | relURL }}" type="image/svg+xml">
+  <img src="{{ "/images/logos/dg_logo_clean.png" | relURL }}" alt="...">
+</picture>
+```
+
+### Key Learnings
+
+1. **BaseURL Consistency**: Netlify environment variables must match site configuration
+2. **Hugo Function Usage**: `relURL` and `absURL` are essential for production deployments
+3. **Local vs Production**: Development servers are more forgiving than production builds
+4. **Template Overrides**: Site-specific overrides are safer than theme modifications
+5. **Asset Path Strategy**: Relative paths with Hugo functions prevent deployment issues
+
+**Result:** The logo now displays correctly on both local development and Netlify production environments, with a robust configuration that survives theme updates and deployment processes.

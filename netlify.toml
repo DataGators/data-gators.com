@@ -2,7 +2,8 @@
   publish = "public"
   command = """
     # Build the Hugo site first (this must succeed)
-    hugo --minify --gc &&
+    hugo --minify --gc
+    
     # ref for below code: https://github.com/r-wasm/jupyterlite-webr-kernel
     git clone https://github.com/r-wasm/jupyterlite-webr-kernel
     cd jupyterlite-webr-kernel

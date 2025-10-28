@@ -1,7 +1,7 @@
 # Hugo Website Fix Documentation
 
-**Date:** October 27, 2025  
 **Project:** Data Gators Hugo Website  
+**Date:** October 27, 2025  
 **Issue:** `hugo -D serve` command failing with template errors
 
 ## Problem Description

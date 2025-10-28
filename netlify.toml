@@ -3,13 +3,12 @@
   command = """
     # Build the Hugo site first (this must succeed)
     hugo --minify --gc
-    
+
     # ref for below code: https://github.com/r-wasm/jupyterlite-webr-kernel
     git clone https://github.com/r-wasm/jupyterlite-webr-kernel
     cd jupyterlite-webr-kernel
     pip install .
     cd ..
-
 
     # Try to build JupyterLite (don't fail the whole build if this fails)
     echo "Building JupyterLite environment..."

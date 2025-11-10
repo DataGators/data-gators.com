@@ -1,5 +1,5 @@
 +++
-title = "Lesson_3"
+title = "R_Lesson_3"
 subtitle = "Working with Iris Dataset: Visualizations, Correlations, Avona and more in R"
 draft = false
 +++

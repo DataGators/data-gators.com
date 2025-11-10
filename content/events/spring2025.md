@@ -1,34 +1,26 @@
 ---
-title: Events
-description: 'Events'
+title: "Spring 2025 Workshop"
+date: 2022-06-26T13:25:33-04:00
 draft: false
 ---
 
-### 📢 Upcoming Events! 📢
+#### Spring 2025 Data Science Workshop Series
 
 Are you currently working on a research project that involves data? Do you need help getting started with your analysis? Are you interested in working with analysis and automation, and looking for ideas to get started? Have no fear, the DataGators are here!
-
-<!-- add a line drop -->
-<center> &#x200B; </center>
 
 ![graphic](/images/events/workshop_flyer_Spring2025_600x800.png)
 
 <!-- add a line drop -->
 <center> &#x200B; </center>
-<!-- add a line drop -->
-<center> &#x200B; </center>
-<!-- add a line drop -->
-<center> &#x200B; </center>
-<!-- add a line drop -->
-<center> &#x200B; </center>
 
 ### Come to our workshops!
 
-Former Workshop
-
-- [:abacus: Fall 2025](fall2025)
-- [:abacus: Spring 2025](spring2025)
-
+``` text
+- What:   Data Science Workshop Series
+- When:   Mondays, March 17th, 24th, and 31st from 5:00 PM to 6:15 PM.
+- Where:  The Pell Classroom in the Library.
+- Who:    Open to all students and faculty.
+```
 
 ### What to expect
 
@@ -48,3 +40,13 @@ An Illustrious DataGator will share the secrets of the Data Scientists to get yo
 
 Bring your laptop, your curiosity, and your enthusiasm! We will provide the rest!
 
+## Cannot Attend But Still Interested?
+
+If you can't make it to the live sessions but would still like to get some idea about your project, then drop by our HelpDesk sessions on Fridays from 12:00pm to 1:00pm in the Pell Classroom. We're here to help you with your data science needs!
+
+
+![graphic](/images/events/helpdesk_spring2025.png)
+
+---
+
+**Questions?** Contact us for more information about the workshop series!

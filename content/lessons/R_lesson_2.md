@@ -1,5 +1,5 @@
 +++
-title = "Lesson_2"
+title = "R_Lesson_2"
 subtitle = "Data Cleaning and Visualization in R"
 draft = false
 +++

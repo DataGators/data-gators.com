@@ -11,10 +11,25 @@ Are you currently working on a research project that involves data? Do you need 
 <!-- add a line drop -->
 <center> &#x200B; </center>
 
-![graphic](/images/events/workshop_flyer_Spring2025_600x800.png)
+- [:abacus: Fall 2025](fall2025)
+<!-- add a line drop -->
+<center> &#x200B; </center>
+
+![graphic](/images/events/workshop_flyer_fall2025_600x800.png)
 
 <!-- add a line drop -->
 <center> &#x200B; </center>
+
+
+## RSVP Now!
+
+{{% notice info %}}
+
+Please let us know if you plan to attend by filling out this [RSVP form](https://forms.gle/dd2xb1VuGJTQcSAe7). This will help us prepare materials and ensure we have enough resources for everyone. 
+
+{{% /notice %}}
+
+
 <!-- add a line drop -->
 <center> &#x200B; </center>
 <!-- add a line drop -->
@@ -28,7 +43,6 @@ Former Workshop
 
 - [:abacus: Fall 2025](fall2025)
 - [:abacus: Spring 2025](spring2025)
-
 
 ### What to expect
 
@@ -48,3 +62,5 @@ An Illustrious DataGator will share the secrets of the Data Scientists to get yo
 
 Bring your laptop, your curiosity, and your enthusiasm! We will provide the rest!
 
+---
+Posted:

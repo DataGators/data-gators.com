@@ -1,0 +1,66 @@
+{{- $styles := partialCached "_relearn/boxStyles.gotmpl" . }}
+{{- $set := dict "style" "" "color" "" "icon" "" "title" "" }}
+{{- $mode := lower .mode | default (lower .style) | default "" }}
+{{- $style := lower .style | default "" }}
+{{- $color := .color | default "" }}
+{{- $icon := .icon | default "" }}
+{{- $title := .title | default "" }}
+
+{{- $fallbackset := dict }}
+{{- if eq $mode "default" }}
+	{{- $fallbackset = index $styles $mode | default $fallbackset }}
+{{- else if or
+	(eq $mode "attachments")
+	(eq $mode "button")
+}}
+	{{- $fallbackset = index $styles $mode | default $fallbackset }}
+	{{- if and (not $color) (eq (len $color) 0) }}
+		{{- $style = $style | default "transparent" }}
+	{{- else }}
+		{{- $style = $style | default "default" }}
+	{{- end }}
+{{- else if eq $mode "tabs" }}
+	{{- $fallbackset = index $styles $mode | default $fallbackset }}
+	{{- if and (not $color) (eq (len $color) 0) }}
+		{{- $style = $style | default "initial" }}
+	{{- else }}
+		{{- $style = $style | default "filled" }}
+	{{- end }}
+{{- else if eq $mode "terms" }}
+	{{- $color = $color | default "var(--INTERNAL-TAG-BG-color)" }}
+{{- end }}
+
+{{- if isset $styles $style }}
+	{{- $set = index $styles $style | default $set | merge $set }}
+{{- end }}
+{{- if $color }}
+	{{- $set = merge $set (dict "color" $color) }}
+{{- end }}
+{{- if and (not $set.style) (not $set.color) }}
+	{{- $set = merge $set (dict "style" "" "color" $style) }}
+{{- end }}
+{{- if $title }}
+	{{- $set = merge $set (dict "title" $title) }}
+{{- end }}
+{{- if $icon }}
+	{{- $set = merge $set (dict "icon" $icon) }}
+{{- end }}
+
+{{- range $k, $v := $fallbackset }}
+	{{ if not (index $set $k) }}
+		{{- $set = merge $set (dict $k $v) }}
+	{{- end }}
+{{- end }}
+
+{{- if $set.icon }}
+	{{- $icon = trim ($set.icon) " " }}
+	{{- if and $icon (not (findRE ".*?\\bfa-\\w.*?" $icon)) }}
+		{{- $icon = printf "fa-fw fas fa-%s" $icon }}
+	{{- end }}
+	{{- $set = merge $set (dict "icon" $icon) }}
+{{- end }}
+{{- if $set.title }}
+	{{- $title = trim ($set.title) " " }}
+	{{- $set = merge $set (dict "title" $title) }}
+{{- end }}
+{{- return $set }}

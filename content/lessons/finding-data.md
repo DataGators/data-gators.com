@@ -81,8 +81,24 @@ Government data is typically free, reliable, and well-documented. Here are some 
 - **[data.gov](https://data.gov)** - Over 250,000 datasets covering topics from agriculture to transportation
 - **[census.gov](https://census.gov)** - Comprehensive demographic and economic data
 - **NOAA** - Climate and weather data
+  - **[Climate Data Online](https://www.ncei.noaa.gov/cdo-web/)** - Weather datasets
 - **NASA** - Space and earth science data
-- **NIH** - Health and biomedical research data
+  - **[NASA Data](https://data.nasa.gov/)** - Various datasets on space missions and earth observations
+- **[NIH](https://www.ncbi.nlm.nih.gov/datasets/)** - Health and biomedical research data
+   -  **[NIH Data Sharing Repositories](https://www.nlm.nih.gov/NIHbmic/nih_data_sharing_repositories.html)** - Biomedical datasets
+-  **CDC** - Public health data
+   - **[CDC WONDER](https://wonder.cdc.gov/)** - Health statistics and information
+   - **[Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/)** - Health-related risk behaviors
+   - **[National Health and Nutrition Examination Survey (NHANES)](https://www.cdc.gov/nchs/nhanes/index.html)** - Health and nutrition data
+   - **[SEER Cancer Statistics](https://seer.cancer.gov/)** - Cancer incidence and survival data
+   - **[National Vital Statistics System (NVSS)](https://www.cdc.gov/nchs/nvss/index.htm)** - Birth and death records
+   - **[Youth Risk Behavior Surveillance System (YRBSS)](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm)** - Youth health behaviors
+   - **[Global Health Data Exchange (GHDx)](http://ghdx.healthdata.org/)** - Global health datasets
+   - **[Disease Control Data Repository](https://data.cdc.gov/)** - COVID-19 cases, vaccination data, and more
+   - **[Environmental Public Health Tracking Network](https://ephtracking.cdc.gov/)** - Environmental health data
+- **[USGS Earth Explorer](https://earthexplorer.usgs.gov/)** - Satellite imagery and geospatial data
+- And more! See [Data-Gators Resources](https://data-gators.com/resources/) for more resources and links!
+
 
 **International:**
 - **World Bank** - Global development indicators

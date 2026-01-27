@@ -1,6 +1,6 @@
 +++
 title = 'Tutorials'
-date = 2025-02-02T03:03:29-05:00
+date = 2026-01-27T03:03:29-05:00
 draft = false
 +++
 
@@ -13,7 +13,9 @@ draft = false
 
 Tutorials are self-taught lessons that one may use to improve  learning, comprehension and over-all vision in a field. Here, you will find a series of fun and informational activities to help you explore and enjoy the depth of data science with computer programming. By the way, tutorials, in addition to other forms of self teachings, also help you to develop problem-solving skills, foster curiosity, and will provide you with a long-lasting foundation this ever-evolving field. You adventure in analytics and programming begin here!
 
-Check back often to see new tutorials of hands-on practice, exciting activities and other amazing gems of learning that will benefit your learning in the amazing field of data science!
+### Please Explore and Come Back Often to find New Tutorials!
+
+Some of the tutorials that we have in store for you have not yet been written. In addition to that, there may be URLs that do not go through. What a mess!! But do not worry -- The Illustrious Data Gators are busy at work to produce a functional website with developed tutorials (self-teaching) and lessons (workshop materials) that can help you get your game on in data! So, check back often to see new tutorials of hands-on practice, exciting activities and other amazing gems of learning that will benefit your education in the amazing field of data science!
 
 #### Oh Hey! I Nearly Forgot to Say!!
 

@@ -7,7 +7,13 @@ draft = false
 ![Logo](/images/logos/dg_logo_1532x313.png)
 
 ---
+### Data Gators
 
+* TBA
+* TBA
+* TBA
+
+<!-- 
 **Alish**
 
 Hello, my name is Alish. I am a software engineer and data scientist with experience in Python, C++, JavaScript, and R. I am passionate about helping others utilize technology to empower themselves and their communities. I enjoy developing applications that provide accessible resources, enabling people to learn, grow, and make informed decisions in an increasingly digital world.
@@ -34,7 +40,7 @@ My name is Luke and I am a senior at Allegheny College and I am a Computer Scien
 
 **Orion**
 
-Hi, I'm Orion. I'm a data scientist, and I've got plenty of experience with data analysis. I work primarily with Python, R, Dart, and Java. I love data analytics, machine learning, and statistical analysis. I enjoy the rigor of breaking down datasets, ripping them apart to their bits and learning what makes them tick to create tools that aid proper decision making when consulting such data. I'm always looking for the next breakthrough to work on, whether it be working with data processing, or developing a machine learning model.
+Hi, I'm Orion. I'm a data scientist, and I've got plenty of experience with data analysis. I work primarily with Python, R, Dart, and Java. I love data analytics, machine learning, and statistical analysis. I enjoy the rigor of breaking down datasets, ripping them apart to their bits and learning what makes them tick to create tools that aid proper decision making when consulting such data. I'm always looking for the next breakthrough to work on, whether it be working with data processing, or developing a machine learning model. -->
 
 ---
 

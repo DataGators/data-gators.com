@@ -12,6 +12,11 @@ draft = false
 
 ## Appointments to Visit a DataGator
 
+<!-- <center>
+<a href="https://calendar.app.google/CSXwgnckaGSGY1dk8" target="_blank" rel="noopener noreferrer"><img src="/images/main/schedule.png" alt="office hours" style="width: 300px; max-width: 100%;"></a> -->
+<!-- add a line drop -->
+<!-- &#x200B; -->
+
 
 <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -23,7 +28,7 @@ draft = false
     calendar.schedulingButton.load({
       url: 'https://calendar.app.google/CSXwgnckaGSGY1dk8',
       color: '#039BE5',
-      label: 'Book an appointment',
+      label: 'Book an Appointment',
       target,
     });
   });

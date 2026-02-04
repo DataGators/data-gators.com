@@ -14,7 +14,7 @@ Many times, you might be using your phone to make a quick appointment. These QR 
 
  + http://www.data-gators.com/contacts/calendar/
 
-![Book an appointment](/images/qrcodes/calendar.png)
+![Book an appointment](/images/qrcodes/qrcode_contacts.png)
 
 <!-- add a line drop -->
 <center> &#x200B; </center>
@@ -23,5 +23,5 @@ Many times, you might be using your phone to make a quick appointment. These QR 
 
  + https://data-gators.com/
 
-![Website](/images/qrcodes/data-gators.png)
+![Website](/images/qrcodes/qrcode_dataGators.png)
 

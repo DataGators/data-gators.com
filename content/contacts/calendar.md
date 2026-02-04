@@ -21,7 +21,7 @@ draft = false
   var target = document.currentScript;
   window.addEventListener('load', function() {
     calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1bAzyK-y_whxBNzwSWylpaJOc6P7uzqgpQwFksHpOsP5OwBX3Z3VJj4RsMr46pVhf2GD8YRsFD?gv=true',
+      url: 'https://calendar.app.google/CSXwgnckaGSGY1dk8',
       color: '#039BE5',
       label: 'Book an appointment',
       target,

@@ -9,13 +9,13 @@ description: Welcome
 ![dataGatorsLogo](images/logos/tutoring_logo_22x14.png)
 ### Hi! Welcome to the DataGator Website!
 
-Are you stuck on a project where you have to use and analyze data? If you need help getting started using computational tools and methods such as Machine Learning, statistical models, visualization techniques or similar? Do you just need to brainstorm some ideas about your project in analysis? 
+Are you stuck on a project where you have to use and analyze data? If you need help getting started using computational tools and methods such as Machine Learning, statistical models, visualization techniques or similar? Or, do you just need help in finding some data, beginning a project? Do you just want to brainstorm some ideas about your project in analysis? Then we can help!
 
-*Then drop by the Campus Center of Library for help on your project. Check the calendar see when the tables are open and to make an [appointment](/contacts/calendar/)!*
+*Then drop by the our desk for help on your project. Check the calendar see when the tables are open and to make an [appointment](/contacts/calendar/)!*
 
 ### What we do
 
-Whether you're working on data analysis, programming in R, Python or something else!, and need assistance with statistical methods and models, our **Help Desks** are here for you! Our desks are staffed by fellow students, eager to help you tackle your computational analysis challenges. Stop by and get the support you need to succeed in your research!
+Whether you're working on data analysis, programming in R, Python, or something related to research, our **Help Desks** are here for you to provide assistance with your research tasks. Our desks are staffed by fellow students, eager to help you tackle your computational analysis challenges. Stop by and get the support you need to succeed in your research!
 
 **We offer assistance with:**
 
@@ -26,8 +26,8 @@ Whether you're working on data analysis, programming in R, Python or something e
 - And much more to support your research projects!
 
 **Where to find us:**
-- **Campus Center Help Desk**
-- **Library Help Desk**
+
+- **Alden Hall, During Data Gator Office hours**
 
 The illustrious DataGators will help you get started with your computational project. When you go to their table, be sure to bring your computer and your idea to start the discussion. Let us help you bring your data to life! ✨
 

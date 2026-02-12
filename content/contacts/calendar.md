@@ -17,7 +17,6 @@ draft = false
 <!-- add a line drop -->
 <!-- &#x200B; -->
 
-
 <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
@@ -26,9 +25,9 @@ draft = false
   var target = document.currentScript;
   window.addEventListener('load', function() {
     calendar.schedulingButton.load({
-      url: 'https://calendar.app.google/CSXwgnckaGSGY1dk8',
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3AWNo6qWG9Zuc9e0W7XdfGAUJY2CEJjn-0_Pb3G3hWBIp2UBZfSN2ZqAra369NNxldg0iWaaH9?gv=true',
       color: '#039BE5',
-      label: 'Book an Appointment',
+      label: 'Book an appointment',
       target,
     });
   });

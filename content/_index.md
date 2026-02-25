@@ -13,6 +13,25 @@ Are you stuck on a project where you have to use and analyze data? If you need h
 
 *Then drop by the our desk for help on your project. Check the calendar see when the tables are open and to make an [appointment](/contacts/calendar/)!*
 
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3AWNo6qWG9Zuc9e0W7XdfGAUJY2CEJjn-0_Pb3G3hWBIp2UBZfSN2ZqAra369NNxldg0iWaaH9?gv=true',
+      color: '#039BE5',
+      label: 'Book an appointment',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+
+
 ### What we do
 
 Whether you're working on data analysis, programming in R, Python, or something related to research, our **Help Desks** are here for you to provide assistance with your research tasks. Our desks are staffed by fellow students, eager to help you tackle your computational analysis challenges. Stop by and get the support you need to succeed in your research!
@@ -32,6 +51,5 @@ Whether you're working on data analysis, programming in R, Python, or something 
 The illustrious DataGators will help you get started with your computational project. When you go to their table, be sure to bring your computer and your idea to start the discussion. Let us help you bring your data to life! ✨
 
 Open to all students and faculty. Organized and supported by the Department of Computer and Information Science and the Office of the Associate Provost for Institutional Effectiveness, Strategic Planning, and Assessment.
-
 
 <!-- [Check out our about page!](/about) -->

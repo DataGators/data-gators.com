@@ -11,7 +11,7 @@ description: Welcome
 
 Are you stuck on a project where you have to use and analyze data? If you need help getting started using computational tools and methods such as Machine Learning, statistical models, visualization techniques or similar? Or, do you just need help in finding some data, beginning a project? Do you just want to brainstorm some ideas about your project in analysis? Then we can help!
 
-*Then drop by the our desk for help on your project. Check the calendar see when the tables are open and to make an [appointment](/contacts/calendar/)!*
+*Let's help you with your data-driven project!*
 
 <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">

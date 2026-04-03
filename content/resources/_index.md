@@ -27,6 +27,14 @@ A comprehensive guide to essential tools, platforms, and resources for data scie
 - Data sources & databases
 - Bioinformatics & biomedical resources
 
+#### 🔧 [Synthetic Data Generator](data_generator/)
+An interactive tool for generating realistic synthetic datasets for testing and analysis:
+- Create custom datasets with multiple columns
+- Support for names, dates, numbers, text, and more
+- Generate random paragraphs for text analysis
+- Download as CSV or TXT format
+- Perfect for testing data analysis code
+
 #### ✍️ [Academic Writing Resources](writing_i/)
 Guidelines and support for academic writing, featuring:
 - Steps for writing effective thesis introductions

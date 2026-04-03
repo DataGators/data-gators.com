@@ -9,7 +9,7 @@ draft = false
 &#x200B;
 </center>
 
-![Data Generator](/images/main/research_01.png)
+![Data Generator](/images/syn_data.png)
 
 ## Synthetic Data Generator
 
@@ -23,18 +23,22 @@ Generate realistic synthetic data for testing and development purposes. Configur
 max-width: 1200px;
 margin: 20px auto;
 padding: 20px;
-background: #f9f9f9;
+/* background: #f9f9f9; */
+background: #213e5f; /*frame of widget*/
 border-radius: 8px;
 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .control-panel {
-background: white;
+/* background: white; */
+/* background: #b4a5a5; */
+background: #a9b4a5;
 padding: 20px;
 border-radius: 6px;
 margin-bottom: 20px;
 }
 .columns-list {
-background: white;
+/* background: white; */
+background: #0b7dda; /*Configured Columns field*/
 padding: 20px;
 border-radius: 6px;
 margin-bottom: 20px;
@@ -72,7 +76,8 @@ margin-bottom: 15px;
 display: block;
 margin-bottom: 5px;
 font-weight: 500;
-color: #555;
+/* color: #222; */
+color: #222; /* menu titled ("Number of Rows", "Column Name", and "Data Type") */
 }
 .form-group input,
 .form-group select {
@@ -80,7 +85,13 @@ width: 100%;
 padding: 8px 12px;
 border: 1px solid #ddd;
 border-radius: 4px;
-font-size: 14px;
+font-size: 20px;
+/* color: #222; */
+color: #aeede0; /*Text in the "Number of Rows" "Column Name" and "Data Type" fields */
+}
+.form-group input::placeholder {
+color: #666;
+opacity: 1;
 }
 .btn {
 padding: 10px 20px;
@@ -285,7 +296,9 @@ function updateColumnConfig () {
 const type = document.getElementById('columnType').value;
 const preview = document.getElementById('columnConfigPreview');
 
-let html = '<div style="background: #fff3cd; padding: 10px; border-radius: 4px; border-left: 4px solid #ffc107;"><strong>Configuration for ' + type + ':</strong> ';
+//let html = '<div style="background: #fff3cd; padding: 10px; border-radius: 4px; border-left: 4px solid #ffc107;"><strong>Configuration for ' + type + ':</strong> ';
+
+let html = '<div style="background: #0b7dda; padding: 10px; border-radius: 4px; border-left: 4px solid #ffc107;"><strong>Configuration for ' + type + ':</strong> ';
 
 switch(type) {
 case 'name':
